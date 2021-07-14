@@ -1,6 +1,4 @@
-[brackets.io][1]
+brackets-cont.github.io
 ===========
 
-[brackets.io website][1]
-
-[1]: http://brackets.io/
+brackets-cont website (WIP)
