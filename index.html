@@ -83,7 +83,7 @@
         <div class="large-11 columns clearfix">
             <h1 class="brackets-logo">
                 <a href="index.html">
-                    <i></i>brackets-cont</a>
+                    <i></i>Brackets Continued</a>
             </h1>
             <div class="mobile-nav">
                 <a id="hamburger" href="#">Menu</a>
@@ -94,7 +94,7 @@
                     <a href="docs/current/modules/brackets.html" data-i18n="nav.apidocs">API Docs</a>
                     <!-- <a href="http://blog.brackets.io" data-i18n="nav.blog">Blog</a> -->
                     <a href="https://registry.brackets.io" data-i18n="nav.extensions">Extensions</a>
-                    <a href="https://github.com/adobe/brackets/wiki/Troubleshooting" data-i18n="nav.support">Support</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting" data-i18n="nav.support">Support</a>
                 </div>
                 <div class="social-links">
                     <a class="social-links-item github-icon" href="https://www.github.com/brackets-cont/brackets" title="GitHub">GitHub</a>
@@ -126,7 +126,7 @@
                 <div id="os-alert" class="alert-box radius" data-alert>
                 </div>
                 <p>
-                    <a id="other-downloads" class="nobr" href="https://github.com/adobe/brackets/releases" data-i18n="index.page.hero.other-downloads">Other Downloads</a>
+                    <a id="other-downloads" class="nobr" href="https://github.com/brackets-cont/brackets/releases" data-i18n="index.page.hero.other-downloads">Other Downloads</a>
                 </p>
                 <!--
                 This <img> tag will be added when NOT on mobile
@@ -247,10 +247,10 @@
                     <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/" data-i18n="footer.links.content.extension-updates">Weekly Extension Updates</a>
                 </li>-->
                 <li>
-                    <a href="https://github.com/adobe/brackets/wiki/Troubleshooting" data-i18n="footer.links.content.troubleshooting">Troubleshooting Help</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting" data-i18n="footer.links.content.troubleshooting">Troubleshooting Help</a>
                 </li>
                 <li>
-                    <a href="https://github.com/adobe/brackets/wiki" data-i18n="footer.links.content.wiki">Wiki</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki" data-i18n="footer.links.content.wiki">Wiki</a>
                 </li>
             </ul>
         </div>
@@ -278,13 +278,13 @@
             <h5 id="contribute" data-i18n="footer.get-involved.header">Get Involved</h5>
             <ul>
                 <!--<li>
-                    <a href="https://github.com/adobe/brackets/wiki/Suggest-a-Feature" data-i18n="footer.get-involved.content.suggest">Suggest a Feature</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature" data-i18n="footer.get-involved.content.suggest">Suggest a Feature</a>
                 </li>
                 <li>
                     <a href="http://bit.ly/BracketsBacklog" data-i18n="footer.get-involved.content.trello">View Backlog on Trello</a>
                 </li>
                 <li>
-                    <a href="https://waffle.io/adobe/brackets" data-i18n="footer.get-involved.content.waffle">Track Our Progress on Waffle</a>
+                    <a href="https://waffle.io/brackets-cont/brackets" data-i18n="footer.get-involved.content.waffle">Track Our Progress on Waffle</a>
                 </li>
                 <li>
                     <a href="https://groups.google.com/forum/#!forum/brackets-dev" data-i18n="footer.get-involved.content.devlist">Discuss on Google Groups</a>
@@ -298,9 +298,9 @@
 
             </ul>
         </div>
-        <!--<div class="medium-6 large-3 columns">
+        <div class="medium-6 large-3 columns">
             <h5 data-i18n="footer.in-touch.header">Keep in Touch</h5>
-            <ul>
+            <ul><!--
                 <li>
                     <a href="https://twitter.com/brackets">Twitter</a>
                 </li>
@@ -309,13 +309,16 @@
                 </li>
                 <li>
                     <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
-                </li>
+                </li> -->
+				<li>
+					<a href="#">Matrix Server/Slack Channel (Coming Soon)</a>
+				</li>
             </ul>
         </div>
-    </div>-->
+	</div>
     <div id="about" class="row">
         <div class="large-12 columns">
-            <p><span data-i18n="footer.project-info.motivation">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level, and discontinued recently. This is an open source project to continue</span><br></p>
+            <p><span data-i18n="footer.project-info.motivation">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level, and discontinued recently. This is an open source project to continue the development of Brackets.</span><br></p>
         </div>
     </div>
 </div>
@@ -372,7 +375,7 @@
     var osMatch,
         unsupported = {
             i18nKey: "general",
-            url: "https://github.com/adobe/brackets/wiki/Troubleshooting#requirements"
+            url: "https://github.com/brackets-cont/brackets/wiki/Troubleshooting#requirements"
         };
 
     // Windows XP
@@ -396,7 +399,7 @@
     } else if (/Debian[ -_]7/i.test(navigator.userAgent)) {
         unsupported.os = "Debian 7";
         unsupported.i18nKey = "debian-7";
-        unsupported.url = "https://github.com/adobe/brackets/issues/4816";
+        unsupported.url = "https://github.com/brackets-cont/brackets/issues/4816";
         unsupported.default = "Unfortunately, we currently don't support Debian 7. <a href='" + unsupported.url + "'>Take a look at the GitHub issue</a> for further information.";
 
     // Ubuntu
@@ -502,10 +505,10 @@
                         url = build.platforms[OS].downloadURL;
                     } else { // Generate the download URI
                         var tag = buildName.toLowerCase().split(" ").join("-");
-                        url = "https://github.com/adobe/brackets/releases/" + tag;
+                        url = "https://github.com/brackets-cont/brackets/releases/" + tag;
 
                         if (ext) {
-                            url = "https://github.com/adobe/brackets/releases/download/" + tag + "/Brackets." + buildName.split(" ").join(".") + ext;
+                            url = "https://github.com/brackets-cont/brackets/releases/download/" + tag + "/Brackets." + buildName.split(" ").join(".") + ext;
                         }
                     }
 
