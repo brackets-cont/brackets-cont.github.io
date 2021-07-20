@@ -66,7 +66,7 @@
         <div class="large-12 columns clearfix">
             <h1 class="brackets-logo">
                 <a href="index.html">
-                    <i></i>Brackets</a>
+                    <i></i>Brackets Continued</a>
             </h1>
             <div class="mobile-nav">
                 <a id="hamburger" href="#">Menu</a>
@@ -75,13 +75,13 @@
                 <div class="nav-links">
                     <a href="contribute.html" class="contribute" data-i18n="nav.contribute">Contribute</a>
                     <a href="docs/current/modules/brackets.html" data-i18n="nav.apidocs">API Docs</a>
-                    <a href="http://blog.brackets.io" data-i18n="nav.blog">Blog</a>
+                    <!-- <a href="http://blog.brackets.io" data-i18n="nav.blog">Blog</a> The blog isn't on the home page for some reason, and it links to the old site anyway, so i'll hide it here -->
                     <a href="https://registry.brackets.io" data-i18n="nav.extensions">Extensions</a>
-                    <a href="https://github.com/adobe/brackets/wiki/Troubleshooting" data-i18n="nav.support">Support</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting" data-i18n="nav.support">Support</a>
                 </div>
                 <div class="social-links">
-                    <a class="social-links-item github-icon" href="https://www.github.com/adobe/brackets" title="GitHub">GitHub</a>
-                    <a class="social-links-item twitter-icon" href="https://twitter.com/brackets" title="Twitter">Twitter</a>
+                    <a class="social-links-item github-icon" href="https://www.github.com/brackets-cont/brackets" title="GitHub">GitHub</a>
+                    <!-- <a class="social-links-item twitter-icon" href="https://twitter.com/brackets" title="Twitter">Twitter</a> This was also hidden on the home page, so i'll hide it in here for consistency -->
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
             <p><span data-i18n="contribute.page.sub-hero.hack.content">Read our detailed instructions for setting up a development environment and get hacking right away.</span>
             </p>
             <p>
-                <a class="button radius secondary" href="https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets" data-i18n="contribute.page.sub-hero.hack.more">Learn How to Hack on Brackets</a>
+                <a class="button radius secondary" href="https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets" data-i18n="contribute.page.sub-hero.hack.more">Learn How to Hack on Brackets</a>
             </p>
         </div>
         <div class="medium-6 large-4 columns">
@@ -115,7 +115,7 @@
                 <span data-i18n="contribute.page.sub-hero.extension.content">Building a Brackets extension is the easiest way to experiment with new ideas and share them with the community.</span>
             </p>
             <p>
-                <a class="button radius secondary" href="https://github.com/adobe/brackets/wiki/How-to-Write-Extensions" data-i18n="contribute.page.sub-hero.extension.more">Learn How to Write Extensions</a>
+                <a class="button radius secondary" href="https://github.com/brackets-cont/brackets/wiki/How-to-Write-Extensions" data-i18n="contribute.page.sub-hero.extension.more">Learn How to Write Extensions</a>
             </p>
         </div>
         <div class="small-12 large-4 columns">
@@ -124,16 +124,16 @@
                 <span data-i18n="[html]contribute.page.sub-hero.translate.content">Brackets is available in <span id="langCount">31</span> languages that are contributed and maintained by the community.</span>
             </p>
             <p>
-                <a class="button radius secondary" href="https://github.com/adobe/brackets/blob/master/src/nls/README.md" data-i18n="contribute.page.sub-hero.translate.more">Contribute a Translation</a>
+                <a class="button radius secondary" href="https://github.com/brackets-cont/brackets/blob/master/src/nls/README.md" data-i18n="contribute.page.sub-hero.translate.more">Contribute a Translation</a>
             </p>
         </div>
     </div>
 </div>
 
-<div id="content-wrapper">
+<div id="content-wrapper" style="display: none"> <!-- Hide this section until the new repo has enough issues to populate it -->
     <div id="content" class="row">
         <div class="medium-6 large-6 columns">
-            <h2><a href="https://github.com/adobe/brackets/labels/starter%20bug" data-i18n="contribute.page.content.starter-issues.header">Starter Issues</a></h2>
+            <h2><a href="https://github.com/brackets-cont/brackets/labels/starter%20bug" data-i18n="contribute.page.content.starter-issues.header">Starter Issues</a></h2>
             <p data-i18n="[html]contribute.page.content.starter-issues.description">Just getting started? Starter issues are bite-sized bugs that shouldn't take more than an hour or two to complete. They are a great way to learn the codebase <em>and</em> make a difference.</p>
             <div id="starter_issues">
                 <div class="spinner">
@@ -142,7 +142,7 @@
                 <!-- JS generated content -->
 
             </div>
-            <p><a class="button radius secondary" href="https://github.com/adobe/brackets/issues?labels=starter+bug&page=1&state=open" data-i18n="contribute.page.content.starter-issues.more">View All Starter Issues&hellip;</a></p>
+            <p><a class="button radius secondary" href="https://github.com/brackets-cont/brackets/issues?labels=starter+bug&page=1&state=open" data-i18n="contribute.page.content.starter-issues.more">View All Starter Issues&hellip;</a></p>
         </div>
         <div class="medium-6 large-6 columns">
             <h2 data-i18n="contribute.page.content.starter-features.header">Starter Features</h2>
@@ -165,19 +165,19 @@
             <h5 data-i18n="footer.links.header">Quick Links</h5>
             <ul>
                 <li>
-                    <a href="https://github.com/adobe/brackets" data-i18n="footer.links.content.source">Source Code on Github</a>
+                    <a href="https://github.com/brackets-cont/brackets" data-i18n="footer.links.content.source">Source Code on Github</a>
                 </li>
                 <li>
                     <a href="docs/current/modules/brackets.html" data-i18n="footer.links.content.apidocs">API Documentation</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/" data-i18n="footer.links.content.extension-updates">Weekly Extension Updates</a>
+                </li>-->
+                <li>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting" data-i18n="footer.links.content.troubleshooting">Troubleshooting Help</a>
                 </li>
                 <li>
-                    <a href="https://github.com/adobe/brackets/wiki/Troubleshooting" data-i18n="footer.links.content.troubleshooting">Troubleshooting Help</a>
-                </li>
-                <li>
-                    <a href="https://github.com/adobe/brackets/wiki" data-i18n="footer.links.content.wiki">Wiki</a>
+                    <a href="https://github.com/brackets-cont/brackets/wiki" data-i18n="footer.links.content.wiki">Wiki</a>
                 </li>
             </ul>
         </div>
@@ -204,30 +204,30 @@
         <div class="medium-6 large-3 columns">
             <h5 id="contribute" data-i18n="footer.get-involved.header">Get Involved</h5>
             <ul>
-                <li>
-                    <a href="https://github.com/adobe/brackets/wiki/Suggest-a-Feature" data-i18n="footer.get-involved.content.suggest">Suggest a Feature</a>
+                <!--<li>
+                    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature" data-i18n="footer.get-involved.content.suggest">Suggest a Feature</a>
                 </li>
                 <li>
                     <a href="http://bit.ly/BracketsBacklog" data-i18n="footer.get-involved.content.trello">View Backlog on Trello</a>
                 </li>
                 <li>
-                    <a href="https://waffle.io/adobe/brackets" data-i18n="footer.get-involved.content.waffle">Track Our Progress on Waffle</a>
+                    <a href="https://waffle.io/brackets-cont/brackets" data-i18n="footer.get-involved.content.waffle">Track Our Progress on Waffle</a>
                 </li>
                 <li>
                     <a href="https://groups.google.com/forum/#!forum/brackets-dev" data-i18n="footer.get-involved.content.devlist">Discuss on Google Groups</a>
                 </li>
                 <li>
                     <a href="http://webchat.freenode.net?channels=brackets&uio=d4" data-i18n="footer.get-involved.content.irc">Chat on IRC at Freenode/#Brackets</a>
-                </li>
+                </li>-->
                 <li>
-                    <a href="https://github.com/adobe/brackets/issues" data-i18n="footer.get-involved.content.issues">Checkout Current Issues on GitHub</a>
+                    <a href="https://github.com/brackets-cont/brackets/issues" data-i18n="footer.get-involved.content.issues">Checkout Current Issues on GitHub</a>
                 </li>
 
             </ul>
         </div>
         <div class="medium-6 large-3 columns">
             <h5 data-i18n="footer.in-touch.header">Keep in Touch</h5>
-            <ul>
+            <ul><!--
                 <li>
                     <a href="https://twitter.com/brackets">Twitter</a>
                 </li>
@@ -236,13 +236,16 @@
                 </li>
                 <li>
                     <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
-                </li>
+                </li> -->
+				<li>
+					<a href="#">Matrix Server/Slack Channel (Coming Soon)</a>
+				</li>
             </ul>
         </div>
-    </div>
+	</div>
     <div id="about" class="row">
         <div class="large-12 columns">
-            <p>Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level.<br>Brackets is released under the <a href="https://github.com/adobe/brackets/blob/master/LICENSE">MIT License</a>.</p>
+            <p><span data-i18n="footer.project-info.motivation">Brackets was founded by Adobe as a community guided, open source project to push web development editors to the next level, and discontinued recently. This is an open source project to continue the development of Brackets.</span><br></p>
         </div>
     </div>
 </div>
@@ -263,7 +266,7 @@
 <script>
     // get contributors
 
-    $.getJSON("https://api.github.com/repos/adobe/brackets/contributors?per_page=100").done(function (data) {
+    $.getJSON("https://api.github.com/repos/brackets-cont/brackets/contributors?per_page=100").done(function (data) {
         var displayContent = "";
         data.forEach(function(member) {
             displayContent += '<a href="' + member.html_url + '">';
@@ -292,7 +295,7 @@
     // don't load starter issues or features on smartphones
     if (document.documentElement.clientWidth > 480) {
         // get starter issues from github
-        $.getJSON("https://api.github.com/repos/adobe/brackets/issues?labels=starter+bug&state=open&per_page=7").done(function (data) {
+        $.getJSON("https://api.github.com/repos/brackets-cont/brackets/issues?labels=starter+bug&state=open&per_page=7").done(function (data) {
             i18nLoaded.done(function () {
                 // update issue list
                 var feature_content = "";
@@ -328,7 +331,7 @@
     }
 
     // retrieve the actual count of available languages
-    $.getJSON("https://api.github.com/repos/adobe/brackets/contents/src/nls")
+    $.getJSON("https://api.github.com/repos/brackets-cont/brackets/contents/src/nls")
         .done(function (data) {
             i18nLoaded.done(function () {
                 $("#langCount").text(data.filter(function (entry) {
