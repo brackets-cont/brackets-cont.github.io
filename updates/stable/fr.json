@@ -1,5 +1,663 @@
-[
-  {
+[   {
+        "buildNumber": 17770,
+        "versionString": "Release 1.14.2",
+        "dateString": "06-04-2020",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.14.2",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge de l’association de types de fichiers avec des éditeurs externes",
+                "description": "Brackets permet désormais d’associer des types de fichiers non pris en charge à des éditeurs externes. Vous pouvez maintenant ouvrir les types de fichiers associés directement dans les applications externes en double-cliquant sur les fichiers dans l’arborescence des fichiers."
+            }
+        ],
+        "platforms" : {
+            "WIN": {
+                "checksum": "5f059e271fe78fefe224e187b6ef559445b1efadd6dca9446a99ca1a53eb4e56",
+                "downloadURL": "https://github.com/scanunicco/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi"
+            },
+            "OSX": {
+                "checksum": "716be1a75099079aa1a22dedab403c9839155c4b99aab6677d8a24589f7f9a15",
+                "downloadURL": "https://github.com/scanunicco/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.dmg"
+            }
+        },
+        "prerelease" : "false"
+    },
+    {
+        "buildNumber": 17752,
+        "versionString": "Release 1.14.1",
+        "dateString": "05-12-2019",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.14.1",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Mise à jour de sécurité",
+                "description": "Il s’agit d'une mise à jour de sécurité visant à corriger une vulnérabilité constatée au niveau du débogage à distance activé par défaut au lancement de l’application."
+            }
+        ],
+        "platforms" : {
+            "WIN": {
+                "checksum": "a5b25126acac7a94ef97430b37dc9ab8a628688e1fe21de9317b6d287eb1eb9d",
+                "downloadURL": "https://github.com/scanunicco/brackets/releases/download/release-1.14.1/Brackets.Release.1.14.1.msi"
+            },
+            "OSX": {
+                "checksum": "9e95b89544796ef959b6acb36db77a712f1cf55d09294cff4b6dde648f055160",
+                "downloadURL": "https://github.com/scanunicco/brackets/releases/download/release-1.14.1/Brackets.Release.1.14.1.dmg"
+            },
+            "LINUX32" : {
+                "checksum": "6ef1567b75a197236b3d35785afa744752a28b74cfa51b93b7b78d0a50acbfd4",
+                "downloadURL" : "https://github.com/scanunicco/brackets/releases/download/release-1.14.1/Brackets.Release.1.14.1.32-bit.deb"
+            },
+            "LINUX64" : {
+                "checksum" : "dd8346ee7061e8820ecb7859f5cdccb6f199b144dd17192c217dd49512c4452b",
+                "downloadURL" : "https://github.com/scanunicco/brackets/releases/download/release-1.14.1/Brackets.Release.1.14.1.64-bit.deb"
+            }
+        },
+        "prerelease" : "false"
+    },
+    {
+        "buildNumber": 17740,
+        "versionString": "Release 1.14",
+        "dateString": "02-05-2019",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.14",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge du Language Server Protocol",
+                "description": "Brackets prend désormais en charge le Language Server Protocol. Il est ainsi possible d’utiliser et de personnaliser l’outil de langage client intégré pour faciliter l’intégration des serveurs de langage comme PHP ou Python afin d’offrir davantage de fonctions comme les conseils de code, les indices de paramètres, l’accès aux définitions, etc."
+            },
+            {
+                "name": "Prise en charge du langage PHP",
+                "description": "Brackets prend désormais en charge le langage PHP par le biais de l’intégration d’un serveur de langage PHP. Lorsque vous utilisez du code PHP, vous pouvez profiter des fonctions de conseils de code, d’indices de paramètres de fonction, d’accès aux définitions, de symboles de projet et de document, de recherche de références et d’analyse Linting."
+            }
+        ],
+        "platforms" : {
+            "WIN": {
+                "checksum": "e26205e7591336e08c81cfa1b9ff7252b9597799d8b3408f20b33c41bf7333be",
+                "downloadURL": "https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.msi"
+            },
+            "OSX": {
+                "checksum": "d1545549863a79a3c4824f9a35866e78f2822664ddeeaeb3cf85a14b491a86cb",
+                "downloadURL": "https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg"
+            },
+            "LINUX32" : {
+                "checksum": "2c0053fb50d1d79071d455a35fbe6f4f9cdb3cd1edf90bec55a4c0c90661a1f1",
+                "downloadURL" : "https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.32-bit.deb"
+            },
+            "LINUX64" : {
+                "checksum" : "4df8490efb8a35ff93ac6975655ab4af9a56547eb4a346514803aa2e1f20f30e",
+                "downloadURL" : "https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.64-bit.deb"
+            }
+        },
+        "prerelease" : "false"
+    },
+    {
+        "buildNumber": 17699,
+        "versionString": "Release 1.13",
+        "dateString": "13-12-2018",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.13",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Windows uniquement",
+                "description": "Cette mise Ã  jour comprend des correctifs visant Ã  amÃ©liorer les performances gÃ©nÃ©rales Brackets, du lancement aux principaux workflows de codage."
+            }
+        ],
+        "platforms" : {
+            "WIN": {
+                "checksum": "1d9879807aef35a322e9129e0692fcc7d1d2704daab6d5c65767ede23d3c7384",
+                "downloadURL": "https://github.com/adobe/brackets/releases/download/release-1.13/Brackets.Release.1.13.msi"
+            }
+        },
+        "prerelease" : "false"
+    },
+    {
+        "buildNumber": 17696,
+        "versionString": "Release 1.13",
+        "dateString": "18-06-2018",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.13",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Organiser les fichiers/dossiers dans l'arborescence de fichiers",
+                "description": "Vous pouvez maintenant manipuler la structure de dossiers depuis Brackets. Il vous suffit de déplacer un fichier/dossier d'un dossier à un autre par un simple glisser-déposer."
+            },
+            {
+                "name": "Ouvrir les fichiers distants",
+                "description": "Vous pouvez maintenant ouvrir une page web hébergée à distance depuis Brackets. Utilisez le raccourci Ctrl/Cmd-Maj-O et fournissez une URL pour ouvrir rapidement le fichier et contrôler le code dans Brackets."
+            },
+            {
+                "name": " Mise à jour automatique",
+                "description": "Vous pouvez maintenant mettre automatiquement à jour Brackets, sans quitter l'éditeur de code."
+            }
+        ]
+    },
+    {
+        "buildNumber": 17621,
+        "versionString": "Release 1.12",
+        "dateString": "30-01-2018",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.12",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Remaniement JS",
+                "description": "fonctionnalité de remaniement de code spécifique à JavaScript."
+            },
+            {
+                "name": "Renommer",
+                "description": "fonctionnalité du mode JS qui permet de renommer des éléments de manière intelligente en mode fichier/portée à l’aide des fonctions Tern d’inférence et d’analyse de la portée. Pour utiliser la fonction Renommer, l’utilisateur doit sélectionner un élément def/ref variable ou placer le curseur dans le texte et appuyer sur Ctrl+R."
+            },
+            {
+                "name": "Encapsuler la sélection dans un bloc Try Catch/Condition",
+                "description": "permet d’encapsuler le code sélectionné dans un bloc Try Catch ou Condition. Pour utiliser cette fonctionnalité, l’utilisateur doit placer le curseur dans le texte, sans rien sélectionner explicitement, à l’endroit où Brackets identifie la portée de l’instruction et l’encapsule dans un bloc Try Catch."
+            },
+            {
+                "name": "Convertir en expression de flèche",
+                "description": "conversion en un clic d’un bloc de fonction/d’expression anonyme en expression de flèche."
+            },
+            {
+                "name": "Créer des getters/setters",
+                "description": "permet de créer des getters/setters pour l’identifiant actif dans le contexte d’une classe/construction."
+            },
+            {
+                "name": "Extraire comme variable",
+                "description": "les expressions peuvent être extraites en tant que variable dans la portée active."
+            },
+            {
+                "name": "Extraire comme fonction",
+                "description": "les blocs de code sélectionnés peuvent être extraits en tant que fonction dans une chaîne de portée sélectionnable, et Brackets se charge de paramétrer les symboles de dépendance."
+            }
+        ]
+    },
+    {
+        "buildNumber": 17524,
+        "versionString": "Release 1.11",
+        "dateString": "25-09-2017",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.11",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge d’ECMAScript 2015",
+                "description": "Brackets est désormais compatible avec ECMAScript 2015. À présent, la liste de saisie prédictive inclut les classes, méthodes, fonctions de flèche, fonctions de générateur et autres éléments. Brackets prend également en charge l’analyse lint du code EcmaScript, ESLint étant utilisé comme utilitaire lint JavaScript par défaut."
+            },
+            {
+                "name": "Brackets sur Linux",
+                "description": "Désormais, Brackets est entièrement pris en charge et opérationnel sur la plate-forme Linux, grâce à une mise à jour du shell avec une nouvelle version de CEF."
+            }
+        ]
+    },
+    {
+        "buildNumber": 17483,
+        "versionString": "Release 1.10",
+        "dateString": "07-07-2017",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.10",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge de plusieurs codages",
+                "description": "Brackets prend désormais en charge plus de 40 différents codages de fichiers. Vous pouvez maintenant ouvrir/enregistrer des fichiers avec différents codages."
+            },
+            {
+                "name": "Navigation vers l’arrière / vers l’avant dans l’historique des modifications",
+                "description": "Naviguez vers l’arrière / vers l’avant en utilisant Alt-I, Alt-Maj-I sur des positions explicites de curseur."
+            },
+            {
+                "name": "Activation/désactivation d’extensions par défaut",
+                "description": "Vous pouvez désormais activer/désactiver les extensions par défaut, qui sont fournies avec Brackets."
+            },
+            {
+                "name": "Historique de recherche",
+                "description": "Accédez à toutes vos recherches les plus récentes à partir de la barre de recherche."
+            },
+            {
+                "name": "Menus natifs pour Linux",
+                "description": "Les menus HTML sont remplacés par des menus natifs dans Linux."
+            },
+            {
+                "name": "Conseils de code pseudo-sélecteur et @rule",
+                "description": "Les conseils de code CSS prennent maintenant en charge les conseils de code pseudo-sélecteur/élément et @rule."
+            },
+            {
+                "name": "Conseils de code CSS en ligne",
+                "description": "Brackets fournit désormais des conseils de code CSS dans la valeur d’attribut de style en html."
+            }
+        ]
+    },
+    {
+        "buildNumber": 17312,
+        "versionString": "Release 1.9",
+        "dateString": "23-03-2017",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.9",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Inspection inversée dans l’Aperçu en direct",
+                "description": "Brackets 1.9 est doté de la fonction Inspection inversée dans l’Aperçu en direct. Désormais, lorsque vous cliquez sur un élément dans l’Aperçu en direct, la balise correspondante est mise en surbrillance dans le code source."
+            },
+            {
+                "name": "Prise en charge de l’action « Tout remplacer » dans la fonction Rechercher/Remplacer",
+                "description": "Désormais, Brackets prend en charge l’action « Remplacer tout » dans la fonction Rechercher/Remplacer, ainsi que les opérations par lot."
+            },
+            {
+                "name": "Affichage du nombre de téléchargements et tri des extensions en fonction du nombre de téléchargements",
+                "description": "Désormais, Extension Manager affiche le nombre de téléchargements pour les extensions répertoriées. Les extensions peuvent être triées en fonction du nombre de téléchargements ou de la date de publication dans l’onglet « Disponibles » ou « Thèmes »."
+            },
+            {
+                "name": "Changement de mode dans un document sans titre",
+                "description": "Le mode de langue peut être activé/désactivé dans les documents sans titre. La coloration du code et les indicateurs de code pour le mode sélectionné sont également pris en charge dans les documents sans titre."
+            },
+            {
+                "name": "Changement de document en mode fractionné",
+                "description": "Il est désormais possible de changer de fenêtre active à l’aide d’un raccourci clavier."
+            },
+            {
+                "name": "Prise en charge des extensions Brackets pour les organisations Github",
+                "description": "Désormais, les organisations Github peuvent posséder leurs propres extensions Brackets. Tous les propriétaires publics d’une organisation peuvent mettre à jour les extensions."
+            }
+        ]
+    },
+    {
+        "buildNumber": 17108,
+        "versionString": "Release 1.8",
+        "dateString": "10-11-2016",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.8",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Mise à niveau vers Node 6.3.1",
+                "description": "Brackets 1.8 est fourni avec Node 6.3.1. Avec cette mise à niveau, vous pouvez bénéficier de tous les derniers modules NPM afin de développer des extensions pour Brackets."
+            },
+            {
+                "name": "Nouveaux éléments dans le menu contextuel de l’éditeur",
+                "description": "Les opérations Couper, Copier et Coller sont maintenant disponibles dans le menu contextuel."
+            },
+            {
+                "name": "Pliage de code pris en charge pour les fichiers de modèles Handlebars",
+                "description": "Le pliage de code est désormais activé pour les blocs et les assistants dans les fichiers de modèles Handlebars."
+            },
+            {
+                "name": "Conseils de code ARIA",
+                "description": "Désormais, Brackets 1.8 prend en charge les attributs ARIA pour les conseils de code relatifs aux attributs HTML."
+            }
+        ]
+    },
+    {
+        "buildNumber": 16898,
+        "versionString": "Release 1.7",
+        "dateString": "10-06-2016",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.7",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Mise à niveau du shell du CEF à la version 2623",
+                "description": "Le shell de l’application Brackets comporte désormais la mise à niveau au cadre CEF 2623. Le problème de longue date d’un défilement trop rapide de la souris sous Windows est maintenant corrigé avec la mise à niveau du CEF."
+            },
+            {
+                "name": "Boîte de dialogue de navigation Fichiers récents",
+                "description": "La combinaison Ctrl+Tab appelle maintenant la nouvelle boîte de dialogue de navigation « Fichiers récents » qui affiche un historique de tous les fichiers ouverts et permet de basculer visuellement vers un fichier. La nouvelle boîte de dialogue effectue également le suivi de fichiers ouverts non inclus dans l’ensemble de travail."
+            },
+            {
+                "name": "64 bits sur MAC",
+                "description": "L’application Brackets sur MAC est désormais conçue pour les systèmes 64 bits !"
+            }
+        ]
+    },
+    {
+        "buildNumber": 16680,
+        "versionString": "Release 1.6",
+        "dateString": "20-01-2016",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.6",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Vue fractionnée (même document)",
+                "description": "Ouvrez le même fichier dans les deux volets, lorsque vous êtes dans la vue fractionnée."
+            },
+            {
+                "name": "Utilisez les bouton de symétrie pour déplacer les fichiers entre les volets fractionnés.",
+                "description": "Utilisez le nouveau bouton de symétrie pour déplacer les fichiers entre les différents volets fractionnés."
+            },
+            {
+                "name": "Inférence de types dans la liste de conseils",
+                "description": "Les conseils du code JavaScript fournissent désormais plus d’informations comme l’inférence de types et la documentation associée."
+            },
+            {
+                "name": "Volets Activer/Désactiver et mode Aucune distraction",
+                "description": "Cmd-Shift-2 va à présent activer le mode Aucune distraction qui vous permettra de travailler avec une interface utilisateur très minime."
+            }
+        ]
+    },
+    {
+        "buildNumber": 16538,
+        "versionString": "Release 1.5",
+        "dateString": "14-10-2015",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.5",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Plier le texte sélectionné",
+                "description": "Sélectionnez un bloc de texte dans l’éditeur et utilisez les repères de pliage qui s’affichent pour réduire le texte."
+            },
+            {
+                "name": "Stabilité renforcée et recherche instantanée",
+                "description": "Améliorations majeures des performances et de la stabilité. La fonction « Rechercher dans les fichiers » peut désormais indexer des milliers de fichiers et rechercher instantanément ceux qui vous intéressent."
+            },
+            {
+                "name": "Conseils de code CSS dans PHP",
+                "description": "Des conseils de code CSS sont désormais disponibles pour les éléments de style dans les fichiers PHP."
+            },
+            {
+                "name": "Maintien de l’apparence réduite des outils d’analyse Linting",
+                "description": "Quand l’utilisateur change de fichier, le système garde en mémoire que les outils d’analyse Linting sont réduits."
+            }
+        ]
+    },
+    {
+        "buildNumber": 16380,
+        "versionString": "Release 1.4",
+        "dateString": "27-07-2015",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.4",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Recherche instantanée dans les fichiers",
+                "description": "Il n’a jamais été aussi rapide de lancer des recherches dans les fichiers. Les résultats s’affichent maintenant au fur et à mesure de la saisie dans la zone de recherche."
+            },
+            {
+                "name": "Améliorations concernant la modification des préférences",
+                "description": "Lorsque vous modifiez le fichier de préférences « brackets.json », toutes les préférences sont maintenant disponibles en tant que conseils de code. Par ailleurs, lorsque vous ouvrez des fichiers de préférences, les préférences par défaut s’affichent dans un volet séparé, à titre de référence."
+            },
+            {
+                "name": "Activation et désactivation des extensions",
+                "description": "Les extensions peuvent désormais être activées/désactivées séparément, d’un simple clic sur un bouton dans Extension Manager."
+            },
+            {
+                "name": "Rendu du texte amélioré sur Mac",
+                "description": "L’anticrénelage des sous-pixels, activé par défaut, permet un rendu du texte parfaitement net sur Mac. Vous pouvez cependant rétablir l’ancien rendu de texte en définissant la valeur « antialiased » pour la préférence « fonts.fontSmoothing »."
+            },
+            {
+                "name": "Prise en charge des caractères grecs et cyrilliques",
+                "description": "La police de l’éditeur (Source Code Pro) a été mise à jour pour offrir une meilleure prise en charge des caractères grecs et cyrilliques."
+            }
+        ]
+    },
+    {
+        "buildNumber": 16022,
+        "versionString": "Release 1.3",
+        "dateString": "27-04-2015",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.3",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Intégration à la ligne de commande",
+                "description": "Lancez Brackets et ouvrez des fichiers/dossiers depuis la ligne de commande sous Mac ou Windows. Brackets peut également être intégré au menu contextuel de l’Explorateur Windows. Sous Windows, il s’agit d’options du programme d’installation ; sous Mac, cliquez sur « Fichier > Installer le raccourci de ligne de commande » pour activer cette fonctionnalité."
+            },
+            {
+                "name": "Pliage de code",
+                "description": "Développez/réduisez des blocs de code en utilisant les indicateurs placés en regard des numéros de ligne ou au moyen de raccourcis clavier."
+            },
+            {
+                "name": "Correction du problème de défilement de la souris sous Windows",
+                "description": "Restaure le comportement de Brackets 1.0 concernant la vitesse de défilement de la molette."
+            },
+            {
+                "name": "Rapport sur l’état de santé de Brackets",
+                "description": "Données anonymes visant à améliorer Brackets. Vous pouvez prévisualiser les données qui seront transmises ou désactiver la fonctionnalité si vous le souhaitez. Nous mettons tout en œuvre pour protéger votre vie privée et garantir la transparence. Pour plus de détails, cliquez sur Aide > Rapport sur l’état de santé."
+            }
+        ]
+    },
+    {
+        "buildNumber": 15697,
+        "versionString": "Release 1.2",
+        "dateString": "02-03-2015",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.2",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Fonction de glisser-déposer pour réorganiser le texte",
+                "description": "Activez la préférence « dragDropText » pour pouvoir déplacer un texte sélectionné. Fonctionne également avec plusieurs sélections."
+            },
+            {
+                "name": "Indicateurs de nom de couleur CSS",
+                "description": "Indicateurs de code correspondant aux couleurs nommées standard en CSS/LESS/SCSS, avec un aperçu des différentes nuances de couleur."
+            },
+            {
+                "name": "Indicateurs de code SVG",
+                "description": "Indicateurs de code dans les fichiers .svg pour les balises, les attributs et les couleurs nommées."
+            },
+            {
+                "name": "Prise en charge des résolutions élevées HiDPI Windows",
+                "description": "Le rendu du texte, des icônes et des images dans Brackets est plus net sur les écrans haute résolution (HiDPI)."
+            },
+            {
+                "name": "Indicateur de coche de recherche",
+                "description": "Désormais, les coches de la barre déroulante Rechercher/Remplacer mettent en évidence le résultat sélectionné."
+            },
+            {
+                "name": "Positionnement amélioré des fenêtres",
+                "description": "Sous Windows, Brackets reste correctement positionné à l’écran même si le moniteur est débranché ou que la résolution d’écran est modifiée."
+            }
+        ]
+    },
+    {
+        "buildNumber": 15558,
+        "versionString": "Release 1.1",
+        "dateString": "16-12-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.1",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "À tester : Prise en charge de l’Aperçu en direct par plusieurs navigateurs",
+                "description": "Cette option est désactivée par défaut et doit être activée par le biais de la préférence « livedev.multibrowser ». L’aperçu en direct s’ouvre dans le navigateur par défaut. Vous pouvez copier/coller l’URL dans n’importe quel autre navigateur. Tous les navigateurs seront mis à jour en même temps."
+            },
+            {
+                "name": "Prise en charge améliorée pour la saisie de lettres accentuées avec la touche AltGr",
+                "description": "Cette version résout les conflits entre certains raccourcis propres à Brackets et différents types de clavier (sous Windows)."
+            },
+            {
+                "name": "Stabilité renforcée",
+                "description": "Les objets centraux de Brackets utilisent une nouvelle API avec fonction d’écoute des événements, qui protège contre les extensions défaillantes."
+            },
+            {
+                "name": "Préférences spécifiques par type de fichier",
+                "description": "Les préférences peuvent désormais être configurées par le biais du calque « language »."
+            },
+            {
+                "name": "Amélioration des performances de saisie avec les indicateurs de code",
+                "description": "La liste des indicateurs de code est désormais limitée à 50 entrées, afin qu’elle s’affiche plus rapidement. Ce paramètre peut être modifié par le biais de la nouvelle préférence « maxCodeHints »."
+            },
+            {
+                "name": "Activation sélective des programmes lint via la section Préférences",
+                "description": "L’exécution et l’ordre des programmes lint peuvent désormais être configurés par projet."
+            }
+        ]
+    },
+    {
+        "buildNumber": 15191,
+        "versionString": "Release 1.0",
+        "dateString": "04-11-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-1.0",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Brackets 1.0",
+                "description": "C’est officiel : Brackets 1.0 est arrivé !"
+            },
+            {
+                "name": "Raccourcis clavier personnalisables",
+                "description": "L’utilisateur peut modifier les combinaisons de touches par défaut et les raccourcis des extensions dans un fichier JSON."
+            },
+            {
+                "name": "Réduction des résultats de l’édition rapide",
+                "description": "Les résultats de l’édition rapide sont à présent regroupés par fichier, et vous pouvez les réduire afin de facilement masquer les résultats de fichiers CSS non souhaités."
+            },
+            {
+                "name": "Meilleurs résultats pour les indicateurs de code et Ouverture rapide",
+                "description": "Les indicateurs de code et Ouverture rapide suggèrent à présent des résultats sensibles à la casse et fournissent ainsi de meilleurs résultats lorsque vous saisissez des lettres majuscules ou minuscules."
+            },
+            {
+                "name": "Améliorations des performances",
+                "description": "Cette version possède de nombreuses améliorations des performances par rapport à la version 0.44."
+            }
+        ]
+    },
+    {
+        "buildNumber": 14876,
+        "versionString": "Release 0.44",
+        "dateString": "06-10-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-0.44",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Vue fractionnée",
+                "description": "Affichez deux fichiers simultanément en les plaçant côte à côte ou l’un au-dessus de l’autre. Utilisez la fonction de glisser-déposer sur les ensembles de travail pour déplacer les fichiers d’un volet à un autre."
+            },
+            {
+                "name": "Améliorations relatives à l’arborescence de projets",
+                "description": "De nombreux bugs ont été corrigés au niveau de l’arborescence et les performances ont été améliorées. Il est notamment possible, désormais, de cliquer avec le bouton droit de la souris sur les fichiers que Brackets ne peut pas ouvrir (les fichiers binaires, par exemple)."
+            },
+            {
+                "name": "Améliorations concernant la modification de feuilles de style",
+                "description": "Nous avons résolu le problème suite auquel l’application Brackets se figeait lors d’un aperçu un direct dans des fichiers CSS/SCSS/LESS. Le problème d’éditeur intégré CSS qui apparaissait vide a également été corrigé."
+            },
+            {
+                "name": "Préférences",
+                "description": "Une nouvelle préférence permettant d’afficher le curseur dans le texte sélectionné a été ajoutée. Par défaut, Brackets continue à masquer le curseur clignotant quand vous sélectionnez du texte."
+            },
+            {
+                "name": "Traduction",
+                "description": "Les informations affichées dans Extension Manager, comme le nom d’une extension et sa description, peuvent maintenant être traduites par l’auteur de l’extension."
+            }
+        ]
+    },
+    {
+        "buildNumber": 14375,
+        "versionString": "Release 0.43",
+        "dateString": "04-09-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-0.43",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge SCSS/LESS",
+                "description": "Les fonctions « Edition rapide », « Accès rapide à la définition » et « Surlignement dans l’Aperçu en direct » sont désormais compatibles avec les langages SCSS et LESS, de la même manière qu’avec le code CSS normal."
+            },
+            {
+                "name": "Amélioration du mode sombre",
+                "description": "Si vous sélectionnez un thème sombre pour l’interface utilisateur de Brackets, davantage d’éléments apparaissent foncés."
+            },
+            {
+                "name": "Rechercher/Remplacer : Afficher l’indice du résultat",
+                "description": "La barre Rechercher/Remplacer affiche l’indice du résultat en cours, par exemple « 7 sur 32 »."
+            },
+            {
+                "name": "Onglet Thèmes dans Extension Manager",
+                "description": "Les thèmes sont répertoriés dans un onglet distinct, pour que l’utilisateur trouve plus facilement ce qu’il recherche. L’onglet Extensions applique un filtre afin d’exclure les thèmes."
+            },
+            {
+                "name": "Enregistrement des changements de mode de langue",
+                "description": "Vous pouvez changer de manière définitive la langue de tous les fichiers portant la même extension en utilisant l’option « Utiliser par défaut » depuis le sélecteur de langue de la barre d’état."
+            },
+            {
+                "name": "Aperçu en direct",
+                "description": "Fiabilité renforcée et prise en charge des fichiers .xhtml"
+            },
+            {
+                "name": "Traduction en ukrainien",
+                "description": "Une nouvelle traduction de Brackets en ukrainien a vu le jour grâce au travail de la communauté."
+            }
+        ]
+    },
+    {
+        "buildNumber": 13957,
+        "versionString": "Release 0.42",
+        "dateString": "01-08-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-0.42",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Prise en charge des thèmes",
+                "description": "Brackets prend désormais en charge les thèmes d’édition et propose un thème clair et un thème sombre définis par défaut. Il est possible d’installer des thèmes supplémentaires via Extension Manager."
+            },
+            {
+                "name": "Fonction « Remplacer dans les fichiers » : possibilité de sélectionner/désélectionner toutes les occurrences d’un fichier",
+                "description": "Lorsque vous effectuez un remplacement par lot ou sur plusieurs fichiers, vous pouvez désormais sélectionner ou désélectionner toutes les occurrences détectées dans l’ensemble d’un fichier."
+            },
+            {
+                "name": "Changement de mode de langue",
+                "description": "Vous pouvez changer le mode de langue d’un fichier spécifique en sélectionnant la langue souhaitée dans le menu déroulant de la barre d’état."
+            },
+            {
+                "name": "Désactivation des indicateurs de code",
+                "description": "De nouvelles préférences ont été ajoutées, pour permettre de désactiver tous les indicateurs de code ou seulement ceux provenant d’un fournisseur spécifique."
+            },
+            {
+                "name": "Installation des extensions par glisser-déposer",
+                "description": "Installez des extensions en faisant glisser les fichiers zip correspondants dans la boîte de dialogue Extension Manager."
+            },
+            {
+                "name": "Extension Manager : affichage des traductions disponibles",
+                "description": "Extension Manager peut désormais indiquer quelles extensions sont disponibles en version traduite."
+            },
+            {
+                "name": "Traductions en galicien et en chinois traditionnel",
+                "description": "Deux nouvelles traductions de Brackets, en galicien et en chinois traditionnel, ont vu le jour grâce au travail de la communauté."
+            }
+        ]
+    },
+    {
+        "buildNumber": 13418,
+        "versionString": "Release 0.41",
+        "dateString": "26-06-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-0.41",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Remplacer dans plusieurs fichiers",
+                "description": "La fonction « Remplacer dans les fichiers » affiche d’abord tous les résultats de la recherche, ce qui vous permet de désélectionner les occurrences que vous ne souhaitez pas remplacer. Elle prend en charge les mêmes filtres d’exclusion que la fonction « Rechercher dans les fichiers »."
+            },
+            {
+                "name": "Documentation de l’API",
+                "description": "La documentation de l’API Brackets pour la branche principale actuelle est maintenant disponible sur http://brackets.io/docs et mise à jour à chaque version."
+            },
+            {
+                "name": "Prévention des blocages au niveau des conseils de code JavaScript",
+                "description": "Brackets cesse automatiquement de traiter les fichiers JavaScript qui ont déjà posé problème et risqueraient de provoquer un blocage."
+            },
+            {
+                "name": "Traduction en danois",
+                "description": "Une nouvelle traduction de Brackets en danois a vu le jour grâce au travail de la communauté."
+            }
+        ]
+    },
+    {
+        "buildNumber": 13109,
+        "versionString": "Sprint 40",
+        "dateString": "05-06-2014",
+        "releaseNotesURL": "https://github.com/adobe/brackets/wiki/Release-Notes:-0.40",
+        "downloadURL": "http://brackets.io",
+        "newFeatures": [
+            {
+                "name": "Plusieurs jeux d’exclusion de fichiers/dossiers",
+                "description": "La fonction « Rechercher dans les fichiers » accepte désormais plusieurs jeux d’exclusion de fichiers/dossiers. Ces jeux d’exclusion peuvent être nommés comme vous le souhaitez, pour faciliter la sélection."
+            },
+            {
+                "name": "Correction du problème de tracé des menus Windows",
+                "description": "Désormais, les menus sous Windows sont tracés correctement quand vous avez installé un thème Windows personnalisé."
+            },
+            {
+                "name": "Résolution de problèmes relatifs à l’inspection de code",
+                "description": "Des correctifs ont été apportés et de nouveaux tests d’unité ont été ajoutés pour l’exécution de plusieurs utilitaires lint."
+            },
+            {
+                "name": "Améliorations concernant l’activation des commentaires",
+                "description": "A présent, la fonction d’activation/désactivation des commentaires fonctionne pour les langages tels que CoffeeScript, où les délimiteurs d’ouverture et de fermeture des commentaires sont les mêmes et où le délimiteur de commentaire de ligne est un préfixe du délimiteur de commentaire de bloc."
+            },
+            {
+                "name": "Correction concernant les raccourcis clavier pour les claviers non anglais",
+                "description": "Le logiciel Brackets n’ajoute plus de raccourcis clavier impliquant l’utilisation de la touche AltGr."
+            }
+        ]
+    },
+    {
         "buildNumber": 12894,
         "versionString": "Sprint 39",
         "dateString": "09-05-2014",
@@ -54,7 +712,7 @@
             {
                 "name": "Annuler la sélection",
                 "description": "Vous pouvez annuler la dernière modification apportée à la sélection avec \u2318U/Ctrl+U, et rétablir la sélection précédente avec \u2318\u21E7U/Ctrl+Maj+U. Cette fonction permet de corriger les erreurs concernant la sélection de plusieurs éléments, ou de revenir à une sélection précédente."
-            },  
+            },
             {
                 "name": "Réduire tous les enfants",
                 "description": "Utilisez la combinaison \u2318\u2325Clic/Ctrl+Alt+Clic pour réduire tous les enfants d’un dossier dans l’arborescence des fichiers."
@@ -62,7 +720,7 @@
             {
                 "name": "Commentaires améliorés pour la fonction Edition rapide",
                 "description": "Lorsque vous tentez d’utiliser les fonctions Edition rapide (\u2318E/Ctrl+E) et Documentation rapide (\u2318K/Ctrl+K) sur des éléments de code ne prenant pas en charge ces commandes, des explications s’affichent à l’écran."
-            },            
+            },
             {
                 "name": "Prise en charge des fichiers .ico en mode Aperçu d’image",
                 "description": "Vous pouvez désormais afficher un aperçu des fichiers .ico en les sélectionnant dans l’arborescence."
@@ -72,7 +730,7 @@
                 "description": "Les utilitaires lint peuvent maintenant lancer des analyses asynchrones, pour une réactivité et des performances optimales."
             }
         ]
-    },            
+    },
     {
         "buildNumber": 12014,
         "versionString": "Sprint 37",
@@ -190,9 +848,9 @@
             {
                 "name": "Correction des problèmes d’interface utilisateur liés à certains fichiers LESS",
                 "description": "Correctif n°6057 : à l’ouverture de certains fichiers LESS, l’interface de l’éditeur disparaissait en partie ou présentait d’autres problèmes d’affichage."
-            }            
+            }
         ]
-    },  
+    },
     {
         "buildNumber": 10729,
         "versionString": "Sprint 34",
