@@ -442,7 +442,7 @@
     });
 
     var shortLocale = (requestedLang && requestedLang.split("/")[0].split("-")[0]) || "en",
-        versionInfoBaseUrl = "//files.brackets.s3.us-east-2.amazonaws.com/updates/stable/",
+        versionInfoBaseUrl = "http://files.brackets.s3.us-east-2.amazonaws.com/updates/stable/",
         versionInfoUrl = versionInfoBaseUrl + shortLocale + ".json",
         lookupPromise = new $.Deferred();
 
