@@ -7,8 +7,8 @@
         },
         "page": {
             "hero": {
-                "description": "A modern, open source text editor that understands web design.",
-                "download": "Download Brackets <d id='download-brackets-version'>1.7</d>",
+                "description": "Modern, Powerful & Open source",
+                "download": "Download v<d id='download-brackets-version'>1.14.2</d>",
                 "os-alert": {
                     "general": "Unfortunately, we don't support __os__ any longer. <a href='__url__'>Take a look at the Requirements.</a>",
                     "win-xp": "Unfortunately, we don't support Windows XP any longer. <a href='__url__'>Read our blog post</a> for further information.",
@@ -28,17 +28,18 @@
                     "contribute": "Learn How to Contribute&hellip;"
                 },
                 "feature-highlights": {
+                    "heading": "Features",
                     "inline-editor": {
                         "header": "Inline Editors",
-                        "content": "Instead of jumping between file tabs, Brackets lets you open a window into the code you care about most. Want to work on the CSS that applies to a specific ID? Put your mouse cursor on that ID, push <kbd>Command</kbd> / <kbd>Ctrl+E</kbd> and Brackets will show you all the CSS selectors with that ID in an inline window so you can work on your code side-by-side without any popups."
+                        "content": "Instead of jumping between file tabs, Brackets lets you open a window into the code you care about most."
                     },
                     "live-preview": {
                         "header": "Live Preview",
-                        "content": "Get a real-time connection to your browser. Make changes to CSS and HTML and you'll instantly see those changes on screen. Also see where your CSS selector is being applied in the browser by simply putting your cursor on it. It's the power of a code editor with the convenience of in-browser dev tools."
+                        "content": "Get a real-time connection to your browser. Make changes to CSS and HTML and you'll instantly see those changes on screen."
                     },
                     "preprocessor": {
                         "header": "Preprocessor Support",
-                        "content": "Work with preprocessors in a whole new way. We know how important preprocessors are to your workflow. That’s why we want to make Brackets the best code editor for preprocessors out there. With Brackets you can use Quick Edit and Live Highlight with your LESS and SCSS files which will make working with them easier than ever."
+                        "content": "Work with preprocessors in a whole new way. We know how important preprocessors are to your workflow."
                     }
                 },
                 "new-features": {

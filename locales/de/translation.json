@@ -7,8 +7,8 @@
         },
         "page": {
             "hero": {
-                "description": "Ein moderner, quelloffener Code-Editor, der Webdesign versteht.",
-                "download": "Brackets <d id='download-brackets-version'>1.7</d> herunterladen",
+                "description": "Moderne, leistungsstarke und offene Quelle",
+                "download": "Herunterladen v<d id='download-brackets-version'>1.14.2</d>",
                 "os-alert": {
                     "general": "__os__ wird von uns leider nicht mehr unterstützt. <a href='__url__'>Wirf einen Blick auf die Systemvoraussetzungen.</a>",
                     "win-xp": "Windows XP wird von uns leider nicht mehr unterstützt. <a href='__url__'>Lies unseren Blogeintrag</a> für weitere Informationen.",
@@ -20,7 +20,7 @@
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",
                 "why": {
                     "header": "Warum Brackets?",
-                    "content": "Brackets ist ein einfacher, aber dennoch leistungsfähiger Editor. Er blendet dir hilfreiche Tools immer dann ein, wenn sie gerade passen, ohne dich jedoch von deiner kreativen Arbeit abzulenken. Du wirst es lieben, Code mit Brackets zu schreiben."
+                    "content": "Klammern sind ein leichter, doch leistungsstarker, moderner Texteditor.Wir mischen visuelle Werkzeuge in den Editor, sodass Sie die richtige Menge an Hilfe erhalten, wenn Sie es wünschen, ohne Ihren kreativen Prozess in den Weg zu bringen.Sie werden gerne Code in Klammern schreiben."
                 },
                 "love-and-js": {
                     "header": "Erstellt mit <a href='contribute.html'>&hearts;</a> und JavaScript",
@@ -28,17 +28,18 @@
                     "contribute": "Lerne, wie du mitwirken kannst…"
                 },
                 "feature-highlights": {
+                    "heading": "Merkmale",
                     "inline-editor": {
-                        "header": "Schnelles Bearbeiten",
-                        "content": "Statt ständig zwischen Dateien hin- und herzuwechseln, kannst du in Brackets einen Editor mitten im Code öffnen. Du willst das CSS bearbeiten, das zu einem Element mit einer bestimmten ID gehört? Kein Problem! Setze den Cursor auf die ID, drücke <kbd>Command</kbd> / <kbd>Strg+E</kbd> und Brackets zeigt dir alle dazugehörigen CSS-Regeln inmitten der bearbeiteten Zeile an, sodass du in beiden Dateien zugleich arbeiten kannst – ohne nervige Popups!"
+                        "header": "Inline-Redakteure.",
+                        "content": "Statt ständig zwischen Dateien hin- und herzuwechseln, kannst du in Brackets einen Editor mitten im Code öffnen."
                     },
                     "live-preview": {
                         "header": "Live-Vorschau",
-                        "content": "Betrachte deine Seite live im Browser. Nimm Änderungen an CSS und HTML vor und du siehst die Auswirkungen sofort auf deinem Bildschirm. Erkenne, welche Elemente von einer CSS-Regel betroffen sind, indem du deinen Cursor einfach auf diese setzt. Das ist die Macht eines Editors, verbunden mit der Bequemlichkeit von Entwicklertools im Browser."
+                        "content": "Betrachte deine Seite live im Browser. Nimm Änderungen an CSS und HTML vor und du siehst die Auswirkungen sofort auf deinem Bildschirm."
                     },
                     "preprocessor": {
                         "header": "Unterstützung für Präprozessoren",
-                        "content": "Wir haben das Arbeiten mit Präprozessoren neu erfunden. Wir wissen, wie wichtig dir diese sind, und daher haben wir Brackets zu dem Editor gemacht, der am besten mit ihnen umgeht. In Brackets kannst du Schnelles Bearbeiten und die Live-Vorschau auch zusammen mit LESS- und SCSS-Dateien verwenden, was das Bearbeiten dieser wesentlich vereinfacht."
+                        "content": "Arbeit mit Präprozessoren auf ganz neue Weise.Wir wissen, wie wichtig Vorverarbeitungsvorgänge zu Ihrem Workflow sind."
                     }
                 },
                 "new-features": {
@@ -111,10 +112,10 @@
         }
     },
     "nav": {
-        "contribute": "Mach mit",
+        "contribute": "Beitragen",
         "apidocs": "API-Doku",
         "blog": "Blog",
-        "support": "Hilfestellung",
+        "support": "Unterstützung",
         "extensions": "Erweiterungen"
     },
     "footer": {

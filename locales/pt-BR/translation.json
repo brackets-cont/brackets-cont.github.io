@@ -7,8 +7,8 @@
         },
         "page": {
             "hero": {
-                "description": "Um editor de textos moderno e de código aberto que entende web design.",
-                "download": "Baixar Brackets <d id='download-brackets-version'>1.7</d>",
+                "description": "Fonte moderna, poderosa e aberta",
+                "download": "Baixar v<d id='download-brackets-version'>1.14.2</d>",
                 "os-alert": {
                     "general": "Infelizmente, o sistema operacional __os__ não é mais suportado. <a href='__url__'>Clique aqui para ver os requisitos.</a>",
                     "win-xp": "Infelizmente, o Windows XP não é mais suportado. <a href='__url__'>Leia o nosso tópico no blog</a> para mais informações.",
@@ -17,7 +17,7 @@
                 "other-downloads": "Outros downloads"
             },
             "content": {
-                "blurb": "Com ferramentas visuais especializadas e suporte a preprocessadores, o Brackets é um editor de textos moderno que facilita a criação de designs no navegador. Experimente o Creative Cloud Extract (preview) para Brackets e conheça uma forma fácil de obter CSS limpo e minimalista direto de um PSD sem escrever uma linha de código.",
+                "blurb": "Com ferramentas visuais focadas e suporte pré-processador, colchetes é um editor de texto moderno que facilita a design no navegador.É criado do solo para web designers e desenvolvedores front-end.",
                 "why": {
                     "header": "Por que usar o Brackets?",
                     "content": "O Brackets é um leve e poderoso editor de textos moderno. Nós combinamos ferramentas visuais no editor para que você tenha acesso a ajuda adequada sempre que precisar. Com novos recursos e extensões disponibilizados a cada 3-4 semanas, é como ganhar presentes durante o ano todo."
@@ -28,17 +28,18 @@
                     "more": "Saiba mais…"
                 },
                 "feature-highlights": {
+                    "heading": "Características",
                     "inline-editor": {
-                        "header": "Editores expandidos",
-                        "content": "Em vez de ficar saltando entre abas de arquivos, o Brackets permite que você expanda um trecho de código que lhe interessar. Quer trabalhar no CSS aplicado a um ID específico? Coloque o cursor do mouse em cima deste ID, pressione <kbd>Command</kbd> / <kbd>Ctrl+E</kbd> e o Brackets irá lhe mostrar todos os seletores CSS com este ID em um editor em série dentro da sua janela atual para que você possa trabalhar em seu código paralelamente sem nenhuma popup."
+                        "header": "Editores inline.",
+                        "content": "Em vez de ficar saltando entre abas de arquivos, o Brackets permite que você expanda um trecho de código que lhe interessar."
                     },
                     "live-preview": {
                         "header": "Visualização instantânea",
-                        "content": "Fique conectado em tempo real com seu navegador. Faça alterações em seu CSS e HTML e veja as alterações instantaneamente na tela. Veja também onde o seu seletor CSS é aplicado simplesmente passando o mouse por cima do seletor desejado. É o poder de um editor de código com a conveniência de ferramentas internas de um navegador."
+                        "content": "Fique conectado em tempo real com seu navegador. Faça alterações em seu CSS e HTML e veja as alterações instantaneamente na tela."
                     },
                     "preprocessor": {
                         "header": "Suporte a pré-processadores",
-                        "content": "Trabalhe com pré-processadores de uma forma totalmente diferente. Nós sabemos a importância dos pré-processadores ao seu fluxo de trabalho. É por isto que nós queremos fazer do Brackets o melhor editor de códigos para pré-processadores. Com o Brackets você pode usar a Edição Rápida e o Destaque Instantâneo com seus arquivos LESS e SCSS, fazendo com que trabalhar com eles seja mais fácil do que nunca."
+                        "content": "Trabalhe com pré-processadores de uma forma totalmente diferente. Nós sabemos a importância dos pré-processadores ao seu fluxo de trabalho."
                     }
                 },
                 "new-features": {
