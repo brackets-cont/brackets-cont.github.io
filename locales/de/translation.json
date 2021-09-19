@@ -20,7 +20,7 @@
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",
                 "why": {
                     "header": "Warum Brackets?",
-                    "content": "Klammern sind ein leichter, doch leistungsstarker, moderner Texteditor.Wir mischen visuelle Werkzeuge in den Editor, sodass Sie die richtige Menge an Hilfe erhalten, wenn Sie es wünschen, ohne Ihren kreativen Prozess in den Weg zu bringen.Sie werden gerne Code in Klammern schreiben."
+                    "content": "Brackets ist ein leichter, doch leistungsstarker, moderner Texteditor.Wir mischen visuelle Werkzeuge in den Editor, sodass Sie die richtige Menge an Hilfe erhalten, wenn Sie es wünschen, ohne Ihren kreativen Prozess in den Weg zu bringen.Sie können den Code schreiben Brackets."
                 },
                 "love-and-js": {
                     "header": "Erstellt mit <a href='contribute.html'>&hearts;</a> und JavaScript",
@@ -112,7 +112,7 @@
         }
     },
     "nav": {
-        "contribute": "Beitragen",
+        "contribute": "Mitmachen",
         "apidocs": "API-Doku",
         "blog": "Blog",
         "support": "Unterstützung",
