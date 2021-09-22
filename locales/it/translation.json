@@ -7,8 +7,8 @@
         },
         "page": {
             "hero": {
-                "description": "Un editor di testo open source e moderno, creato per il web.",
-                "download": "Scarica Brackets <d id='download-brackets-version'>1.7</d>",
+                "description": "Moderno, potente e open source",
+                "download": "Scarica v<d id='download-brackets-version'>1.7</d>",
                 "os-alert": {
                     "general": "Sfortunatamente, __os__ non è supportato. <a href='__url__'>Controlla i Requisiti.</a>",
                     "win-xp": "Sfortunatamente, Window XP non è supportato. Leggi <a href='__url__'>questo post</a> per avere altre informazioni.",
@@ -17,7 +17,7 @@
                 "other-downloads": "Altri Downloads"
             },
             "content": {
-                "blurb": "Con strumenti visuali e supporto ai preprocessori, Brackets è un moderno editor di testo che rende semplice programmare per il web. Prova Creative Cloud Extract (in anteprima) per Brackets: un modo facile per ottenere del codice CSS pulito e minimale, direttamente da un PSD e senza dover scriverene una sola linea!",
+                "blurb": "Con strumenti visivi focalizzati e supporto preprocessore, le staffe è un editor di testo moderno che semplifica la progettazione del browser.È realizzato da terra per i web designer e sviluppatori front-end.",
                 "why": {
                     "header": "Perché Usare Brackets?",
                     "content": "Brackets è un editor potente, moderno e leggero. Abbiamo aggiunto strumenti visuali nell'editor così da poter ricevere il giusto aiuto quando se ne ha bisogno. Con nuove funzionalità ed estensioni rilasciate ogni 3-4 settimane, è come ricevere regali tutto l'anno!"
@@ -28,17 +28,18 @@
                     "more": "Altro …"
                 },
                 "feature-highlights": {
+                    "heading": "Caratteristiche",
                     "inline-editor": {
                         "header": "Editor Inline",
-                        "content": "Anziché spostarsi da un file all'altro, Brackets permette di aprire in una finestra il codice che ti interessa. Vuoi lavorare sul CSS applicato ad uno specifico ID? Posiziona il cursore su quell'ID, premi <kbd>Command</kbd> / <kbd>Ctrl+E</kbd> e Brackets mostrerà tutti i selettori CSS con quell'ID in una finestra nel il codice, così che tu possa lavorare facilmente su diversi file del tuo progetto."
+                        "content": "Anziché spostarsi da un file all'altro, Brackets permette di aprire in una finestra il codice che ti interessa."
                     },
                     "live-preview": {
                         "header": "Anteprima Live",
-                        "content": "Stabilisci una connessione in tempo reale con il tuo browser. Modifica il codice CSS e HTML e vedrai subito questi cambiamenti sullo schermo. Guarda anche dove sono applicati i selettori CSS nel browser semplicemente posizionandovi sopra il cursore. Questa è la potenza di un editor con gli strumenti di sviluppo integrati nel browser."
+                        "content": "Stabilisci una connessione in tempo reale con il tuo browser. Modifica il codice CSS e HTML e vedrai subito questi cambiamenti sullo schermo."
                     },
                     "preprocessor": {
                         "header": "Supporto ai Preprocessori",
-                        "content": "Lavorare con i preprocessori in un modo completamente nuovo. Sappiamo quanto questi siano importanti nel tuo lavoro. Ecco perché vogliamo rendere Brackets l'editor con il miglior supporto ai preprocessori. Con Brackets puoi utilizzare l'Anteprima Live o modificare velocemente i tuoi file LESS e SCSS per rendere il lavoro più facile che mai."
+                        "content": "Lavorare con i preprocessori in un modo completamente nuovo. Sappiamo quanto questi siano importanti nel tuo lavoro."
                     }
                 },
                 "new-features": {
