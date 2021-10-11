@@ -1,5 +1,7 @@
 var menuButton = document.getElementById("hamburger");
-var menu = document.getElementById("nav-menu");
+var menu_left = document.getElementById("nav-lmenu");
+var menu_right = document.getElementById("nav-rmenu");
 menuButton.addEventListener("click", () => {
-    menu.classList.toggle("show-menu")
-})        
+    menu_left.classList.toggle("show-menu");
+    
+});        
