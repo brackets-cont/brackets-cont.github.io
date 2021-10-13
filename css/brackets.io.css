@@ -333,7 +333,7 @@ blockquote p {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-left-menu,.nav-right-menu{
+  .nav-left-menu, .nav-right-menu{
     position: absolute;
     top: 90px;
     left: 0;
@@ -347,6 +347,20 @@ blockquote p {
     opacity: 0;
     pointer-events: none;
     transition: all 0.1s ease-in-out;
+  }
+
+  #nav-lmenu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:40%;
+  }
+
+  #nav-rmenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40%;
   }
 
   .show-menu {
