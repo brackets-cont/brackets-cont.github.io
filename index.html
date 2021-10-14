@@ -4,7 +4,6 @@
 <html class="no-js" lang="en">
   <!--<![endif]-->
   <!--
-
     [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
     [::::::::::::::      ::::::::::::::]
     [::::::::::::::      ::::::::::::::]
@@ -23,7 +22,6 @@
     [::::::::::::::      ::::::::::::::]
     [::::::::::::::      ::::::::::::::]
     [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
 -->
 
   <head>
@@ -109,66 +107,77 @@
       <div class="navbar-base">
         <div class="navigation-container">
           <div class="navigation-side">
+              
             <a href="/" class="brand w-nav-brand w--current">
               <img src="./img/brackets.svg" alt="Brackets logo" class="logo" />
             </a>
           </div>
-          <nav class="nav-menu w-nav-menu" id="nav-menu">
-            <a
-              href="contribute.html"
-              data-i18n="nav.contribute"
-              class="nav-link w-inline-block"
-            >
-              Contribute
-            </a>
-            <a
-              href="docs/current/modules/brackets.html"
-              data-i18n="nav.apidocs"
-              class="nav-link w-inline-block"
-            >
-              API Docs
-            </a>
-            <a
-              href="https://registry.brackets.io"
-              data-i18n="nav.extensions"
-              class="nav-link w-inline-block"
-            >
-              Extensions
-            </a>
-            <a
-              href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
-              data-i18n="nav.support"
-              class="nav-link w-inline-block"
-            >
-              Suppport
-            </a>
-            <a
-              href="https://www.github.com/brackets-cont/brackets"
-              class="nav-link w-inline-block"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://twitter.com/BracketsCont"
-              class="nav-link w-inline-block"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://discord.com/invite/rBpTBPttca"
-              class="nav-link w-inline-block"
-            >
-              Discord
-            </a>
-          </nav>
-          <div class="navigation-link-right desktop-link">
-            <a href="https://github.com/adobe/brackets/releases">
-              <button class="download-button">Download</button>
-            </a>
+          <div class="nav-left-menu" id="nav-l">
+            
+            <div class="nav-menu w-nav-menu" id="nav-lmenu">
+            <!--  <nav class="nav-menu w-nav-menu" id="nav-menu">-->
+              <a
+                href="contribute.html"
+                data-i18n="nav.contribute"
+                class="nav-link w-inline-block"
+              >
+                Contribute
+              </a>
+              <a
+                href="docs/current/modules/brackets.html"
+                data-i18n="nav.apidocs"
+                class="nav-link w-inline-block"
+              >
+                API Docs
+              </a>
+              <a
+                href="https://registry.brackets.io"
+                data-i18n="nav.extensions"
+                class="nav-link w-inline-block"
+              >
+                Extensions
+              </a>
+              <a
+                href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
+                data-i18n="nav.support"
+                class="nav-link w-inline-block"
+              >
+                Support
+              </a>
+            </div>
           </div>
+          <nav class="nav-right-menu" id="nav-r">
+            <div class="nav-menu w-nav-menu" id="nav-rmenu">
+              <a
+                href="https://www.github.com/brackets-cont/brackets"
+                class="nav-link w-inline-block"
+              >
+              <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://twitter.com/BracketsCont"
+                class="nav-link w-inline-block"
+              >
+              <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://discord.com/invite/rBpTBPttca"
+                class="nav-link w-inline-block"
+              >
+              <i class="fab fa-discord"></i>
+
+              </a>
+            </div>
+            <div class="navigation-link-right desktop-link">
+              <a href="https://github.com/adobe/brackets/releases">
+                <button class="download-button">Download</button>
+              </a>
+            </div>
+          </nav>
           <div class="hamburgerMenuIcon" id="hamburger">
             <i class="bx bx-menu"></i>
           </div>
+        
         </div>
       </div>
     </div>
@@ -184,8 +193,10 @@
         <div>
           <span class="banner-text"
             >This is a fork of a project previously maintained by Adobe. We
-            might change names in the future.</span
-          >
+            might change names in the future.<br/>
+           <b> Stay tuned for the first community release of Brackets by  November 2021.
+            </b></span>
+            
           <a
             id="banner-button"
             href="https://github.com/brackets-cont/brackets"
