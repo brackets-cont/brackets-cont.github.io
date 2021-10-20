@@ -235,6 +235,7 @@ blockquote p {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  position: sticky;
 }
 
 .navigation-link-right {
@@ -252,7 +253,7 @@ blockquote p {
 }
 
 .brand {
-  margin-right: 72px;
+  margin-right: 50px;
 }
 
 .brand.w--current {
@@ -260,6 +261,17 @@ blockquote p {
 }
 
 .nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left-menu{
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.nav-right-menu{
   display: flex;
   align-items: center;
 }
@@ -322,7 +334,7 @@ blockquote p {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-menu {
+  .nav-left-menu, .nav-right-menu{
     position: absolute;
     top: 90px;
     left: 0;
@@ -338,7 +350,23 @@ blockquote p {
     transition: all 0.1s ease-in-out;
   }
 
+  #nav-lmenu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:40%;
+  }
+
+  #nav-rmenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40%;
+  }
+
   .show-menu {
+    display:flex;
+    flex-direction: column;
     visibility: visible;
     opacity: 1;
     pointer-events: all;
@@ -353,6 +381,9 @@ blockquote p {
 
   .hamburgerMenuIcon {
     display: block;
+    position: fixed;
+    top:0;
+    right:0;
   }
   .desktop-link {
     display: none;
