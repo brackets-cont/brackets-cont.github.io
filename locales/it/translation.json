@@ -14,7 +14,7 @@
                     "win-xp": "Sfortunatamente, Window XP non è supportato. Leggi <a href='__url__'>questo post</a> per avere altre informazioni.",
                     "debian-7": "Sfortunatamente, Debian 7 non è supportato. Controlla questo <a href='__url__'>issue su GithHub</a> per avere altre informazioni."
                 },
-                "other-downloads": "Altri Downloads"
+                "other-downloads": "Build pre-release e altri download"
             },
             "content": {
                 "blurb": "Con strumenti visivi focalizzati e supporto preprocessore, le staffe è un editor di testo moderno che semplifica la progettazione del browser.È realizzato da terra per i web designer e sviluppatori front-end.",

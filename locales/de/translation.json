@@ -14,7 +14,7 @@
                     "win-xp": "Windows XP wird von uns leider nicht mehr unterstützt. <a href='__url__'>Lies unseren Blogeintrag</a> für weitere Informationen.",
                     "debian-7": "Debian 7 wird von uns derzeit nicht unterstützt. <a href='__url__'>Wirf einen Blick auf den Bug</a>, um mehr zu erfahren."
                 },
-                "other-downloads": "Andere Downloads"
+                "other-downloads": "Vorabversionen und Andere Downloads"
             },
             "content": {
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",

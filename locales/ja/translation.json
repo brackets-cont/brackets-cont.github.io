@@ -14,7 +14,7 @@
                     "win-xp": "申し訳ありませんが、Windows XP のサポートは終了しました。詳しくは、<a href='__url__'>ブログの記事<\/a>を参照してください。",
                     "debian-7": "申し訳ありませんが、Debian 7 はサポートしていません。詳しくは、<a href='__url__'>GitHub について<\/a>をご確認ください。"
                 },
-                "other-downloads": "その他のダウンロード"
+                "other-downloads": "プレリリースビルドとその他のダウンロード"
             },
             "content": {
                 "blurb": "Brackets は、各種専用ビジュアルツールとプリプロセッサーをサポートし、ブラウザーの設計が簡単にできる最新のテキストエディターです。Web デザイナーやフロントエンドのデベロッパーのために、ゼロから開発されたものです。",
@@ -155,7 +155,7 @@
             "header": "配信"
         },
         "project-info": {
-            "motivation": "コミュニティによって支えられた、Adobe が開発した Brackets は、web 開発エディターを次のレベルに引き上げるオープンソースプロジェクトです。",
+            "motivation": "ブラケットはbrackets.ioコミュニティによって管理されています。これは、Web開発エディターを次のレベルに押し上げるためのコミュニティガイド付きオープンソースプロジェクトとしてAdobeによって設立されました。",
             "license": "Brackets は $t(footer.project-info.licensetype)でご利用いただけます",
             "licensetype": "MIT ライセンス"
         }

@@ -14,7 +14,7 @@
                     "win-xp": "Malheureusement, nous ne prenons plus en charge Windows XP. <a href='__url__'>Lisez notre article de blog<\/a> pour plus d'informations.",
                     "debian-7": "Malheureusement, nous ne prenons pas actuellement en charge Debian 7. <a href='__url__'>Jetez un œil à la question GitHub<\/a> pour plus d'informations."
                 },
-                "other-downloads": "Autres téléchargements"
+                "other-downloads": "Versions préliminaires et autres téléchargements"
             },
             "content": {
                 "blurb": "Avec des outils visuels ciblés et un support de préprocesseur, les crochets sont un éditeur de texte moderne qui facilite la conception du navigateur.Il est fabriqué à partir des concepteurs Web et des développeurs frontaux.",
@@ -155,7 +155,7 @@
             "header": "Rester en contact"
         },
         "project-info": {
-            "motivation": "Brackets a été fondé par Adobe en tant que projet open source guidé par la communauté pour offrir aux éditeurs de développement web des opportunités inédites.",
+            "motivation": "Brackets est maintenu par la communauté brackets.io. Il a été fondé par Adobe en tant que projet open source guidé par la communauté pour pousser les éditeurs de développement Web au niveau supérieur.",
             "license": "Brackets est publié sous $t(footer.project-info.licensetype)",
             "licensetype": "Licence MIT"
         }
