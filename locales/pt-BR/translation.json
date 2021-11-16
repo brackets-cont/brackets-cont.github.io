@@ -14,7 +14,7 @@
                     "win-xp": "Infelizmente, o Windows XP não é mais suportado. <a href='__url__'>Leia o nosso tópico no blog</a> para mais informações.",
                     "debian-7": "Infelizmente, o Debian 7 ainda não é suportado. <a href='__url__'>Veja a issue no GitHub</a> para mais informações."
                 },
-                "other-downloads": "Outros downloads"
+                "other-downloads": "Compilações de pré-lançamento e outros downloads"
             },
             "content": {
                 "blurb": "Com ferramentas visuais focadas e suporte pré-processador, colchetes é um editor de texto moderno que facilita a design no navegador.É criado do solo para web designers e desenvolvedores front-end.",
