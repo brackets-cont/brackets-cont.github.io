@@ -32,8 +32,10 @@
     </title>
     <script type="text/javascript">
       window.bracketsVersion = "1.14.2";
-      window.windowsBuildURL = "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi";
-      window.macBuildURL = "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.dmg";
+      window.buildURL = {
+        WIN: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi",
+        OSX: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.dmg"
+      };
     </script>
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -174,7 +176,17 @@
               </a>
             </div>
             <div class="navigation-link-right desktop-link">
-                <button class="download-button">Download</button>
+              <a id="download-nav-brackets"
+                 class="large rounded radius"
+                 href="https://github.com/adobe/brackets/releases"
+                 download>
+                <button data-i18n="[html]index.page.hero.download"
+                        class="download-button"
+                        onclick="navDownloadClicked()">
+                  <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="navDownloadSpinner"></i>
+                  Download </d>
+                </button>
+              </a>
             </div>
           </nav>
           <div class="hamburgerMenuIcon" id="hamburger">
@@ -232,9 +244,12 @@
             <!-- Temporary link to download page -->
             <a id="download-plain-brackets"
                class="large rounded radius"
-               href="https://github.com/adobe/brackets/releases">
+               href="https://github.com/adobe/brackets/releases"
+               download>
                 <button data-i18n="[html]index.page.hero.download"
-                        class="download-button">
+                        class="download-button"
+                        onclick="mainDownloadClicked()">
+                  <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinner"></i>
                     Download v<d id="download-brackets-version">1.14.2</d>
               </button>
             </a>
@@ -626,39 +641,32 @@
       }
 
       function setupDownloads() {
-        console.log(OS);
+        let downloadURL = buildURL[OS] || "https://github.com/brackets-cont/brackets/releases";
+        document.getElementById("download-plain-brackets")
+                .setAttribute("href",downloadURL);
+        document.getElementById("download-nav-brackets")
+                .setAttribute("href",downloadURL);
+      }
+      function mainDownloadClicked() {
+        document.getElementById("mainDownloadSpinner")
+                .setAttribute("style", "margin-left: -16px")
+        setTimeout(()=>{
+          document.getElementById("mainDownloadSpinner")
+                  .setAttribute("style", "visibility:hidden; margin-left: -16px")
+        },20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
+      }
+
+      function navDownloadClicked() {
+        document.getElementById("navDownloadSpinner")
+                .setAttribute("style", "margin-left: -16px")
+        setTimeout(()=>{
+          document.getElementById("navDownloadSpinner")
+                  .setAttribute("style", "visibility:hidden; margin-left: -16px")
+        },20000);
       }
     </script>
 
     <script>
-
-          // update features (limit 5)
-          var feature_content =
-            "<h2>" +
-            i18n.t("index.page.content.new-features.new-features-in", {
-              defaultValue: "New in " + build.versionString,
-              sprintNumber: build.versionString,
-            }) +
-            "</h2>";
-          build.newFeatures
-            .slice(0, Math.min(build.newFeatures.length, 5))
-            .forEach(function (feature) {
-              feature_content +=
-                "<h3>" + $("<div/>").text(feature.name).html() + "</h3>";
-              feature_content +=
-                "<p>" + $("<div/>").text(feature.description).html() + "</p>";
-            });
-          feature_content +=
-            "<p><a class='button radius secondary' href='" +
-            build.releaseNotesURL +
-            "'>" +
-            i18n.t("index.page.content.new-features.release-notes", {
-              defaultValue: "Read More in the Release Notes",
-            }) +
-            "</a></p>";
-          $("#features").html(feature_content);
-        });
-      });
 
       function logAndGo(elementID, _url, tagObj) {
         var elem = document.getElementById(elementID);
