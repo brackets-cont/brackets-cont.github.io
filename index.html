@@ -646,8 +646,11 @@
                 .setAttribute("href",downloadURL);
         document.getElementById("download-nav-brackets")
                 .setAttribute("href",downloadURL);
+        document.getElementById("other-downloads")
+                .addEventListener('click',otherDownloadClicked);
       }
       function mainDownloadClicked() {
+        logDownloadClicked("main");
         document.getElementById("mainDownloadSpinner")
                 .setAttribute("style", "margin-left: -16px")
         setTimeout(()=>{
@@ -657,6 +660,7 @@
       }
 
       function navDownloadClicked() {
+        logDownloadClicked("navBar");
         document.getElementById("navDownloadSpinner")
                 .setAttribute("style", "margin-left: -16px")
         setTimeout(()=>{
@@ -664,47 +668,33 @@
                   .setAttribute("style", "visibility:hidden; margin-left: -16px")
         },20000);
       }
+
+      function otherDownloadClicked() {
+        logDownloadClicked("otherDownloads");
+      }
     </script>
 
     <script>
 
-      function logAndGo(elementID, _url, tagObj) {
-        var elem = document.getElementById(elementID);
-        elem.href = _url;
-        elem.onclick = function (e) {
-          e.preventDefault();
-          var downloadStarted = false;
-          setTimeout(function () {
-            if (!downloadStarted) window.location.href = _url;
-          }, 1200); // fallback
-          _gaq.push(tagObj, function () {
-            downloadStarted = true;
-            setTimeout(function () {
-              window.location.href = _url;
-            }, 1000); // short delay just in case it doesn't get logged
+      function logDownloadClicked(whichButton) {
+        gtag('event', whichButton, {
+          'event_category': "download",
+          'event_label': "clicked",
+          'value': 1
           });
-        };
       }
     </script>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-32881640-1"]);
-      _gaq.push(["_setDomainName", "brackets.io"]);
-      _gaq.push(["_gat._anonymizeIp"]);
-      _gaq.push(["_trackPageview"]);
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XHYXL1VHXW');
     </script>
+
     <script>
       var closeButton = document.getElementById("banner-close-button");
       var banner = document.getElementById("banner-wrapper");
