@@ -31,6 +31,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css"/>
 
     <!-- social media images -->
     <link rel="image_src" href="/img/hero.png" />
@@ -72,63 +73,81 @@
     <link rel="alternate" href="?lang=pt-br" hreflang="pt-br" />
   </head>
   <body id="contribute">
-    <!-- Navigation Menu -->
-    <div class="navbar w-nav">
-      <div class="navbar-base">
-        <div class="navigation-container">
-          <div class="navigation-side">
-            <a href="/" class="brand w-nav-brand w--current">
-              <img src="./img/brackets.svg" alt="Brackets logo" class="logo" />
-            </a>
-          </div>
-          <nav class="nav-menu w-nav-menu" id="nav-menu">
+  <!-- Navigation Menu -->
+  <div class="navbar w-nav">
+    <div class="navbar-base">
+      <div class="navigation-container">
+        <div class="navigation-side">
+
+          <a href="/" class="brand w-nav-brand w--current">
+            <img src="./img/brackets.svg" alt="Brackets logo" class="logo" />
+          </a>
+        </div>
+        <div class="nav-left-menu" id="nav-l">
+
+          <div class="nav-menu w-nav-menu" id="nav-lmenu">
+            <!--  <nav class="nav-menu w-nav-menu" id="nav-menu">-->
             <a
-              href="contribute.html"
-              data-i18n="nav.contribute"
-              class="nav-link w-inline-block"
+                    href="contribute.html"
+                    data-i18n="nav.contribute"
+                    class="nav-link w-inline-block"
             >
               Contribute
             </a>
             <a
-              href="docs/current/modules/brackets.html"
-              data-i18n="nav.apidocs"
-              class="nav-link w-inline-block"
+                    href="docs/current/modules/brackets.html"
+                    data-i18n="nav.apidocs"
+                    class="nav-link w-inline-block"
             >
               API Docs
             </a>
             <a
-              href="https://registry.brackets.io"
-              data-i18n="nav.extensions"
-              class="nav-link w-inline-block"
+                    href="https://registry.brackets.io"
+                    data-i18n="nav.extensions"
+                    class="nav-link w-inline-block"
             >
               Extensions
             </a>
             <a
-              href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
-              data-i18n="nav.support"
-              class="nav-link w-inline-block"
+                    href="https://github.com/brackets-cont/brackets/discussions"
+                    data-i18n="nav.support"
+                    class="nav-link w-inline-block"
             >
-              Suppport
+              Support
             </a>
-            <a
-              href="https://www.github.com/brackets-cont/brackets"
-              class="nav-link w-inline-block"
-            >
-              GitHub
-            </a>
-          </nav>
-          <div class="navigation-link-right desktop-link">
-            <a href="#">
-              <button class="download-button">Download</button>
-            </a>
-          </div>
-          <div class="hamburgerMenuIcon" id="hamburger">
-            <i class="bx bx-menu"></i>
           </div>
         </div>
+        <nav class="nav-right-menu" id="nav-r">
+          <div class="nav-menu w-nav-menu" id="nav-rmenu">
+            <a
+                    href="https://www.github.com/brackets-cont/brackets"
+                    class="nav-link w-inline-block"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+                    href="https://twitter.com/BracketsCont"
+                    class="nav-link w-inline-block"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+                    href="https://discord.com/invite/rBpTBPttca"
+                    class="nav-link w-inline-block"
+            >
+              <i class="fab fa-discord"></i>
+
+            </a>
+          </div>
+        </nav>
+        <div class="hamburgerMenuIcon" id="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+
       </div>
     </div>
-    <!-- End of Navigation Menu -->
+  </div>
+  <!-- End of Navigation Menu -->
 
     <div id="hero-wrapper">
       <div id="hero" class="row">
@@ -350,7 +369,7 @@
           </ul>
         </div>
         <div class="medium-6 large-3 columns">
-          <h5 id="contribute" data-i18n="footer.get-involved.header">
+          <h5 id="contribute-inv" data-i18n="footer.get-involved.header">
             Get Involved
           </h5>
           <ul>
@@ -544,23 +563,14 @@
       });
     </script>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-32881640-1"]);
-      _gaq.push(["_setDomainName", "brackets.io"]);
-      _gaq.push(["_gat._anonymizeIp"]);
-      _gaq.push(["_trackPageview"]);
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XHYXL1VHXW');
     </script>
   </body>
 </html>

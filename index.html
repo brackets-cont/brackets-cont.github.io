@@ -30,6 +30,13 @@
     <title data-i18n="index.head.title">
       Brackets - A modern, open source code editor that understands web design.
     </title>
+    <script type="text/javascript">
+      window.bracketsVersion = "1.14.2";
+      window.buildURL = {
+        WIN: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi",
+        OSX: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.dmg"
+      };
+    </script>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
@@ -101,7 +108,7 @@
     <link rel="alternate" href="?lang=it" hreflang="it" />
     <link rel="alternate" href="?lang=pt-br" hreflang="pt-br" />
   </head>
-  <body id="home">
+  <body id="home" onload="setupDownloads()">
     <!-- Navigation Menu -->
     <div class="navbar w-nav">
       <div class="navbar-base">
@@ -138,7 +145,7 @@
                 Extensions
               </a>
               <a
-                href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
+                href="https://github.com/brackets-cont/brackets/discussions"
                 data-i18n="nav.support"
                 class="nav-link w-inline-block"
               >
@@ -169,8 +176,16 @@
               </a>
             </div>
             <div class="navigation-link-right desktop-link">
-              <a href="https://github.com/adobe/brackets/releases">
-                <button class="download-button">Download</button>
+              <a id="download-nav-brackets"
+                 class="large rounded radius"
+                 href="https://github.com/adobe/brackets/releases"
+                 download>
+                <button data-i18n="[html]index.page.hero.download"
+                        class="download-button"
+                        onclick="navDownloadClicked()">
+                  <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="navDownloadSpinner"></i>
+                  Download </d>
+                </button>
               </a>
             </div>
           </nav>
@@ -227,27 +242,25 @@
           </div>
           <div id="download">
             <!-- Temporary link to download page -->
-            <a
-              id="download-plain-brackets"
-              class="large rounded radius"
-              href="https://github.com/adobe/brackets/releases"
-            >
-              <button
-                data-i18n="[html]index.page.hero.download"
-                class="download-button"
-              >
-                Download v<d id="download-brackets-version">1.14.2</d>
+            <a id="download-plain-brackets"
+               class="large rounded radius"
+               href="https://github.com/adobe/brackets/releases"
+               download>
+                <button data-i18n="[html]index.page.hero.download"
+                        class="download-button"
+                        onclick="mainDownloadClicked()">
+                  <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinner"></i>
+                    Download v<d id="download-brackets-version">1.14.2</d>
               </button>
             </a>
             <div id="os-alert" class="alert-box radius" data-alert></div>
             <p>
-              <a
-                id="other-downloads"
+              <a id="other-downloads"
                 class="nobr"
                 href="https://github.com/brackets-cont/brackets/releases"
-                data-i18n="index.page.hero.other-downloads"
-                >Pre-release builds & Other Downloads</a
-              >
+                data-i18n="index.page.hero.other-downloads">
+                Pre-release builds & Other Downloads
+              </a>
             </p>
             <!--
                 This <img> tag will be added when NOT on mobile
@@ -356,89 +369,62 @@
 
     <div id="content-wrapper">
       <div id="content" class="row">
+        <h2 data-i18n="index.page.content.popular-extensions.header" >
+          Popular Extensions
+        </h2>
         <div class="medium-4 large-4 columns" id="features">
-          <h2 data-i18n="index.page.content.new-features.new-features">
-            New Features
-          </h2>
-          <div class="spinner"></div>
-
-          <!-- JS generated content -->
-        </div>
-        <div class="medium-4 large-4 columns">
-          <h2 data-i18n="index.page.content.popular-extensions.header">
-            Popular Extensions
-          </h2>
+          <h3><a href="https://github.com/zaggino/brackets-git">Git</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.git">
+            Git integration for Brackets.
+          </p>
 
           <h3><a href="https://github.com/emmetio/brackets-emmet">Emmet</a></h3>
           <p data-i18n="index.page.content.popular-extensions.list.emmet">
             High-speed HTML and CSS workflow.
           </p>
 
-          <h3>
-            <a href="https://github.com/drewhamlett/brackets-beautify"
-              >Beautify</a
-            >
-          </h3>
+          <h3><a href="https://github.com/drewhamlett/brackets-beautify">Beautify</a></h3>
           <p data-i18n="index.page.content.popular-extensions.list.beautify">
             Format JavaScript, HTML, and CSS files.
           </p>
 
-          <h3>
-            <a href="https://github.com/ivogabe/Brackets-Icons">File Icons</a>
-          </h3>
-          <p
-            data-i18n="index.page.content.popular-extensions.list.ivogabe-icons"
-          >
+          <h3><a href="https://github.com/gruehle/MarkdownPreview">Markdown Preview</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.markdown">
+            Live preview of markdown documents.
+          </p>
+
+        </div>
+        <div class="medium-4 large-4 columns">
+          <h3><a href="https://github.com/ivogabe/Brackets-Icons">File Icons</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.ivogabe-icons">
             File icons in Brackets’ file tree.
           </p>
 
-          <h3>
-            <a href="https://github.com/lkcampbell/brackets-indent-guides"
-              >Indent Guides</a
-            >
-          </h3>
-          <p
-            data-i18n="index.page.content.popular-extensions.list.indent-guides"
-          >
+          <h3><a href="https://github.com/lkcampbell/brackets-indent-guides">Indent Guides</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.indent-guides">
             Show indent guides in the code editor.
           </p>
 
-          <h3><a href="https://github.com/zaggino/brackets-git">Git</a></h3>
-          <p data-i18n="index.page.content.popular-extensions.list.git">
-            Git integration for Brackets.
-          </p>
-
-          <h3>
-            <a href="https://github.com/mikaeljorhult/brackets-autoprefixer"
-              >Autoprefixer</a
-            >
-          </h3>
-          <p
-            data-i18n="index.page.content.popular-extensions.list.autoprefixer"
-          >
+          <h3><a href="https://github.com/mikaeljorhult/brackets-autoprefixer">Autoprefixer</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.autoprefixer">
             Parse CSS and add vendor prefixes automatically.
           </p>
 
-          <h3>
-            <a href="https://github.com/cfjedimaster/brackets-w3cvalidation"
-              >W3C Validation</a
-            >
-          </h3>
-          <p
-            data-i18n="index.page.content.popular-extensions.list.w3cvalidation"
-          >
+          <h3><a href="https://github.com/cfjedimaster/brackets-w3cvalidation">W3C Validation</a></h3>
+          <p data-i18n="index.page.content.popular-extensions.list.w3cvalidation">
             Simple W3C Validator.
           </p>
 
           <p>
             <a
               class="button radius secondary"
-              href="https://ingorichter.github.io/BracketsExtensionTweetBot/"
+              href="https://registry.brackets.io/"
               data-i18n="index.page.content.popular-extensions.check-out"
               >Check Out New Extensions</a
             >
           </p>
         </div>
+
         <!-- <div class="medium-4 large-4 columns">
             <h2 data-i18n="index.page.content.blog.header">Recent Blog Posts</h2>
             <div class="spinner" id="blogposts-spinner">
@@ -622,9 +608,20 @@
       if (/Windows|Win32|WOW64|Win64/.test(navigator.userAgent)) {
         OS = "WIN";
         ext = ".msi";
+        if (/NT ?5\.\d/.test(navigator.userAgent)) {
+          FLAVOR = "Windows XP";
+        }
       } else if (/Mac/.test(navigator.userAgent)) {
         OS = "OSX";
         ext = ".dmg";
+        osMatch = navigator.userAgent.match(/Mac OS X 10[._](\d+)([._](\d+))?\D/i)
+        osMatch = parseFloat(osMatch[1] + "." + (osMatch[3] || 0));
+
+        // Firefox reports only the OS X major version (10.6), so we have to check for 6.0
+        if (osMatch < 6.8 && osMatch !== 6.0) {
+          // Mac OS X pre 10.6.8 is not supported
+          FLAVOR = "Mac OS X 10." + osMatch;
+        }
       } else if (/Linux|X11/.test(navigator.userAgent)) {
         OS = "LINUX32";
         ext = ".32-bit.deb";
@@ -642,352 +639,62 @@
           "<img src='img/hero.png' srcset='img/hero@2x.png 2x' height='370' width='1059' alt='Screenshot of Brackets'>"
         ).appendTo("#download");
       }
-    </script>
 
-    <script>
-      // Detect unsupported Operating Systems
-      function updateAlertContent(unsupported) {
-        var translatedText = i18n.t(
-          "index.page.hero.os-alert." + unsupported.i18nKey,
-          {
-            os: unsupported.os,
-            defaultValue: unsupported.default,
-            url: unsupported.url,
-          }
-        );
-        $("#os-alert").html(translatedText).show();
+      function setupDownloads() {
+        let downloadURL = buildURL[OS] || "https://github.com/brackets-cont/brackets/releases";
+        document.getElementById("download-plain-brackets")
+                .setAttribute("href",downloadURL);
+        document.getElementById("download-nav-brackets")
+                .setAttribute("href",downloadURL);
+        document.getElementById("other-downloads")
+                .addEventListener('click',otherDownloadClicked);
+      }
+      function mainDownloadClicked() {
+        logDownloadClicked("main");
+        document.getElementById("mainDownloadSpinner")
+                .setAttribute("style", "margin-left: -16px")
+        setTimeout(()=>{
+          document.getElementById("mainDownloadSpinner")
+                  .setAttribute("style", "visibility:hidden; margin-left: -16px")
+        },20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
       }
 
-      var osMatch,
-        unsupported = {
-          i18nKey: "general",
-          url: "https://github.com/brackets-cont/brackets/wiki/Troubleshooting#requirements",
-        };
-
-      // Windows XP
-      if (/NT ?5\.\d/.test(navigator.userAgent)) {
-        unsupported.os = "Windows XP";
-        unsupported.i18nKey = "win-xp";
-        unsupported.url =
-          "http://blog.brackets.io/2014/04/18/windows-xp-support/";
-        unsupported.default =
-          "Unfortunately, we don't support Windows XP any longer. <a href='" +
-          unsupported.url +
-          "'>Read our blog post</a> for further information.";
-
-        // Mac OS X 10.*
-      } else if (
-        (osMatch = navigator.userAgent.match(
-          /Mac OS X 10[._](\d+)([._](\d+))?\D/i
-        ))
-      ) {
-        osMatch = parseFloat(osMatch[1] + "." + (osMatch[3] || 0));
-
-        // Firefox reports only the OS X major version (10.6), so we have to check for 6.0
-        if (osMatch < 6.8 && osMatch !== 6.0) {
-          // Mac OS X pre 10.6.8 is not supported
-          unsupported.os = "Mac OS X 10." + osMatch;
-        }
-
-        // Debian 7
-      } else if (/Debian[ -_]7/i.test(navigator.userAgent)) {
-        unsupported.os = "Debian 7";
-        unsupported.i18nKey = "debian-7";
-        unsupported.url =
-          "https://github.com/brackets-cont/brackets/issues/4816";
-        unsupported.default =
-          "Unfortunately, we currently don't support Debian 7. <a href='" +
-          unsupported.url +
-          "'>Take a look at the GitHub issue</a> for further information.";
-
-        // Ubuntu
-      } else if (
-        (osMatch = navigator.userAgent.match(/Ubuntu[ -_\/]?(\d+)[._](\d+)\D/i))
-      ) {
-        // Pre-Ubuntu 12.04
-        if (parseInt(osMatch[1], 10) < 12) {
-          unsupported.os = "Ubuntu " + osMatch[1] + "." + osMatch[2];
-        }
+      function navDownloadClicked() {
+        logDownloadClicked("navBar");
+        document.getElementById("navDownloadSpinner")
+                .setAttribute("style", "margin-left: -16px")
+        setTimeout(()=>{
+          document.getElementById("navDownloadSpinner")
+                  .setAttribute("style", "visibility:hidden; margin-left: -16px")
+        },20000);
       }
 
-      // The user is running an unsupported OS
-      if (unsupported.os) {
-        if (!unsupported.default) {
-          unsupported.default =
-            "Unfortunately, we don't support " +
-            unsupported.os +
-            " any longer. <a href='" +
-            unsupported.url +
-            "'>Take a look at the Requirements.</a>";
-        }
-        $("#hero-cta-button").hide();
-        $("#download-plain-brackets").hide();
-        updateAlertContent(unsupported);
-        if (!i18nLoaded.state() !== "resolved") {
-          i18nLoaded.done(function () {
-            updateAlertContent(unsupported);
-          });
-        }
-      }
-
-      i18nLoaded.done(function () {
-        // load the complete license string
-        var licenseStr = i18n.t("footer.project-info.license", {
-          defaultValue: "Brackets is released under the MIT License",
-        });
-        // load the license type string
-        var licenseTypeStr = i18n.t("footer.project-info.licensetype", {
-          defaultValue: "MIT License",
-        });
-        // identify the license type string and wrap it in an anchor
-        licenseStr = licenseStr.replace(
-          licenseTypeStr,
-          "<a href='https://github.com/brackets-cont/brackets/blob/master/LICENSE'>" +
-            licenseTypeStr +
-            "</a>"
-        );
-        $("#about div p").append(licenseStr + ".");
-      });
-
-      var shortLocale =
-          (requestedLang && requestedLang.split("/")[0].split("-")[0]) || "en",
-        versionInfoBaseUrl =
-          "http://files.brackets.s3.us-east-2.amazonaws.com/updates/stable/",
-        versionInfoUrl = versionInfoBaseUrl + shortLocale + ".json",
-        lookupPromise = new $.Deferred();
-
-      if (shortLocale !== "en") {
-        $.ajax({
-          url: versionInfoUrl,
-          type: "HEAD",
-        })
-          .fail(function () {
-            shortLocale = "en";
-            versionInfoUrl = versionInfoBaseUrl + shortLocale + ".json";
-          })
-          .always(function () {
-            lookupPromise.resolve();
-          });
-      } else {
-        lookupPromise.resolve();
-      }
-
-      lookupPromise.done(function () {
-        var ajaxRequest = $.ajax({
-          dataType: "json",
-          url: versionInfoUrl,
-          cache: false,
-        });
-
-        $.when(ajaxRequest, i18nLoaded).done(function (data) {
-          var allBuilds = data[0],
-            build = data[0][0]; // default initialization with latest build
-
-          // Find the applicable build for current platform
-          // If current platform is unsupported (OTHERS), then take the last common release
-          // If a build entry doesn't have 'platforms' key -> Older format for all supported OS
-          for (
-            var buildIndex = 0;
-            buildIndex < allBuilds.length;
-            buildIndex++
-          ) {
-            build = allBuilds[buildIndex];
-            if (!build.platforms) {
-              // Older format detected - Applicable to all platforms
-              break;
-            } else {
-              if (build.platforms[OS]) {
-                // Current platform is one of the supported platforms
-                break;
-              } else if (OS == "OTHER") {
-                // Unsupported platform detected
-                if (Object.keys(build.platforms).length == 4) {
-                  // Build applicable for all platforms
-                  break;
-                }
-              }
-            }
-          }
-
-          var buildName = build.versionString;
-
-          // Probe previous entry to see if the update is a dot update,
-          // in which case combine both the entries.
-          var prevBuild = data[0][1];
-          if (
-            prevBuild &&
-            prevBuild.versionString &&
-            prevBuild.versionString === buildName
-          ) {
-            build.newFeatures = prevBuild.newFeatures.concat(build.newFeatures);
-          }
-
-          if (buildName) {
-            var buildNum = buildName.match(/([\d.]+)/);
-            if (buildNum) {
-              buildNum = buildNum[1];
-            }
-
-            // update button
-            if (OS !== "OTHER" && buildNum) {
-              var url;
-              if (build.platforms && build.platforms[OS]) {
-                // Fetch download url from platform entry
-                url = build.platforms[OS].downloadURL;
-              } else {
-                // Generate the download URI
-                var tag = buildName.toLowerCase().split(" ").join("-");
-                url =
-                  "https://github.com/brackets-cont/brackets/releases/" + tag;
-
-                if (ext) {
-                  url =
-                    "https://github.com/brackets-cont/brackets/releases/download/" +
-                    tag +
-                    "/Brackets." +
-                    buildName.split(" ").join(".") +
-                    ext;
-                }
-              }
-
-              $("#download-brackets-version").text(buildNum);
-              logAndGo("download-plain-brackets", url, [
-                "_trackEvent",
-                "Downloads",
-                buildNum,
-                OS,
-              ]);
-            }
-
-            // other-download track
-            logAndGo("other-downloads", $("#other-downloads").attr("href"), [
-              "_trackEvent",
-              "Other-Downloads",
-              buildNum,
-              OS,
-            ]);
-          }
-
-          // update features (limit 5)
-          var feature_content =
-            "<h2>" +
-            i18n.t("index.page.content.new-features.new-features-in", {
-              defaultValue: "New in " + build.versionString,
-              sprintNumber: build.versionString,
-            }) +
-            "</h2>";
-          build.newFeatures
-            .slice(0, Math.min(build.newFeatures.length, 5))
-            .forEach(function (feature) {
-              feature_content +=
-                "<h3>" + $("<div/>").text(feature.name).html() + "</h3>";
-              feature_content +=
-                "<p>" + $("<div/>").text(feature.description).html() + "</p>";
-            });
-          feature_content +=
-            "<p><a class='button radius secondary' href='" +
-            build.releaseNotesURL +
-            "'>" +
-            i18n.t("index.page.content.new-features.release-notes", {
-              defaultValue: "Read More in the Release Notes",
-            }) +
-            "</a></p>";
-          $("#features").html(feature_content);
-        });
-      });
-
-      function logAndGo(elementID, _url, tagObj) {
-        var elem = document.getElementById(elementID);
-        elem.href = _url;
-        elem.onclick = function (e) {
-          e.preventDefault();
-          var downloadStarted = false;
-          setTimeout(function () {
-            if (!downloadStarted) window.location.href = _url;
-          }, 1200); // fallback
-          _gaq.push(tagObj, function () {
-            downloadStarted = true;
-            setTimeout(function () {
-              window.location.href = _url;
-            }, 1000); // short delay just in case it doesn't get logged
-          });
-        };
+      function otherDownloadClicked() {
+        logDownloadClicked("otherDownloads");
       }
     </script>
 
     <script>
-      function recentBlogposts() {
-        var dateRegex = /(\d+)-(\d+)-(\d+)\s+(\d+):(\d+):(\d+)/,
-          $blogposts = $("#blogposts");
 
-        $.ajax({
-          url: "http://blog.brackets.io/feed/json",
-          dataType: "jsonp",
-        })
-          .always(function () {
-            $("#blogposts-spinner").remove();
-            $blogposts.hide();
-            $blogposts.fadeIn(1000);
-          })
-          .done(function (data) {
-            var options = {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            };
-
-            data.slice(0, 8).forEach(function (item) {
-              // only ever display 8 blog posts
-              var dateComponents = item.date.match(dateRegex),
-                postingDate = new Date(
-                  dateComponents[1],
-                  dateComponents[2] - 1, // zero based month
-                  dateComponents[3],
-                  dateComponents[4],
-                  dateComponents[5],
-                  dateComponents[6]
-                );
-
-              $blogposts.append(
-                '<h3><a href="' +
-                  item.permalink +
-                  '">' +
-                  item.title +
-                  "</a></h3><p>" +
-                  postingDate.toLocaleDateString(requestedLang, options) +
-                  "</p>"
-              );
-            });
-          })
-          .fail(function () {
-            var errorString = i18n.t("index.page.content.blog.error", {
-              defaultValue: "Refresh page to load posts",
-            });
-            $blogposts.append("<p>" + errorString + "</p>");
+      function logDownloadClicked(whichButton) {
+        gtag('event', whichButton, {
+          'event_category': "download",
+          'event_label': "clicked",
+          'value': 1
           });
       }
-
-      $(recentBlogposts());
     </script>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-32881640-1"]);
-      _gaq.push(["_setDomainName", "brackets.io"]);
-      _gaq.push(["_gat._anonymizeIp"]);
-      _gaq.push(["_trackPageview"]);
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XHYXL1VHXW');
     </script>
+
     <script>
       var closeButton = document.getElementById("banner-close-button");
       var banner = document.getElementById("banner-wrapper");
