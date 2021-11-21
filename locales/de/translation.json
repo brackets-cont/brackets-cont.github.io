@@ -9,12 +9,13 @@
             "hero": {
                 "description": "Moderne, leistungsstarke und offene Quelle",
                 "download": "Herunterladen v<d id='download-brackets-version'>1.14.2</d>",
+                "preRelease": "Vorabversion v2.0.0",
                 "os-alert": {
                     "general": "__os__ wird von uns leider nicht mehr unterstützt. <a href='__url__'>Wirf einen Blick auf die Systemvoraussetzungen.</a>",
                     "win-xp": "Windows XP wird von uns leider nicht mehr unterstützt. <a href='__url__'>Lies unseren Blogeintrag</a> für weitere Informationen.",
                     "debian-7": "Debian 7 wird von uns derzeit nicht unterstützt. <a href='__url__'>Wirf einen Blick auf den Bug</a>, um mehr zu erfahren."
                 },
-                "other-downloads": "Vorabversionen und Andere Downloads"
+                "other-downloads": "Andere Downloads"
             },
             "content": {
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",

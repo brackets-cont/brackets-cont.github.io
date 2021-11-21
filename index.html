@@ -180,11 +180,10 @@
                  class="large rounded radius"
                  href="https://github.com/adobe/brackets/releases"
                  download>
-                <button data-i18n="[html]index.page.hero.download"
-                        class="download-button"
+                <button class="download-button"
                         onclick="navDownloadClicked()">
                   <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="navDownloadSpinner"></i>
-                  Download </d>
+                  <span data-i18n="[html]index.page.hero.download">Download</span> </d>
                 </button>
               </a>
             </div>
@@ -246,20 +245,29 @@
                class="large rounded radius"
                href="https://github.com/adobe/brackets/releases"
                download>
-                <button data-i18n="[html]index.page.hero.download"
-                        class="download-button"
+                <button class="download-button"
                         onclick="mainDownloadClicked()">
                   <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinner"></i>
-                    Download v<d id="download-brackets-version">1.14.2</d>
+                  <span data-i18n="[html]index.page.hero.download">Download v1.14.2</d></span>
+              </button>
+            </a>
+            <a id="download-plain-brackets-v2"
+               class="large rounded radius"
+               href="https://github.com/brackets-cont/brackets/releases"
+               download>
+              <button class="download-button"
+                      onclick="preReleaseDownloadClicked()">
+                <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinnerv2"></i>
+                <span data-i18n="[html]index.page.hero.preRelease">Pre-release v2.0.0</d></span>
               </button>
             </a>
             <div id="os-alert" class="alert-box radius" data-alert></div>
             <p>
               <a id="other-downloads"
                 class="nobr"
-                href="https://github.com/brackets-cont/brackets/releases"
+                href="https://github.com/adobe/brackets/releases"
                 data-i18n="index.page.hero.other-downloads">
-                Pre-release builds & Other Downloads
+                Other Downloads
               </a>
             </p>
             <!--
@@ -657,6 +665,12 @@
           document.getElementById("mainDownloadSpinner")
                   .setAttribute("style", "visibility:hidden; margin-left: -16px")
         },20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
+      }
+
+      function preReleaseDownloadClicked() {
+        logDownloadClicked("v2PreReleaseButton");
+        document.getElementById("mainDownloadSpinnerv2")
+                .setAttribute("style", "margin-left: -16px")
       }
 
       function navDownloadClicked() {
