@@ -9,12 +9,13 @@
             "hero": {
                 "description": "Moderno, potente e open source",
                 "download": "Scarica v<d id='download-brackets-version'>1.7</d>",
+                "preRelease": "Versione preliminare v2.0.0",
                 "os-alert": {
                     "general": "Sfortunatamente, __os__ non è supportato. <a href='__url__'>Controlla i Requisiti.</a>",
                     "win-xp": "Sfortunatamente, Window XP non è supportato. Leggi <a href='__url__'>questo post</a> per avere altre informazioni.",
                     "debian-7": "Sfortunatamente, Debian 7 non è supportato. Controlla questo <a href='__url__'>issue su GithHub</a> per avere altre informazioni."
                 },
-                "other-downloads": "Build pre-release e altri download"
+                "other-downloads": "Altri download"
             },
             "content": {
                 "blurb": "Con strumenti visivi focalizzati e supporto preprocessore, le staffe è un editor di testo moderno che semplifica la progettazione del browser.È realizzato da terra per i web designer e sviluppatori front-end.",

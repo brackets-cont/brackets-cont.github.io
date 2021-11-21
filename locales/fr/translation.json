@@ -9,12 +9,13 @@
             "hero": {
                 "description": "Source moderne, puissante et ouverte",
                 "download": "Télécharger v<d id='download-brackets-version'>1.7<\/d>",
+                "preRelease": "Pré-version v2.0.0",
                 "os-alert": {
                     "general": "Malheureusement, nous ne prenons plus en charge __os__. <a href='__url__'>Jetez un œil aux exigences.<\/a>",
                     "win-xp": "Malheureusement, nous ne prenons plus en charge Windows XP. <a href='__url__'>Lisez notre article de blog<\/a> pour plus d'informations.",
                     "debian-7": "Malheureusement, nous ne prenons pas actuellement en charge Debian 7. <a href='__url__'>Jetez un œil à la question GitHub<\/a> pour plus d'informations."
                 },
-                "other-downloads": "Versions préliminaires et autres téléchargements"
+                "other-downloads": "Autres téléchargements"
             },
             "content": {
                 "blurb": "Avec des outils visuels ciblés et un support de préprocesseur, les crochets sont un éditeur de texte moderne qui facilite la conception du navigateur.Il est fabriqué à partir des concepteurs Web et des développeurs frontaux.",
