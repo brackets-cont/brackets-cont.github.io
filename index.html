@@ -253,6 +253,17 @@
                     Download v<d id="download-brackets-version">1.14.2</d>
               </button>
             </a>
+            <a id="download-plain-brackets-v2"
+               class="large rounded radius"
+               href="https://github.com/brackets-cont/brackets/releases"
+               download>
+              <button data-i18n="[html]index.page.hero.download"
+                      class="download-button"
+                      onclick="preReleaseDownloadClicked()">
+                <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinnerv2"></i>
+                Pre-relase v<d id="download-brackets-version">2.0.0</d>
+              </button>
+            </a>
             <div id="os-alert" class="alert-box radius" data-alert></div>
             <p>
               <a id="other-downloads"
@@ -657,6 +668,12 @@
           document.getElementById("mainDownloadSpinner")
                   .setAttribute("style", "visibility:hidden; margin-left: -16px")
         },20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
+      }
+
+      function preReleaseDownloadClicked() {
+        logDownloadClicked("v2PreReleaseButton");
+        document.getElementById("mainDownloadSpinnerv2")
+                .setAttribute("style", "margin-left: -16px")
       }
 
       function navDownloadClicked() {

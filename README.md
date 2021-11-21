@@ -1,4 +1,4 @@
-brackets-cont.github.io
+Brackets Website
 ===========
 
-brackets-cont website (WIP)
+[Brackets Website source.](https://brackets.io)
