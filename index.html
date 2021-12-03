@@ -31,10 +31,10 @@
       Brackets - A modern, open source code editor that understands web design.
     </title>
     <script type="text/javascript">
-      window.bracketsVersion = "1.14.2";
+      window.bracketsVersion = "2.0.1";
       window.buildURL = {
-        WIN: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.msi",
-        OSX: "https://github.com/adobe/brackets/releases/download/release-1.14.2/Brackets.Release.1.14.2.dmg"
+        WIN: "https://github.com/brackets-cont/brackets/releases/download/v2.0.1/Brackets.2.0.1ml.exe",
+        OSX: "https://github.com/brackets-cont/brackets/releases/download/v2.0.1/Brackets.2.0.1.signed.dmg"
       };
     </script>
 
@@ -198,29 +198,29 @@
     <!-- End of Navigation Menu -->
 
     <!-- this is for special occasions -->
-    <div id="banner-wrapper">
-      <!-- Banner close button -->
-      <span class="banner-close" id="banner-close-button"
-        ><i class="bx bx-x"></i
-      ></span>
-      <div id="banner" class="banner">
-        <div>
-          <span class="banner-text">
-            Brackets is being transitioned from Adobe to the Brackets Community.
-            Brackets v1.14 has issues with loading the extension library.
-            <br><b>Please download and use Pre-release V2.0.0</b> till we roll
-            out the latest release of Brackets in December.
-            </span>
+<!--    <div id="banner-wrapper">-->
+<!--      &lt;!&ndash; Banner close button &ndash;&gt;-->
+<!--      <span class="banner-close" id="banner-close-button"-->
+<!--        ><i class="bx bx-x"></i-->
+<!--      ></span>-->
+<!--      <div id="banner" class="banner">-->
+<!--        <div>-->
+<!--          <span class="banner-text">-->
+<!--            Brackets is being transitioned from Adobe to the Brackets Community.-->
+<!--            Brackets v1.14 has issues with loading the extension library.-->
+<!--            <br><b>Please download and use Pre-release V2.0.0</b> till we roll-->
+<!--            out the latest release of Brackets in December.-->
+<!--            </span>-->
 
-          <a
-            id="banner-button"
-            href="https://github.com/brackets-cont/brackets"
-            class="rounded radius button"
-            >Help us out!</a
-          >
-        </div>
-      </div>
-    </div>
+<!--          <a-->
+<!--            id="banner-button"-->
+<!--            href="https://github.com/brackets-cont/brackets"-->
+<!--            class="rounded radius button"-->
+<!--            >Help us out!</a-->
+<!--          >-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
     <!---->
 
     <div id="hero-wrapper">
@@ -248,24 +248,19 @@
                 <button class="download-button"
                         onclick="mainDownloadClicked()">
                   <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinner"></i>
-                  <span data-i18n="[html]index.page.hero.download">Download v1.14.2</d></span>
+                  <span data-i18n="[html]index.page.hero.download">Download v2.0.1</d></span>
               </button>
             </a>
-            <a id="download-plain-brackets-v2"
-               class="large rounded radius"
-               href="https://github.com/brackets-cont/brackets/releases"
-               download>
-              <button class="download-button"
-                      onclick="preReleaseDownloadClicked()">
-                <i class="fa fa-spinner fa-spin" style="visibility: hidden; margin-left: -16px" id="mainDownloadSpinnerv2"></i>
-                <span data-i18n="[html]index.page.hero.preRelease">Pre-release v2.0.0</d></span>
-              </button>
-            </a>
+            <span style="font-size: small">
+              <br/>
+              <span data-i18n="[html]index.page.hero.attribution">Installer Built and Signed by </span>
+              <a href="https://phoenix.core.ai">phoenix.core.ai</a>
+            </span>
             <div id="os-alert" class="alert-box radius" data-alert></div>
             <p>
               <a id="other-downloads"
                 class="nobr"
-                href="https://github.com/adobe/brackets/releases"
+                href="https://github.com/brackets-cont/brackets/releases"
                 data-i18n="index.page.hero.other-downloads">
                 Other Downloads
               </a>
@@ -665,12 +660,6 @@
           document.getElementById("mainDownloadSpinner")
                   .setAttribute("style", "visibility:hidden; margin-left: -16px")
         },20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
-      }
-
-      function preReleaseDownloadClicked() {
-        logDownloadClicked("v2PreReleaseButton");
-        document.getElementById("mainDownloadSpinnerv2")
-                .setAttribute("style", "margin-left: -16px")
       }
 
       function navDownloadClicked() {
