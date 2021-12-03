@@ -8,6 +8,7 @@ var requestedLang,
         detectLngQS: "lang", // use ?lang=... instead of ?setLng=...
         cookieName: "lang", // use cookie "lang" instead of "i18next"
         useLocalStorage: !!production, // production only
+        //lng : 'en', // language override to test. uncomment this line to test other languages
         localStorageExpirationTime: 3 * 24 * 60 * 60 * 1000 // cache 3 days
     },
     i18nLoaded = new $.Deferred();

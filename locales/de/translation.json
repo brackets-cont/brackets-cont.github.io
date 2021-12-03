@@ -8,8 +8,8 @@
         "page": {
             "hero": {
                 "description": "Moderne, leistungsstarke und offene Quelle",
-                "download": "Herunterladen v<d id='download-brackets-version'>1.14.2</d>",
-                "preRelease": "Vorabversion v2.0.0",
+                "download": "Herunterladen v<d id='download-brackets-version'>2.0.1</d>",
+                "attribution": "Installer gebaut und signiert von",
                 "os-alert": {
                     "general": "__os__ wird von uns leider nicht mehr unterstützt. <a href='__url__'>Wirf einen Blick auf die Systemvoraussetzungen.</a>",
                     "win-xp": "Windows XP wird von uns leider nicht mehr unterstützt. <a href='__url__'>Lies unseren Blogeintrag</a> für weitere Informationen.",
