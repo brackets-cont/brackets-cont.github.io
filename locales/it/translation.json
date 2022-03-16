@@ -18,14 +18,14 @@
                 "other-downloads": "Altri download"
             },
             "content": {
-                "blurb": "Con strumenti visivi focalizzanti e supporto preprocessore, Brackets è un editor di testo moderno che semplifica la progettazione del browser. È realizzato nativamente per web designer e sviluppatori front-end.",
+                "blurb": "Con strumenti visivi dedicati e supporto a preprocessore, Brackets è un editor di testo moderno che semplifica la progettazione su browser. È realizzato nativamente per web designer e sviluppatori front-end.",
                 "why": {
                     "header": "Perché Usare Brackets?",
-                    "content": "Brackets è un editor potente, moderno e leggero. Abbiamo aggiunto strumenti visibili nell'editor così da poter ricevere il giusto aiuto quando se ne ha bisogno. Con nuove funzionalità ed estensioni rilasciate ogni 3-4 settimane, è come ricevere regali tutto l'anno!"
+                    "content": "Brackets è un editor potente, moderno e leggero. Abbiamo aggiunto strumenti visivi nell'editor così da poter ricevere il giusto aiuto quando se ne ha bisogno. Con nuove funzionalità ed estensioni rilasciate ogni 3-4 settimane, è come ricevere regali tutto l'anno!"
                 },
                 "extract": {
                     "header": "Ricevi suggerimenti da un PSD",
-                    "content": "L'estensione Extract per Brackets (Anteprima) ti permette di ricavare gli stili di un PSD: colori, fonts, sfumature e altre informazioni, per scrivere del CSS pulito e minimale tramite i suggermenti del codice. Puoi anche estrarre livelli come immagini, usare le informazioni del PSD per definire variabili per i processori e misurare facilmente la distanza tra gli oggetti. Tutto con il codice sempre sotto gli occhi.",
+                    "content": "L'estensione Extract per Brackets (Anteprima) ti permette di ricavare gli stili di un PSD: colori, fonts, sfumature e altre informazioni, per scrivere del CSS pulito e minimale tramite i suggerimenti del codice. Puoi anche estrarre livelli come immagini, usare le informazioni del PSD per definire variabili per i processori e misurare facilmente la distanza tra gli oggetti. Tutto con il codice sempre visibile.",
                     "more": "Altro …"
                 },
                 "feature-highlights": {
