@@ -72,28 +72,28 @@
     },
     "contribute": {
         "head": {
-            "title": "Brackets - Contribute "
+            "title": "Brackets - 기여하기"
         },
         "page": {
             "hero": {
-                "header": "Brackets is fun to hack on and easy to <span class='nobr'>contribute to.</span>",
-                "content": "Made with <span class='hearts'>&hearts;</span> and JavaScript, the Brackets project is a community sandbox where everyone is invited to experiment with new ideas for <span class='nobr'>web tooling."
+                "header": "Brackets는 즐겁게 개발하고 쉽게 <span class='nobr'>기여</span>할 수 있습니다.",
+                "content": "<span class='hearts'>&hearts;</span>와 JavaScript로 제작되어, Brackets 프로젝트는 <span class='nobr'>웹 도구</span>와 관련된 새로운 아이디어를 실험해보고 싶은 모두가 모인 공동체 샌드박스입니다."
             },
             "sub-hero": {
                 "hack": {
-                    "header": "How to Hack on Brackets?",
-                    "content": "Read our detailed instructions for setting up a development environment and get hacking right away.",
-                    "more": "Learn How to Hack on Brackets"
+                    "header": "Brackets 개발에 참여하려면?",
+                    "content": "개발 환경 설정법에 대한 상세 설명서를 읽어보시고 바로 개발에 참여하세요.",
+                    "more": "Brackets 개발에 참여하는 법 찾아보기"
                 },
                 "extension": {
-                    "header": "How to Write Extensions?",
-                    "content": "Building a Brackets extension is the easiest way to experiment with new ideas and share them with the community.",
-                    "more": "Learn How to Write Extensions"
+                    "header": "부가기능은 어떻게 제작하나요?",
+                    "content": "Brackets 부가기능 제작은 새 아이디어를 실험하고 공동체와 공유하는 가장 쉬운 방법 중 하나입니다.",
+                    "more": "부가기능 제작법 배우기"
                 },
                 "translate": {
-                    "header": "Help Translate Brackets",
-                    "content": "Brackets is available in <span id='langCount'>31</span> languages that are contributed and maintained by the community.",
-                    "more": "Contribute a Translation"
+                    "header": "Brackets 번역을 도와주세요",
+                    "content": "Brackets는 공동체가 기여하고 관리하는 <span id='langCount'>31</span>개 언어로 제공되고 있습니다.",
+                    "more": "번역 기여하기"
                 }
             },
             "content": {
