@@ -18,6 +18,11 @@
                 "other-downloads": "미리보기 빌드 및 그 외 다운로드 찾아보기"
             },
             "content": {
+                "phoenix": "소개 Phoenix Code",
+                "phoenixLaunch": "시작하다 Phoenix",
+                "phoenixInfo1": "Phoenix brings all the powers of Brackets and its Extensions to web browsers; no install needed.",
+                "phoenixInfo2": "Phoenix is currently in Alpha. Please provide your valuable feedback and feature requests to make Phoenix better.",
+                "phoenixInfo3": "Click here to read more.",
                 "blurb": "시각 도구와 전처리기 지원을 중심으로, Brackets는 브라우저 내에서 쉽게 웹 디자인을 실현할 수 있는 현대적인 텍스트 에디터입니다. 처음부터 끝까지 웹 디자이너와 프론트엔드 개발자를 위해 제작했습니다.",
                 "why": {
                     "header": "Brackets를 사용해야 하는 이유",

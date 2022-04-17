@@ -18,6 +18,8 @@
                 "other-downloads": "Altri download"
             },
             "content": {
+                "phoenix": "Presentazione Phoenix Code",
+                "phoenixLaunch": "Lanciare Phoenix",
                 "blurb": "Con strumenti visivi dedicati e supporto a preprocessore, Brackets è un editor di testo moderno che semplifica la progettazione su browser. È realizzato nativamente per web designer e sviluppatori front-end.",
                 "why": {
                     "header": "Perché Usare Brackets?",

@@ -18,6 +18,8 @@
                 "other-downloads": "Outros downloads"
             },
             "content": {
+                "phoenix": "Apresentando Phoenix Code",
+                "phoenixLaunch": "Lançar Phoenix",
                 "blurb": "Com ferramentas visuais focadas e suporte pré-processador, colchetes é um editor de texto moderno que facilita a design no navegador.É criado do solo para web designers e desenvolvedores front-end.",
                 "why": {
                     "header": "Por que usar o Brackets?",
