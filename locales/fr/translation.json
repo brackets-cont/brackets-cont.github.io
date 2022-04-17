@@ -18,6 +18,8 @@
                 "other-downloads": "Autres téléchargements"
             },
             "content": {
+                "phoenix": "Présentation Phoenix Code",
+                "phoenixLaunch": "Lancer Phoenix",
                 "blurb": "Avec des outils visuels ciblés et un support de préprocesseur, les crochets sont un éditeur de texte moderne qui facilite la conception du navigateur.Il est fabriqué à partir des concepteurs Web et des développeurs frontaux.",
                 "why": {
                     "header": "Pourquoi utiliser Brackets ?",
