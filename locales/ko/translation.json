@@ -18,11 +18,11 @@
                 "other-downloads": "미리보기 빌드 및 그 외 다운로드 찾아보기"
             },
             "content": {
-                "phoenix": "소개 Phoenix 코드 편집기",
-                "phoenixLaunch": "시작하다 Phoenix",
-                "phoenixInfo1": "Phoenix brings all the powers of Brackets and its Extensions to web browsers; no install needed.",
-                "phoenixInfo2": "Phoenix is currently in Alpha. Please provide your valuable feedback and feature requests to make Phoenix better.",
-                "phoenixInfo3": "Click here to read more.",
+                "phoenix": "Phoenix 코드 편집기를 소개합니다",
+                "phoenixLaunch": "Phoenix 실행해보기",
+                "phoenixInfo1": "Phoenix는 설치하지 않고도 웹 브라우저에서 Brackets와 Brackets의 부가기능을 온전히 활용할 수 있습니다.",
+                "phoenixInfo2": "Phoenix는 현재 Alpha 단계입니다. 여러분의 소중한 기능 요청과 피드백으로 더 나은 Phoenix가 될 수 있게 도와주세요.",
+                "phoenixInfo3": "여기를 눌러 자세히 알아보세요",
                 "blurb": "시각 도구와 전처리기 지원을 중심으로, Brackets는 브라우저 내에서 쉽게 웹 디자인을 실현할 수 있는 현대적인 텍스트 에디터입니다. 처음부터 끝까지 웹 디자이너와 프론트엔드 개발자를 위해 제작했습니다.",
                 "why": {
                     "header": "Brackets를 사용해야 하는 이유",
