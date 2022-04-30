@@ -12,6 +12,7 @@ on:
   pull_request:
     branches:
       - gh-pages
+      - test-cla-checks
 
 jobs:
   one:
