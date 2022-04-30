@@ -11,7 +11,7 @@ name: Checking CLA Signature
 on: 
   pull_request:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   one:
