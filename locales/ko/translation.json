@@ -8,7 +8,7 @@
         "page": {
             "hero": {
                 "description": "현대적이고, 강력한 오픈소스 코드 에디터",
-                "download": "<i class=\"fa fa-spinner fa-spin\" style=\"visibility: hidden; margin-left: -16px\" id=\"mainDownloadSpinner\"></i>v<d id='download-brackets-version'>2.0.1</d> 다운로드",
+                "download": "<i class=\"fa fa-spinner fa-spin\" style=\"visibility: hidden; margin-left: -16px\" id=\"mainDownloadSpinner\"></i>v<d id='download-brackets-version'>2.1.2</d> 다운로드",
                 "attribution": "다음 프로젝트의 도움을 받아 설치 프로그램을 제작하였습니다: ",
                 "os-alert": {
                     "general": "아쉽지만, __os__ (을)를 더는 지원하지 않습니다. <a href='__url__'>최소 사양을 확인해보세요.</a>",
