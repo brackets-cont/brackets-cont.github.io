@@ -20,6 +20,8 @@
             "content": {
                 "phoenix": "紹介 Phoenix コードエディタ",
                 "phoenixLaunch": "発売 Phoenix",
+                "phoenixInfo1": "Phoenix は、Brackets とその拡張機能のすべての機能を Web ブラウザーにもたらします。インストールは必要ありません。",
+                "phoenixInfo3": "詳細を読むには、ここをクリックしてください。",
                 "blurb": "Brackets は、各種専用ビジュアルツールとプリプロセッサーをサポートし、ブラウザーの設計が簡単にできる最新のテキストエディターです。Web デザイナーやフロントエンドのデベロッパーのために、ゼロから開発されたものです。",
                 "why": {
                     "header": "Brackets を使う理由",
