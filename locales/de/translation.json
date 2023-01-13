@@ -20,6 +20,8 @@
             "content": {
                 "phoenix": "Einführung in den Phoenix-Code-Editor",
                 "phoenixLaunch": "Starten Phoenix",
+                "phoenixInfo1": "Phoenix bringt alle Möglichkeiten von Brackets und seinen Erweiterungen in Webbrowser; keine Installation erforderlich.",
+                "phoenixInfo3": "Klicken Sie hier, um mehr zu lesen.",
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",
                 "why": {
                     "header": "Warum Brackets?",

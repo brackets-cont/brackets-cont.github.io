@@ -20,6 +20,8 @@
             "content": {
                 "phoenix": "Présentation de l'éditeur de code Phoenix",
                 "phoenixLaunch": "Lancer Phoenix",
+                "phoenixInfo1": "Phoenix apporte tous les pouvoirs de Brackets et de ses extensions aux navigateurs Web ; aucune installation nécessaire.",
+                "phoenixInfo3": "Cliquez ici pour en lire plus.",
                 "blurb": "Avec des outils visuels ciblés et un support de préprocesseur, les crochets sont un éditeur de texte moderne qui facilite la conception du navigateur.Il est fabriqué à partir des concepteurs Web et des développeurs frontaux.",
                 "why": {
                     "header": "Pourquoi utiliser Brackets ?",

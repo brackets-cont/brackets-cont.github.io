@@ -20,6 +20,8 @@
             "content": {
                 "phoenix": "Apresentando o Editor de Código Phoenix",
                 "phoenixLaunch": "Lançar Phoenix",
+                "phoenixInfo1": "Phoenix traz todos os poderes de Brackets e suas extensões para navegadores da web; nenhuma instalação necessária.",
+                "phoenixInfo3": "Clique aqui para ler mais.",
                 "blurb": "Com ferramentas visuais focadas e suporte pré-processador, colchetes é um editor de texto moderno que facilita a design no navegador.É criado do solo para web designers e desenvolvedores front-end.",
                 "why": {
                     "header": "Por que usar o Brackets?",
