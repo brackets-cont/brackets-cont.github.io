@@ -3,11 +3,11 @@
     "lang": "pt-BR",
     "index": {
         "head": {
-            "title": "Brackets - Um editor de textos moderno e de código aberto que entende web design."
+            "title": "Brackets - Um editor de código moderno e aberto que entende de web design."
         },
         "page": {
             "hero": {
-                "description": "Fonte moderna, poderosa e aberta",
+                "description": "Moderno, Poderoso e Aberto",
                 "download": "Baixar",
                 "attribution": "Instalador construído e assinado por",
                 "os-alert": {
@@ -19,13 +19,18 @@
             },
             "content": {
                 "phoenix": "Apresentando o Editor de Código Phoenix",
-                "phoenixLaunch": "Lançar Phoenix",
-                "phoenixInfo1": "Phoenix traz todos os poderes de Brackets e suas extensões para navegadores da web; nenhuma instalação necessária.",
+                "phoenixLaunch": "Abrir Phoenix",
+                "phoenixInfo1": "Phoenix traz todos os poderes do Brackets e suas extensões para navegadores web; nenhuma instalação necessária.",
                 "phoenixInfo3": "Clique aqui para ler mais.",
-                "blurb": "Com ferramentas visuais focadas e suporte pré-processador, colchetes é um editor de texto moderno que facilita a design no navegador.É criado do solo para web designers e desenvolvedores front-end.",
+                "blurb": "Com foco em ferramentas visuais e suporte a pré-processador, o Brackets é um editor de texto moderno que facilita o desenvolvimento no navegador. Ele foi pensado desde o início para web designers e desenvolvedores front-end.",
                 "why": {
                     "header": "Por que usar o Brackets?",
                     "content": "O Brackets é um leve e poderoso editor de textos moderno. Nós combinamos ferramentas visuais no editor para que você tenha acesso a ajuda adequada sempre que precisar. Com novos recursos e extensões disponibilizados a cada 3-4 semanas, é como ganhar presentes durante o ano todo."
+                },
+                "love-and-js": {
+                    "header": "Feito com <a href='contribute.html'>&hearts;</a> e JavaScript",
+                    "content": "Brackets é um projeto de código aberto, apoiado por uma comunidade ativa e apaixonada. É feito por outros desenvolvedores web como você!",
+                    "contribute": "Saiba como contribuir&hellip;"
                 },
                 "extract": {
                     "header": "Extraia sugestões de código de um PSD",
@@ -35,16 +40,16 @@
                 "feature-highlights": {
                     "heading": "Características",
                     "inline-editor": {
-                        "header": "Editores inline.",
+                        "header": "Editores Inline",
                         "content": "Em vez de ficar saltando entre abas de arquivos, o Brackets permite que você expanda um trecho de código que lhe interessar."
                     },
                     "live-preview": {
-                        "header": "Visualização instantânea",
+                        "header": "Visualização Instantânea",
                         "content": "Fique conectado em tempo real com seu navegador. Faça alterações em seu CSS e HTML e veja as alterações instantaneamente na tela."
                     },
                     "preprocessor": {
-                        "header": "Suporte a pré-processadores",
-                        "content": "Trabalhe com pré-processadores de uma forma totalmente diferente. Nós sabemos a importância dos pré-processadores ao seu fluxo de trabalho."
+                        "header": "Suporte a Pré-processadores",
+                        "content": "Trabalhe com pré-processadores de uma forma totalmente diferente. Nós sabemos a importância dos pré-processadores no seu fluxo de trabalho."
                     }
                 },
                 "new-features": {
@@ -74,30 +79,30 @@
             },
             "sub-hero": {
                 "hack": {
-                    "header": "Como hackear o Brackets?",
+                    "header": "Como Hackear o Brackets?",
                     "content": "Leia nossas instruções detalhadas para configurar um ambiente de desenvolvimento e começar a hackear agora.",
-                    "more": "Como hackear o Brackets"
+                    "more": "Como Hackear o Brackets"
                 },
                 "extension": {
-                    "header": "Como escrever extensões?",
+                    "header": "Como Escrever Extensões?",
                     "content": "Construir uma extensão para Brackets é a forma mais fácil de testar novas ideias e compartilhá-las com a comunidade.",
-                    "more": "Aprenda a escrever extensões"
+                    "more": "Aprenda a Escrever Extensões"
                 },
                 "translate": {
-                    "header": "Ajude a traduzir o Brackets",
-                    "content": "O Brackets está disponível em <span id='langCount'>31</span> idiomas que são contribuidos e mantidos pela comunidade.",
-                    "more": "Contribua com uma tradução"
+                    "header": "Ajude a Traduzir o Brackets",
+                    "content": "O Brackets está disponível em <span id='langCount'>31</span> idiomas que são contribuídos e mantidos pela comunidade.",
+                    "more": "Contribua com uma Tradução"
                 }
             },
             "content": {
                 "starter-issues": {
                     "header": "Issues para iniciantes",
-                    "description": "Começando agora? As issues para iniciantes são pequenos bugs que não devem levar mais do que uma hora ou duas horas para serem resolvidos. Eles são uma ótima forma de aprender a base de código e fazer uma diferença.",
+                    "description": "Começando agora? As issues para iniciantes são pequenos bugs que não devem levar mais do que uma ou duas horas para serem resolvidos. Eles são uma ótima forma de aprender a base de código e fazer uma diferença.",
                     "more": "Ver todas as issues para iniciantes…"
                 },
                 "starter-features": {
                     "header": "Features para iniciantes",
-                    "description": "Pronto para algo maior? Features para iniciantes são pequenas ideias que não irão requerer um grande compromisso de tempo. Você deve conseguir conclui-los em algumas noites ou em um fim de semana.",
+                    "description": "Pronto para algo maior? Features para iniciantes são pequenas ideias que não irão requerer um grande compromisso de tempo. Você deve conseguir concluí-los em algumas noites ou em um fim de semana.",
                     "more": "Ver todas as features para iniciantes…"
                 },
                 "comments": {
@@ -118,10 +123,10 @@
         "links": {
             "header": "Links rápidos",
             "content": {
-                "source": "Código fonte no Github",
+                "source": "Código-fonte no GitHub",
                 "apidocs": "Manual da API",
-                "extension-updates": "Atualizações semanais das extensões",
-                "troubleshooting": "Resolução de problemas",
+                "extension-updates": "Atualizações Semanais das Extensões",
+                "troubleshooting": "Resolução de Problemas",
                 "wiki": "Wiki"
             }
         },
@@ -129,25 +134,30 @@
             "header": "Vídeos",
             "content": {
                 "intro": "Introduzindo o Brackets",
-                "livedev": "Desenvolvimento ao vivo para HTML",
+                "livedev": "Desenvolvimento Ao Vivo para HTML",
                 "theseus": "Debugger JavaScript para Brackets",
                 "tutsplus": "Introdução ao Brackets por Tuts+",
-                "youtube": "Vídeos do Brackets no Youtube"
+                "youtube": "Vídeos do Brackets no YouTube"
             }
         },
         "get-involved": {
             "header": "Envolva-se",
             "content": {
-                "suggest": "Sugira uma feature",
-                "trello": "Veja nosso backlog no Trello",
-                "waffle": "Acompanhe nosso progresso no Waffle",
+                "suggest": "Sugira uma Feature",
+                "trello": "Veja nosso Backlog no Trello",
+                "waffle": "Acompanhe nosso Progresso no Waffle",
                 "devlist": "Discuta nos Grupos do Google",
                 "irc": "Bate-papo no IRC em Freenode/#Brackets",
-                "issues": "Acompanhe as issues atuais no GitHub"
+                "issues": "Acompanhe as Issues Atuais no GitHub"
             }
         },
         "in-touch": {
             "header": "Fique ligado"
+        },
+        "project-info": {
+            "motivation": "Brackets é mantido pela comunidade brackets.io. Foi fundado pela Adobe como um projeto de código aberto guiado pela comunidade para levar os editores de desenvolvimento web para o próximo nível.",
+            "license": "Brackets é lançado sob a $t(footer.project-info.licensetype)",
+            "licensetype": "Licença MIT"
         }
     }
 }
