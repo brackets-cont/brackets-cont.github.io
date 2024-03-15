@@ -18,11 +18,10 @@
                 "other-downloads": "Outros downloads"
             },
             "content": {
-                "phoenix": "Phoenix Code: A Nova Era dos Brackets",
+                "phoenix": "Apresentando o Editor de Phoenix Code",
                 "phoenixLaunch": "Inicie o Editor da Web",
                 "phoenixio": "Obtenha-o em phcode.io",
-                "phoenixInfo1": "Phoenix Code é a próxima geração de Brackets projetados para tornar a codificação tão intuitiva e divertida quanto jogar um videogame - especialmente criado para desenvolvedores web, designers e estudantes.",
-                "phoenixInfo2": "Funciona em qualquer lugar - Windows, macOS, Linux e navegadores da Web.",
+                "phoenixInfo1": "Phoenix Code é a próxima geração do Brackets que roda em qualquer lugar - Windows, macOS, Linux e navegadores da Web.",
                 "phoenixInfo3": "Clique aqui para ler mais.",
                 "blurb": "Com foco em ferramentas visuais e suporte a pré-processador, o Brackets é um editor de texto moderno que facilita o desenvolvimento no navegador. Ele foi pensado desde o início para web designers e desenvolvedores front-end.",
                 "why": {
