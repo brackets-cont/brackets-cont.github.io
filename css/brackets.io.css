@@ -480,7 +480,7 @@ blockquote p {
   color: #010001;
   border: 2px solid #000;
   margin: 5px;
-  max-width: 500px;
+  max-width: 650px;
   border-radius: 3px;
   position: fixed;
   z-index: 999;
@@ -616,14 +616,14 @@ blockquote p {
   margin: auto;
 }
 
-#banner-button {
+#phcodeio-button, #launch-editor-button {
   background: #010001;
   border: 2px solid #010001;
   color: #fff;
   margin-bottom: 1em;
 }
 
-#banner-button:hover {
+#phcodeio-button:hover , #launch-editor-button:hover{
   opacity: 0.8;
 }
 

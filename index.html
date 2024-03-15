@@ -33,11 +33,18 @@ foo commit change
     design.
   </title>
   <script type="text/javascript">
-    window.bracketsVersion = "2.2.1";
+    window.bracketsVersion = "2.1.2";
     window.buildURL = {
-      WIN: "https://github.com/brackets-cont/brackets/releases/download/v2.2.1/Brackets-2.2.1.exe",
-      OSX: "https://github.com/brackets-cont/brackets/releases/download/v2.2.0/brackets.2.2.0.dmg"
+      WIN: "https://github.com/brackets-cont/brackets/releases/download/v2.1.3/Brackets-2.1.3.exe",
+      OSX: "https://github.com/brackets-cont/brackets/releases/download/v2.1.2-release/brackets.2.1.2.dmg"
     };
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lgzhgemeh3");
   </script>
 
   <link rel="stylesheet" href="css/normalize.css" />
@@ -218,16 +225,22 @@ foo commit change
       <h2>
         <img src="img/phoenix.svg" width="40px" />
         <span data-i18n="index.page.content.phoenix"
-        >Introducing Phoenix Code Editor</span
+        >Phoenix Code: The New Era of Brackets</span
         >
       </h2>
       <span class="banner-text">
                         <span data-i18n="index.page.content.phoenixInfo1"
-                        >Phoenix brings all the powers of Brackets and its
-                            Extensions to web browsers; no install needed.</span
+                        >Phoenix Code is the next generation of Brackets
+                            designed to make coding as intuitive and fun as
+                            playing a video game - specially crafted for web
+                            developers, designers, and students.</span
+                        >
+                        <br />
+                        <span data-i18n="index.page.content.phoenixInfo2"
+                        >Runs everywhere - Windows, macOS, Linux and Web Browsers.</span
                         >
                         <a
-                                href="https://www.reddit.com/r/brackets/comments/zu42kx/brackets_web_phoenix_ide_30_web_release_is_out/"
+                                href="https://www.reddit.com/r/brackets/comments/tz06tn/brackets_community_announcement_phoenix_code/"
                                 target="_blank"
                                 data-i18n="index.page.content.phoenixInfo3">
                             Click here to read more</a
@@ -235,16 +248,30 @@ foo commit change
                     </span>
 
       <div style="display: flex; justify-content: space-between">
-        <a
-                id="banner-button"
-                href="https://phcode.dev"
-                class="rounded radius button"
-                style="background-color: #fe9615; color: black"
-                data-i18n="index.page.content.phoenixLaunch"
-                target="_blank"
-        >Launch Phoenix</a
-        >
-        <div>
+        <div style="display: flex">
+          <a
+                  id="phcodeio-button"
+                  href="https://phcode.io"
+                  onclick="logDownloadClicked('phcodeioClicked');"
+                  class="rounded radius button"
+                  style="background-color: #fe9615; color: black"
+                  data-i18n="index.page.content.phoenixio"
+                  target="_blank"
+          >Get it from phcode.io
+          </a>
+          <a
+                  onclick="logDownloadClicked('launchWebEditor');"
+                  style="margin-left: 10px;margin-right: 10px;"
+                  id="launch-editor-button"
+                  href="https://phcode.dev"
+                  class="rounded radius button"
+                  style="background-color: #fe9615; color: black"
+                  data-i18n="index.page.content.phoenixLaunch"
+                  target="_blank"
+          >Launch Web Editor</a
+          >
+        </div>
+        <div style="display: flex">
           <a
                   href="https://github.com/phcode-dev/phoenix"
                   class="nav-link w-inline-block"

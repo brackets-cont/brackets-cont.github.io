@@ -18,9 +18,11 @@
                 "other-downloads": "Autres téléchargements"
             },
             "content": {
-                "phoenix": "Présentation de l'éditeur de code Phoenix",
-                "phoenixLaunch": "Lancer Phoenix",
-                "phoenixInfo1": "Phoenix apporte tous les pouvoirs de Brackets et de ses extensions aux navigateurs Web ; aucune installation nécessaire.",
+                "phoenix": "Phoenix Code : la nouvelle ère du Brackets",
+                "phoenixLaunch": "Lancer l'éditeur Web",
+                "phoenixio": "Récupérez-le sur phcode.io",
+                "phoenixInfo1": "Phoenix Code est la nouvelle génération de Brackets conçue pour rendre le codage aussi intuitif et amusant que jouer à un jeu vidéo - spécialement conçu pour les développeurs Web, les concepteurs et les étudiants.",
+                "phoenixInfo2": "Fonctionne partout : Windows, macOS, Linux et navigateurs Web.",
                 "phoenixInfo3": "Cliquez ici pour en lire plus.",
                 "blurb": "Avec des outils visuels ciblés et un support de préprocesseur, les crochets sont un éditeur de texte moderne qui facilite la conception du navigateur.Il est fabriqué à partir des concepteurs Web et des développeurs frontaux.",
                 "why": {

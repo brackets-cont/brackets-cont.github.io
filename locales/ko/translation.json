@@ -18,10 +18,12 @@
                 "other-downloads": "미리보기 빌드 및 그 외 다운로드 찾아보기"
             },
             "content": {
-                "phoenix": "Phoenix 코드 편집기를 소개합니다",
-                "phoenixLaunch": "Phoenix 실행해보기",
-                "phoenixInfo1": "Phoenix는 설치하지 않고도 웹 브라우저에서 Brackets와 Brackets의 부가기능을 온전히 활용할 수 있습니다.",
-                "phoenixInfo3": "여기를 눌러 자세히 알아보세요",
+                "phoenix": "Phoenix Code: Brackets의 새로운 시대s",
+                "phoenixLaunch": "웹 에디터 실행",
+                "phoenixio": "phcode.io에서 받기",
+                "phoenixInfo1": "Phoenix Code는 웹 개발자, 디자이너, 학생을 위해 특별히 제작된 코딩을 비디오 게임처럼 직관적이고 재미있게 만들 수 있도록 설계된 차세대 Brackets입니다.",
+                "phoenixInfo2": "Windows, macOS, Linux 및 웹 브라우저 등 어디에서나 실행됩니다.",
+                "phoenixInfo3": "자세한 내용을 보려면 여기를 클릭하세요.",
                 "blurb": "시각 도구와 전처리기 지원을 중심으로, Brackets는 브라우저 내에서 쉽게 웹 디자인을 실현할 수 있는 현대적인 텍스트 에디터입니다. 처음부터 끝까지 웹 디자이너와 프론트엔드 개발자를 위해 제작했습니다.",
                 "why": {
                     "header": "Brackets를 사용해야 하는 이유",
