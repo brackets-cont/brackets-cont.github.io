@@ -229,17 +229,6 @@ foo commit change
                   target="_blank"
           > <i class="fas fa-download" style="margin-right: 8px;"></i><span data-i18n="index.page.content.phoenixio" style="color: black;font-size: unset;">Get it from phcode.io</span>
           </a>
-          <a
-                  onclick="logDownloadClicked('launchWebEditor');"
-                  style="margin-left: 10px;margin-right: 10px;"
-                  id="launch-editor-button"
-                  href="https://phcode.dev"
-                  class="rounded radius button"
-                  style="background-color: #fe9615; color: black;"
-                  data-i18n="index.page.content.phoenixLaunch"
-                  target="_blank"
-          >Launch Web Editor</a
-          >
         </div>
         <div style="display: flex">
           <a
@@ -286,23 +275,20 @@ foo commit change
         <!-- Temporary link to download page -->
         <a
                 id="download-plain-brackets"
-                class="large rounded radius"
+                class="rounded radius button"
                 href="https://github.com/adobe/brackets/releases"
+                style="display: inline-flex;background-color: black; color: white; align-items: center;padding-left: 1.5rem;justify-content: center;"
+                onclick="mainDownloadClicked()"
                 download>
-          <button
-                  class="download-button"
-                  onclick="mainDownloadClicked()">
-            <i
-                    class="fa fa-spinner fa-spin"
-                    style="
-                                        visibility: hidden;
-                                        margin-left: -16px;
+          <i
+                  class="fa fa-spinner fa-spin"
+                  style="
+                                        display: none;
                                     "
-                    id="mainDownloadSpinner"></i>
-            <span data-i18n="[html]index.page.hero.download"
-            >Download</span
-            >
-          </button>
+                  id="mainDownloadSpinner"></i>
+          <span data-i18n="[html]index.page.hero.download" style="color: white;font-size: unset;"
+          >Download</span
+          >
         </a>
           <a
                   id="phcodeio-button-main"
@@ -312,6 +298,15 @@ foo commit change
                   style="background-color: #fe9615; color: black; display: inline-flex;align-items: center;padding-left: 1.5rem;"
           > <i class="fas fa-download" style="margin-right: 8px;"></i><span data-i18n="index.page.content.phoenixioDownload" style="color: black;font-size: unset;">Download from phcode.io</span>
           </a>
+        <a
+                onclick="logDownloadClicked('launchWebEditor');"
+                id="launch-editor-button"
+                href="https://phcode.dev"
+                class="rounded radius button forced-hidden"
+                style="background-color: #fe9615; color: black;margin-left: 10px;margin-right: 10px;border-radius: 5px;"
+                data-i18n="index.page.content.phoenixLaunch"
+                target="_blank"
+        >Launch Web Editor</a>
         <span style="font-size: small">
                             <br />
                             <span data-i18n="[html]index.page.hero.attribution"
@@ -729,6 +724,7 @@ This <img> tag will be added when NOT on mobile
     if (/NT ?5\.\d/.test(navigator.userAgent)) {
       FLAVOR = "Windows XP";
     }
+    $("#launch-editor-button").removeClass("forced-hidden");
   } else if (/Mac/.test(navigator.userAgent)) {
     OS = "OSX";
     ext = ".dmg";
@@ -742,6 +738,7 @@ This <img> tag will be added when NOT on mobile
       // Mac OS X pre 10.6.8 is not supported
       FLAVOR = "Mac OS X 10." + osMatch;
     }
+    $("#launch-editor-button").removeClass("forced-hidden");
   } else if (/Linux|X11/.test(navigator.userAgent)) {
     OS = "LINUX32";
     $("#download-plain-brackets").hide();
@@ -750,12 +747,26 @@ This <img> tag will be added when NOT on mobile
   }
   if (/iPad|iPod|iPhone|Android/.test(navigator.userAgent)) {
     OS = "OTHER";
-    $("#download").hide();
+    $("#download-plain-brackets").hide();
+    $("#phcode-upgrade").hide();
+    $("#phcodeio-button-main").hide();
+    $("#launch-editor-button").removeClass("forced-hidden");
   } else {
     $(
             "<img src='img/hero.png' srcset='img/hero@2x.png 2x' height='370' width='1059' alt='Screenshot of Brackets'>"
     ).appendTo("#download");
   }
+
+  function setUniformButtonWidth() {
+    var width1 = document.getElementById('download-plain-brackets').offsetWidth;
+    var width2 = document.getElementById('launch-editor-button').offsetWidth;
+    var maxWidth = Math.max(width1, width2, 250);
+
+    document.getElementById('download-plain-brackets').style.width = maxWidth + 'px';
+    document.getElementById('launch-editor-button').style.width = maxWidth + 'px';
+  }
+  setUniformButtonWidth();
+
 
   function setupDownloads() {
     let downloadURL =
