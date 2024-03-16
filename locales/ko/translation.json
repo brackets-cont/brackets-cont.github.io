@@ -19,6 +19,8 @@
             },
             "content": {
                 "phoenix": "Phoenix Code 편집기 소개",
+                "phoenixUpgrade": "Brackets는 사용자에게 차세대 Brackets인 Phoenix Code를 다운로드할 것을 권장합니다.",
+                "phoenixioDownload": "phcode.io에서 다운로드",
                 "phoenixLaunch": "웹 에디터 실행",
                 "phoenixio": "phcode.io에서 받기",
                 "phoenixInfo1": "Phoenix Code는 Windows, macOS, Linux 및 웹 브라우저 등 어디에서나 실행되는 차세대 Brackets입니다.",

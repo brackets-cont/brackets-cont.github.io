@@ -19,6 +19,8 @@
             },
             "content": {
                 "phoenix": "Phoenix Codeエディターの紹介",
+                "phoenixUpgrade": "Brackets は、次世代の Brackets である Phoenix Code をダウンロードすることをユーザーに推奨しています。",
+                "phoenixioDownload": "phcode.ioからダウンロード",
                 "phoenixLaunch": "Webエディタを起動する",
                 "phoenixio": "phcode.ioから入手してください",
                 "phoenixInfo1": "Phoenix Code は、Windows、macOS、Linux、Web ブラウザなど、どこでも実行できる次世代の Brackets です。",

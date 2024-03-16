@@ -19,6 +19,8 @@
             },
             "content": {
                 "phoenix": "Introducing Phoenix Code Editor",
+                "phoenixUpgrade": "Brackets recommends users to download Phoenix Code - the next generation of Brackets.",
+                "phoenixioDownload": "Download from phcode.io",
                 "phoenixLaunch": "Launch Web Editor",
                 "phoenixio": "Get it from phcode.io",
                 "phoenixInfo1": "Phoenix Code is the next generation of Brackets that Runs everywhere - Windows, macOS, Linux and Web Browsers.",

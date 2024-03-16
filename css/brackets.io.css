@@ -475,6 +475,10 @@ blockquote p {
   padding-top: 1em;
 }
 
+.forced-hidden {
+  display: none !important;
+}
+
 #banner-wrapper {
   background: #d0ecf5;
   color: #010001;
@@ -616,14 +620,14 @@ blockquote p {
   margin: auto;
 }
 
-#phcodeio-button, #launch-editor-button {
+#phcodeio-button, #phcodeio-button-main, #launch-editor-button {
   background: #010001;
   border: 2px solid #010001;
   color: #fff;
   margin-bottom: 1em;
 }
 
-#phcodeio-button:hover , #launch-editor-button:hover{
+#phcodeio-button:hover , #launch-editor-button:hover, #phcodeio-button-main:hover{
   opacity: 0.8;
 }
 

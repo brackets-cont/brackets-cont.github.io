@@ -280,6 +280,9 @@ foo commit change
         </p>
       </div>
       <div id="download">
+          <p id="phcode-upgrade" data-i18n="index.page.content.phoenixUpgrade" style="margin-bottom: 1px;" class="forced-hidden">
+          Brackets recommends users to download Phoenix Code - the next generation of Brackets.
+        </p>
         <!-- Temporary link to download page -->
         <a
                 id="download-plain-brackets"
@@ -301,6 +304,14 @@ foo commit change
             >
           </button>
         </a>
+          <a
+                  id="phcodeio-button-main"
+                  href="https://phcode.io"
+                  onclick="logDownloadClicked('phcodeioMainClicked');"
+                  class="rounded radius button forced-hidden"
+                  style="background-color: #fe9615; color: black; display: inline-flex;align-items: center;padding-left: 1.5rem;"
+          > <i class="fas fa-download" style="margin-right: 8px;"></i><span data-i18n="index.page.content.phoenixioDownload" style="color: black;font-size: unset;">Download from phcode.io</span>
+          </a>
         <span style="font-size: small">
                             <br />
                             <span data-i18n="[html]index.page.hero.attribution"
@@ -733,11 +744,9 @@ This <img> tag will be added when NOT on mobile
     }
   } else if (/Linux|X11/.test(navigator.userAgent)) {
     OS = "LINUX32";
-    ext = ".32-bit.deb";
-    if (/x86_64/.test(navigator.appVersion + navigator.userAgent)) {
-      OS = "LINUX64";
-      ext = ".64-bit.deb";
-    }
+    $("#download-plain-brackets").hide();
+    $("#phcode-upgrade").removeClass("forced-hidden");
+    $("#phcodeio-button-main").removeClass("forced-hidden");
   }
   if (/iPad|iPod|iPhone|Android/.test(navigator.userAgent)) {
     OS = "OTHER";
