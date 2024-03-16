@@ -182,29 +182,6 @@ foo commit change
             <i class="fab fa-youtube"></i>
           </a>
         </div>
-        <div class="navigation-link-right desktop-link">
-          <a
-                  id="download-nav-brackets"
-                  class="large rounded radius"
-                  href="https://github.com/adobe/brackets/releases"
-                  download>
-            <button
-                    class="download-button"
-                    onclick="navDownloadClicked()">
-              <i
-                      class="fa fa-spinner fa-spin"
-                      style="
-                                            visibility: hidden;
-                                            margin-left: -16px;
-                                        "
-                      id="navDownloadSpinner"></i>
-              <span
-                      data-i18n="[html]index.page.hero.download"
-              >Download</span
-              >
-            </button>
-          </a>
-        </div>
       </nav>
       <div class="hamburgerMenuIcon" id="hamburger">
         <i class="bx bx-menu"></i>
@@ -765,7 +742,6 @@ This <img> tag will be added when NOT on mobile
   if (/iPad|iPod|iPhone|Android/.test(navigator.userAgent)) {
     OS = "OTHER";
     $("#download").hide();
-    $("#secondary-download").hide();
   } else {
     $(
             "<img src='img/hero.png' srcset='img/hero@2x.png 2x' height='370' width='1059' alt='Screenshot of Brackets'>"
@@ -778,9 +754,6 @@ This <img> tag will be added when NOT on mobile
             "https://github.com/brackets-cont/brackets/releases";
     document
             .getElementById("download-plain-brackets")
-            .setAttribute("href", downloadURL);
-    document
-            .getElementById("download-nav-brackets")
             .setAttribute("href", downloadURL);
     document
             .getElementById("other-downloads")
@@ -799,21 +772,6 @@ This <img> tag will be added when NOT on mobile
                       "visibility:hidden; margin-left: -16px"
               );
     }, 20000); // We dont have an API to determine if browser actually started the download. So clear after 20 secs.
-  }
-
-  function navDownloadClicked() {
-    logDownloadClicked("navBarDownload");
-    document
-            .getElementById("navDownloadSpinner")
-            .setAttribute("style", "margin-left: -16px");
-    setTimeout(() => {
-      document
-              .getElementById("navDownloadSpinner")
-              .setAttribute(
-                      "style",
-                      "visibility:hidden; margin-left: -16px"
-              );
-    }, 20000);
   }
 
   function otherDownloadClicked() {
