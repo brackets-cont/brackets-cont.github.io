@@ -731,7 +731,7 @@ This <img> tag will be added when NOT on mobile
     osMatch = navigator.userAgent.match(
             /Mac OS X 10[._](\d+)([._](\d+))?\D/i
     );
-    osMatch = parseFloat(osMatch[1] + "." + (osMatch[3] || 0));
+    osMatch = osMatch && parseFloat(osMatch[1] + "." + (osMatch[3] || 0));
 
     // Firefox reports only the OS X major version (10.6), so we have to check for 6.0
     if (osMatch < 6.8 && osMatch !== 6.0) {
