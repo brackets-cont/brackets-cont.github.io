@@ -21,19 +21,19 @@
                 "phoenix": "Apresentando o Editor de Phoenix Code",
                 "phoenixUpgrade": "Brackets recomenda que os usuários atualizem para o Phoenix Code – a nova geração do Brackets, feita para você.",
                 "phoenixioDownload": "Baixe em phcode.io",
-                "phoenixLaunch": "Inicie o Editor da Web",
+                "phoenixLaunch": "Inicie o Editor Web",
                 "phoenixio": "Obtenha-o em phcode.io",
-                "phoenixInfo1": "Phoenix Code é a próxima geração do Brackets que roda em qualquer lugar - Windows, macOS, Linux e navegadores da Web.",
+                "phoenixInfo1": "Phoenix Code é a próxima geração do Brackets que roda em qualquer lugar - Windows, macOS, Linux e Navegadores Web.",
                 "phoenixInfo3": "Clique aqui para ler mais.",
-                "blurb": "Com foco em ferramentas visuais e suporte a pré-processador, o Brackets é um editor de texto moderno que facilita o desenvolvimento no navegador. Ele foi pensado desde o início para web designers e desenvolvedores front-end.",
+                "blurb": "Com foco em ferramentas visuais e suporte a pré-processador, o Brackets é um editor de código moderno que facilita o desenvolvimento no navegador. Ele foi pensado desde o início para web designers e desenvolvedores front-end.",
                 "why": {
                     "header": "Por que usar o Brackets?",
-                    "content": "O Brackets é um leve e poderoso editor de textos moderno. Nós combinamos ferramentas visuais no editor para que você tenha acesso a ajuda adequada sempre que precisar. Com novos recursos e extensões disponibilizados a cada 3-4 semanas, é como ganhar presentes durante o ano todo."
+                    "content": "O Brackets é um leve e poderoso editor de código moderno. Nós combinamos ferramentas visuais no editor para que você tenha acesso a ajuda adequada sempre que precisar. Com novos recursos e extensões disponibilizados a cada 3-4 semanas, é como ganhar presentes durante o ano todo!"
                 },
                 "love-and-js": {
                     "header": "Feito com <a href='contribute.html'>&hearts;</a> e JavaScript",
                     "content": "Brackets é um projeto de código aberto, apoiado por uma comunidade ativa e apaixonada. É feito por outros desenvolvedores web como você!",
-                    "contribute": "Saiba como contribuir&hellip;"
+                    "contribute": "Saiba como contribuir..."
                 },
                 "extract": {
                     "header": "Extraia sugestões de código de um PSD",
