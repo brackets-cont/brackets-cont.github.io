@@ -312,8 +312,8 @@ foo commit change
                             <span data-i18n="[html]index.page.hero.attribution"
                             >Installer Built and Signed by
                             </span>
-                            <a href="https://phoenix.core.ai"
-                            >phoenix.core.ai</a
+                            <a href="https://core.ai"
+                            >core.ai</a
                             >
                         </span>
         <div
@@ -718,44 +718,10 @@ This <img> tag will be added when NOT on mobile
 <script>
   var ext = "",
           OS = "UNKNOWN";
-  if (/Windows|Win32|WOW64|Win64/.test(navigator.userAgent)) {
-    OS = "WIN";
-    ext = ".msi";
-    if (/NT ?5\.\d/.test(navigator.userAgent)) {
-      FLAVOR = "Windows XP";
-    }
-    $("#launch-editor-button").removeClass("forced-hidden");
-  } else if (/Mac/.test(navigator.userAgent)) {
-    OS = "OSX";
-    ext = ".dmg";
-    osMatch = navigator.userAgent.match(
-            /Mac OS X 10[._](\d+)([._](\d+))?\D/i
-    );
-    osMatch = osMatch && parseFloat(osMatch[1] + "." + (osMatch[3] || 0));
-
-    // Firefox reports only the OS X major version (10.6), so we have to check for 6.0
-    if (osMatch < 6.8 && osMatch !== 6.0) {
-      // Mac OS X pre 10.6.8 is not supported
-      FLAVOR = "Mac OS X 10." + osMatch;
-    }
-    $("#launch-editor-button").removeClass("forced-hidden");
-  } else if (/Linux|X11/.test(navigator.userAgent)) {
-    OS = "LINUX32";
-    $("#download-plain-brackets").hide();
-    $("#phcode-upgrade").removeClass("forced-hidden");
-    $("#phcodeio-button-main").removeClass("forced-hidden");
-  }
-  if (/iPad|iPod|iPhone|Android/.test(navigator.userAgent)) {
-    OS = "OTHER";
-    $("#download-plain-brackets").hide();
-    $("#phcode-upgrade").hide();
-    $("#phcodeio-button-main").hide();
-    $("#launch-editor-button").removeClass("forced-hidden");
-  } else {
-    $(
-            "<img src='img/hero.png' srcset='img/hero@2x.png 2x' height='370' width='1059' alt='Screenshot of Brackets'>"
-    ).appendTo("#download");
-  }
+  OS = "LINUX32";
+  $("#download-plain-brackets").hide();
+  $("#phcode-upgrade").removeClass("forced-hidden");
+  $("#phcodeio-button-main").removeClass("forced-hidden");
 
   function setUniformButtonWidth() {
     var width1 = document.getElementById('download-plain-brackets').offsetWidth;
