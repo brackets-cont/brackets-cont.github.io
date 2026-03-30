@@ -29,9 +29,9 @@ foo commit change
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title data-i18n="index.head.title">
-    Brackets - A modern, open source code editor that understands web
-    design.
+    Brackets — Now Phoenix Code | Free Open Source Code Editor with Live Preview
   </title>
+  <meta name="description" content="Brackets has evolved into Phoenix Code — a free, open-source code editor with live preview for HTML, CSS, and JavaScript. Download for Windows, macOS, Linux, or try at phcode.io." />
   <script type="text/javascript">
     window.bracketsVersion = "2.2.1";
     window.buildURL = {
@@ -62,7 +62,7 @@ foo commit change
 
   <!-- social media images -->
   <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:url" content="http://brackets-cont.github.io" />
+  <meta property="og:url" content="https://brackets.io" />
   <meta
           property="og:title"
           content="A modern, open source code editor that understands web design" />
@@ -86,6 +86,31 @@ foo commit change
   <meta
           name="twitter:image"
           content="http://brackets.io/img/hero@2x.png" />
+
+  <!-- JSON-LD: Succession signal for search engines and Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Brackets",
+    "url": "https://brackets.io",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "description": "A modern, open source code editor for web design. Succeeded by Phoenix Code.",
+    "alternateName": "Brackets Editor",
+    "predecessorOf": {
+      "@type": "SoftwareApplication",
+      "name": "Phoenix Code",
+      "url": "https://phcode.io",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Windows, macOS, Linux, Web Browser"
+    },
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Brackets_(text_editor)",
+      "https://github.com/brackets-cont/brackets"
+    ]
+  }
+  </script>
 
   <!-- Only Edit brackets.io.css -->
   <link rel="stylesheet" href="css/brackets.io.css" />
@@ -211,10 +236,10 @@ foo commit change
                         >
                         <br />
                         <a
-                                href="https://www.reddit.com/r/brackets/comments/1b7bihm/introducing_phoenix_code_desktop_now_on_windows/"
+                                href="https://phcode.io"
                                 target="_blank"
                                 data-i18n="index.page.content.phoenixInfo3">
-                            Click here to read more</a
+                            Click here to read more</
                         >.<br />
                     </span>
 
@@ -276,7 +301,7 @@ foo commit change
         <a
                 id="download-plain-brackets"
                 class="rounded radius button"
-                href="https://github.com/adobe/brackets/releases"
+                href="https://github.com/brackets-cont/brackets/releases"
                 style="display: inline-flex;background-color: black; color: white; align-items: center;padding-left: 1.5rem;justify-content: center;"
                 onclick="mainDownloadClicked()"
                 download>
@@ -696,7 +721,7 @@ This <img> tag will be added when NOT on mobile
                             community. It was founded by Adobe as a community
                             guided, open source project to push web development
                             editors to the next level. </span
-                        ><br />
+                        >The project continues as <a href="https://phcode.io">Phoenix Code</a>, the next-generation open source code editor with live preview.<br />
       </p>
     </div>
   </div>
