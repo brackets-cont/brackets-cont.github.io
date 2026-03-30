@@ -3,7 +3,7 @@
     "lang": "en",
     "index": {
         "head": {
-            "title": "Brackets - A modern, open source code editor that understands web design."
+            "title": "Brackets — Now Phoenix Code | Free Open Source Code Editor with Live Preview"
         },
         "page": {
             "hero": {
@@ -163,7 +163,7 @@
             "header": "Keep in Touch"
         },
         "project-info": {
-            "motivation": "Brackets is maintained by the brackets.io community. It was founded by Adobe as a community guided, open source project to push web development editors to the next level.",
+            "motivation": "Brackets is maintained by the brackets.io community. It was founded by Adobe as a community guided, open source project to push web development editors to the next level. The project continues as Phoenix Code (phcode.io), the next-generation open source code editor.",
             "license": "Brackets is released under the $t(footer.project-info.licensetype)",
             "licensetype": "MIT License"
         }

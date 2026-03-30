@@ -3,7 +3,7 @@
     "lang": "ja",
     "index": {
         "head": {
-            "title": "Brackets - Web デザインを認識する最新のオープンソースコードエディター"
+            "title": "Brackets — Phoenix Code へ | ライブプレビュー付き無料オープンソースコードエディター"
         },
         "page": {
             "hero": {
@@ -163,7 +163,7 @@
             "header": "配信"
         },
         "project-info": {
-            "motivation": "ブラケットはbrackets.ioコミュニティによって管理されています。これは、Web開発エディターを次のレベルに押し上げるためのコミュニティガイド付きオープンソースプロジェクトとしてAdobeによって設立されました。",
+            "motivation": "ブラケットはbrackets.ioコミュニティによって管理されています。これは、Web開発エディターを次のレベルに押し上げるためのコミュニティガイド付きオープンソースプロジェクトとしてAdobeによって設立されました。このプロジェクトは次世代オープンソースコードエディター Phoenix Code (phcode.io) として継続しています。",
             "license": "Brackets は $t(footer.project-info.licensetype)でご利用いただけます",
             "licensetype": "MIT ライセンス"
         }
