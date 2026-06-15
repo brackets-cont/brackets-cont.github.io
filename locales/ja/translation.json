@@ -9,7 +9,7 @@
             "hero": {
                 "description": "モダンで強力でオープンソース",
                 "download": "をダウンロード",
-                "attribution": "インストーラーの作成と署名",
+                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Brackets から Phoenix Code へ移行する</a>",
                 "os-alert": {
                     "general": "申し訳ありませんが、__os__ のサポートは終了しました。<a href='__url__'>要件を見てください。<\/a>",
                     "win-xp": "申し訳ありませんが、Windows XP のサポートは終了しました。詳しくは、<a href='__url__'>ブログの記事<\/a>を参照してください。",
@@ -19,7 +19,7 @@
             },
             "content": {
                 "phoenix": "Phoenix Codeエディターの紹介",
-                "phoenixUpgrade": "Brackets は、Phoenix Code へのアップグレードをおすすめします ― Brackets の次世代版として、あなたのために作られました。",
+                "phoenixUpgrade": "Brackets は、<a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code へのアップグレード</a>をおすすめします ― 新しい Brackets として、あなたのために作られました。",
                 "phoenixioDownload": "phcode.ioからダウンロード",
                 "phoenixLaunch": "Webエディタを起動する",
                 "phoenixio": "phcode.ioから入手してください",

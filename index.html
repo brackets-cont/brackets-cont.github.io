@@ -34,10 +34,6 @@ foo commit change
   <meta name="description" content="Brackets has evolved into Phoenix Code — a free, open-source code editor with live preview for HTML, CSS, and JavaScript. Download for Windows, macOS, Linux, or try at phcode.io." />
   <script type="text/javascript">
     window.bracketsVersion = "2.2.1";
-    window.buildURL = {
-      WIN: "https://github.com/brackets-cont/brackets/releases/download/v2.2.1/Brackets-2.2.1.exe",
-      OSX: "https://github.com/brackets-cont/brackets/releases/download/v2.2.0/brackets.2.2.0.dmg"
-    };
   </script>
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -292,18 +288,12 @@ foo commit change
                         >
       </h1>
       <div class="intro row">
-        <p data-i18n="index.page.content.blurb">
-          With focused visual tools and preprocessor support,
-          Brackets is a modern text editor that makes it easy
-          to design in the browser. It's crafted from the
-          ground up for web designers and front-end
-          developers.
+        <p id="phcode-upgrade" data-i18n="[html]index.page.content.phoenixUpgrade">
+          Brackets recommends users upgrade to <a href="https://phcode.io/brackets-text-editor.html" style="color: inherit; text-decoration: none;">Phoenix Code – the new Brackets</a>, built for you.
         </p>
       </div>
       <div id="download">
-          <p id="phcode-upgrade" data-i18n="index.page.content.phoenixUpgrade" style="margin-bottom: 1px;" class="forced-hidden">
-          Brackets recommends users upgrade to Phoenix Code – the next generation of Brackets, built for you.
-        </p>
+
         <!-- Temporary link to download page -->
         <a
                 id="download-plain-brackets"
@@ -342,11 +332,7 @@ foo commit change
         <span style="font-size: small">
                             <br />
                             <span data-i18n="[html]index.page.hero.attribution"
-                            >Installer Built and Signed by
-                            </span>
-                            <a href="https://core.ai"
-                            >core.ai</a
-                            >
+                            ><a href="https://phcode.io/brackets-text-editor.html">Migrate from Brackets to Phoenix Code</a></span>
                         </span>
         <div
                 id="os-alert"
@@ -748,9 +734,6 @@ This <img> tag will be added when NOT on mobile
 </script>
 
 <script>
-  var ext = "",
-          OS = "UNKNOWN";
-  OS = "LINUX32";
   $("#download-plain-brackets").hide();
   $("#phcode-upgrade").removeClass("forced-hidden");
   $("#phcodeio-button-main").removeClass("forced-hidden");
@@ -767,12 +750,6 @@ This <img> tag will be added when NOT on mobile
 
 
   function setupDownloads() {
-    let downloadURL =
-            buildURL[OS] ||
-            "https://github.com/brackets-cont/brackets/releases";
-    document
-            .getElementById("download-plain-brackets")
-            .setAttribute("href", downloadURL);
     document
             .getElementById("other-downloads")
             .addEventListener("click", otherDownloadClicked);

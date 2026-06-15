@@ -9,7 +9,7 @@
             "hero": {
                 "description": "Modern, Powerful & Open source",
                 "download": "<i class=\"fa fa-spinner fa-spin\" style=\"visibility: hidden; margin-left: -16px\" id=\"mainDownloadSpinner\"></i>Download",
-                "attribution": "Installer Built and Signed by",
+                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Migrate from Brackets to Phoenix Code</a>",
                 "os-alert": {
                     "general": "Unfortunately, we don't support __os__ any longer. <a href='__url__'>Take a look at the Requirements.</a>",
                     "win-xp": "Unfortunately, we don't support Windows XP any longer. <a href='__url__'>Read our blog post</a> for further information.",
@@ -19,7 +19,7 @@
             },
             "content": {
                 "phoenix": "Introducing Phoenix Code Editor",
-                "phoenixUpgrade": "Brackets recommends users to download Phoenix Code - the next generation of Brackets.",
+                "phoenixUpgrade": "Brackets recommends users to download <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code - the new Brackets</a>.",
                 "phoenixioDownload": "Download from phcode.io",
                 "phoenixLaunch": "Launch Web Editor",
                 "phoenixio": "Get it from phcode.io",
