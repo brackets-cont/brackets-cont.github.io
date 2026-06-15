@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://brackets.io/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brackets.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://brackets.io/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://brackets.io/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brackets.io/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://brackets.io/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://brackets.io/?lang=pt-br" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://brackets.io/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://brackets.io/?lang=ja" />
+  </url>
+  <url>
+    <loc>https://brackets.io/contribute.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
