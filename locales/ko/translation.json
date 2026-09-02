@@ -9,7 +9,7 @@
             "hero": {
                 "description": "현대적이고, 강력한 오픈소스 코드 에디터",
                 "download": "<i class=\"fa fa-spinner fa-spin\" style=\"visibility: hidden; margin-left: -16px\" id=\"mainDownloadSpinner\"></i> 다운로드",
-                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Brackets에서 Phoenix Code로 마이그레이션</a>",
+                "attribution": "<a href=\"https://phcode.dev/brackets-text-editor.html\">Brackets에서 Phoenix Code로 마이그레이션</a>",
                 "os-alert": {
                     "general": "아쉽지만, __os__ (을)를 더는 지원하지 않습니다. <a href='__url__'>최소 사양을 확인해보세요.</a>",
                     "win-xp": "아쉽지만, Windows XP를 더는 지원하지 않습니다. <a href='__url__'>공지 블로그</a>에서 자세히 알아보세요.",
@@ -19,10 +19,10 @@
             },
             "content": {
                 "phoenix": "Phoenix Code 편집기 소개",
-                "phoenixUpgrade": "Brackets는 사용자들에게 <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">새로운 Brackets인 Phoenix Code</a>로 업그레이드할 것을 추천합니다.",
-                "phoenixioDownload": "phcode.io에서 다운로드",
+                "phoenixUpgrade": "Brackets는 사용자들에게 <a href=\"https://phcode.dev/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">새로운 Brackets인 Phoenix Code</a>로 업그레이드할 것을 추천합니다.",
+                "phoenixioDownload": "phcode.dev에서 다운로드",
                 "phoenixLaunch": "웹 에디터 실행",
-                "phoenixio": "phcode.io에서 받기",
+                "phoenixio": "phcode.dev에서 받기",
                 "phoenixInfo1": "Phoenix Code는 Windows, macOS, Linux 및 웹 브라우저 등 어디에서나 실행되는 차세대 Brackets입니다.",
                 "phoenixInfo3": "자세한 내용을 보려면 여기를 클릭하세요.",
                 "blurb": "시각 도구와 전처리기 지원을 중심으로, Brackets는 브라우저 내에서 쉽게 웹 디자인을 실현할 수 있는 현대적인 텍스트 에디터입니다. 처음부터 끝까지 웹 디자이너와 프론트엔드 개발자를 위해 제작했습니다.",

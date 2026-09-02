@@ -9,7 +9,7 @@
             "hero": {
                 "description": "Moderno, potente e open source",
                 "download": "Scarica",
-                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Migra da Brackets a Phoenix Code</a>",
+                "attribution": "<a href=\"https://phcode.dev/brackets-text-editor.html\">Migra da Brackets a Phoenix Code</a>",
                 "os-alert": {
                     "general": "Sfortunatamente, __os__ non è supportato. <a href='__url__'>Controlla i Requisiti.</a>",
                     "win-xp": "Sfortunatamente, Window XP non è supportato. Leggi <a href='__url__'>questo post</a> per avere altre informazioni.",
@@ -19,10 +19,10 @@
             },
             "content": {
                 "phoenix": "Presentazione dell'editor di Phoenix Code",
-                "phoenixUpgrade": "Brackets consiglia agli utenti di passare a <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code – il nuovo Brackets</a>, creato per te.",
-                "phoenixioDownload": "Scaricalo da phcode.io",
+                "phoenixUpgrade": "Brackets consiglia agli utenti di passare a <a href=\"https://phcode.dev/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code – il nuovo Brackets</a>, creato per te.",
+                "phoenixioDownload": "Scaricalo da phcode.dev",
                 "phoenixLaunch": "Avvia l'editor web",
-                "phoenixio": "Ottienilo da phcode.io",
+                "phoenixio": "Ottienilo da phcode.dev",
                 "phoenixInfo1": "Phoenix Code è la prossima generazione di Brackets che funziona ovunque: Windows, macOS, Linux e browser Web.",
                 "phoenixInfo3": "Clicca qui per saperne di più.",
                 "blurb": "Con strumenti visivi dedicati e supporto a preprocessore, Brackets è un editor di testo moderno che semplifica la progettazione su browser. È realizzato nativamente per web designer e sviluppatori front-end.",

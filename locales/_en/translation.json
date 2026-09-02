@@ -9,7 +9,7 @@
             "hero": {
                 "description": "Modern, Powerful & Open source",
                 "download": "<i class=\"fa fa-spinner fa-spin\" style=\"visibility: hidden; margin-left: -16px\" id=\"mainDownloadSpinner\"></i>Download",
-                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Migrate from Brackets to Phoenix Code</a>",
+                "attribution": "<a href=\"https://phcode.dev/brackets-text-editor.html\">Migrate from Brackets to Phoenix Code</a>",
                 "os-alert": {
                     "general": "Unfortunately, we don't support __os__ any longer. <a href='__url__'>Take a look at the Requirements.</a>",
                     "win-xp": "Unfortunately, we don't support Windows XP any longer. <a href='__url__'>Read our blog post</a> for further information.",
@@ -19,10 +19,10 @@
             },
             "content": {
                 "phoenix": "Introducing Phoenix Code Editor",
-                "phoenixUpgrade": "Brackets recommends users to download <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code - the new Brackets</a>.",
-                "phoenixioDownload": "Download from phcode.io",
+                "phoenixUpgrade": "Brackets recommends users to download <a href=\"https://phcode.dev/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code - the new Brackets</a>.",
+                "phoenixioDownload": "Download from phcode.dev",
                 "phoenixLaunch": "Launch Web Editor",
-                "phoenixio": "Get it from phcode.io",
+                "phoenixio": "Get it from phcode.dev",
                 "phoenixInfo1": "Phoenix Code is the next generation of Brackets that Runs everywhere - Windows, macOS, Linux and Web Browsers.",
                 "phoenixInfo3": "Click here to read more.",
                 "blurb": "With focused visual tools and preprocessor support, Brackets is a modern text editor that makes it easy to design in the browser. It's crafted from the ground up for web designers and front-end developers.",
@@ -163,7 +163,7 @@
             "header": "Keep in Touch"
         },
         "project-info": {
-            "motivation": "Brackets is maintained by the brackets.io community. It was founded by Adobe as a community guided, open source project to push web development editors to the next level. The project continues as Phoenix Code (phcode.io), the next-generation open source code editor.",
+            "motivation": "Brackets is maintained by the brackets.io community. It was founded by Adobe as a community guided, open source project to push web development editors to the next level. The project continues as Phoenix Code (phcode.dev), the next-generation open source code editor.",
             "license": "Brackets is released under the $t(footer.project-info.licensetype)",
             "licensetype": "MIT License"
         }

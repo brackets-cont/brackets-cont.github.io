@@ -9,7 +9,7 @@
             "hero": {
                 "description": "Moderno, Poderoso e Aberto",
                 "download": "Baixar",
-                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Migre do Brackets para o Phoenix Code</a>",
+                "attribution": "<a href=\"https://phcode.dev/brackets-text-editor.html\">Migre do Brackets para o Phoenix Code</a>",
                 "os-alert": {
                     "general": "Infelizmente, o sistema operacional __os__ não é mais suportado. <a href='__url__'>Clique aqui para ver os requisitos.</a>",
                     "win-xp": "Infelizmente, o Windows XP não é mais suportado. <a href='__url__'>Leia o nosso tópico no blog</a> para mais informações.",
@@ -19,10 +19,10 @@
             },
             "content": {
                 "phoenix": "Apresentando o Editor de Phoenix Code",
-                "phoenixUpgrade": "Brackets recomenda que os usuários atualizem para o <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code – o novo Brackets</a>, feito para você.",
-                "phoenixioDownload": "Baixe em phcode.io",
+                "phoenixUpgrade": "Brackets recomenda que os usuários atualizem para o <a href=\"https://phcode.dev/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code – o novo Brackets</a>, feito para você.",
+                "phoenixioDownload": "Baixe em phcode.dev",
                 "phoenixLaunch": "Inicie o Editor Web",
-                "phoenixio": "Obtenha-o em phcode.io",
+                "phoenixio": "Obtenha-o em phcode.dev",
                 "phoenixInfo1": "Phoenix Code é a próxima geração do Brackets que roda em qualquer lugar - Windows, macOS, Linux e Navegadores Web.",
                 "phoenixInfo3": "Clique aqui para ler mais.",
                 "blurb": "Com foco em ferramentas visuais e suporte a pré-processador, o Brackets é um editor de código moderno que facilita o desenvolvimento no navegador. Ele foi pensado desde o início para web designers e desenvolvedores front-end.",

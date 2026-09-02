@@ -9,7 +9,7 @@
             "hero": {
                 "description": "Moderne, leistungsstarke und offene Quelle",
                 "download": "Herunterladen",
-                "attribution": "<a href=\"https://phcode.io/brackets-text-editor.html\">Von Brackets zu Phoenix Code migrieren</a>",
+                "attribution": "<a href=\"https://phcode.dev/brackets-text-editor.html\">Von Brackets zu Phoenix Code migrieren</a>",
                 "os-alert": {
                     "general": "__os__ wird von uns leider nicht mehr unterstützt. <a href='__url__'>Wirf einen Blick auf die Systemvoraussetzungen.</a>",
                     "win-xp": "Windows XP wird von uns leider nicht mehr unterstützt. <a href='__url__'>Lies unseren Blogeintrag</a> für weitere Informationen.",
@@ -19,10 +19,10 @@
             },
             "content": {
                 "phoenix": "Einführung in den Phoenix Code Editor",
-                "phoenixUpgrade": "Brackets empfiehlt den Nutzern, auf <a href=\"https://phcode.io/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code zu aktualisieren – das neue Brackets</a>, entwickelt für Sie.",
-                "phoenixioDownload": "Von phcode.io herunterladen",
+                "phoenixUpgrade": "Brackets empfiehlt den Nutzern, auf <a href=\"https://phcode.dev/brackets-text-editor.html\" style=\"color: inherit; text-decoration: none;\">Phoenix Code zu aktualisieren – das neue Brackets</a>, entwickelt für Sie.",
+                "phoenixioDownload": "Von phcode.dev herunterladen",
                 "phoenixLaunch": "Starten Sie den Web-Editor",
-                "phoenixio": "Holen Sie es sich von phcode.io",
+                "phoenixio": "Holen Sie es sich von phcode.dev",
                 "phoenixInfo1": "Phoenix Code ist die nächste Generation von Brackets, die überall läuft – Windows, macOS, Linux und Webbrowser.",
                 "phoenixInfo3": "Klicken Sie hier, um mehr zu lesen.",
                 "blurb": "Mit tollen visuellen Tools und Unterstützung für Präprozessoren ist Brackets ein moderner Editor, der es dir leicht macht, im Browser zu designen. Er wurde von Vornherein für Web- und Frontend-Entwickler entwickelt.",
