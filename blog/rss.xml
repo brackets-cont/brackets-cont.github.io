@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brackets Blog</title>
+    <link>https://brackets.io/blog/</link>
+    <description>Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code.</description>
+    <language>en</language>
+    <atom:link href="https://brackets.io/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Open an HTML File</title>
+      <link>https://brackets.io/blog/how-to-open-an-html-file/</link>
+      <guid isPermaLink="true">https://brackets.io/blog/how-to-open-an-html-file/</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Got an .html file and not sure what to do with it? Here are the simplest ways to open and view an HTML file on Windows, Mac, or right in your browser.</description>
+    </item>
+    <item>
+      <title>How to Run HTML Code Online When You Just Need to See It Work</title>
+      <link>https://brackets.io/blog/how-to-run-html-code-online/</link>
+      <guid isPermaLink="true">https://brackets.io/blog/how-to-run-html-code-online/</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <description>You&#x27;ve got a snippet of HTML and you want to see it actually run — no project setup, no server. Here&#x27;s the fastest way to run and render HTML code online.</description>
+    </item>
+    <item>
+      <title>What Actually Happens in the Half-Second Before Your HTML Shows Up</title>
+      <link>https://brackets.io/blog/what-happens-when-a-browser-renders-html/</link>
+      <guid isPermaLink="true">https://brackets.io/blog/what-happens-when-a-browser-renders-html/</guid>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML.</description>
+    </item>
+  </channel>
+</rss>
