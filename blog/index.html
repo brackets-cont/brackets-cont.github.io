@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brackets Blog: HTML, CSS and Front-End Guides</title>
+  <meta name="description" content="Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code." />
+  <link rel="canonical" href="https://brackets.io/blog/" />
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lgzhgemeh3");
+  </script>
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/foundation.min.css" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brackets.io/blog/" />
+  <meta property="og:title" content="Brackets Blog: HTML, CSS and Front-End Guides" />
+  <meta property="og:description" content="Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code." />
+  <meta property="og:site_name" content="Brackets" />
+  <meta property="og:image" content="https://brackets.io/img/hero@2x.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@brackets" />
+  <meta name="twitter:title" content="Brackets Blog: HTML, CSS and Front-End Guides" />
+  <meta name="twitter:description" content="Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code." />
+  <meta name="twitter:image" content="https://brackets.io/img/hero@2x.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://brackets.io/blog/#blog",
+      "url": "https://brackets.io/blog/",
+      "name": "Brackets Blog",
+      "description": "Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://brackets.io/#organization",
+        "name": "Brackets",
+        "url": "https://brackets.io",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://brackets.io/img/brackets.svg"
+        }
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://brackets.io/blog/how-to-open-an-html-file/#article",
+          "url": "https://brackets.io/blog/how-to-open-an-html-file/",
+          "headline": "How to Open an HTML File",
+          "datePublished": "2026-09-23"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://brackets.io/blog/how-to-run-html-code-online/#article",
+          "url": "https://brackets.io/blog/how-to-run-html-code-online/",
+          "headline": "How to Run HTML Code Online When You Just Need to See It Work",
+          "datePublished": "2026-09-23"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/#article",
+          "url": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/",
+          "headline": "What Actually Happens in the Half-Second Before Your HTML Shows Up",
+          "datePublished": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://brackets.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://brackets.io/blog/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Only Edit brackets.io.css -->
+  <link rel="stylesheet" href="/css/brackets.io.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="alternate" type="application/rss+xml" title="Brackets Blog" href="https://brackets.io/blog/rss.xml" />
+</head>
+<body id="blog">
+<!-- Navigation Menu -->
+<div class="navbar w-nav">
+  <div class="navbar-base">
+    <div class="navigation-container">
+      <div class="navigation-side">
+        <a href="/" class="brand w-nav-brand w--current">
+          <img src="/img/brackets.svg" alt="Brackets logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-left-menu" id="nav-l">
+        <div class="nav-menu w-nav-menu" id="nav-lmenu">
+          <a href="/contribute.html" class="nav-link w-inline-block">Contribute</a>
+          <a href="/docs/current/modules/brackets.html" class="nav-link w-inline-block">API Docs</a>
+          <a href="https://registry.brackets.io" class="nav-link w-inline-block">Extensions</a>
+          <a href="/blog/" class="nav-link w-inline-block">Blog</a>
+          <a href="https://github.com/brackets-cont/brackets/discussions" class="nav-link w-inline-block">Support</a>
+        </div>
+      </div>
+      <nav class="nav-right-menu" id="nav-r">
+        <div class="nav-menu w-nav-menu" id="nav-rmenu">
+          <a href="https://www.github.com/brackets-cont/brackets" class="nav-link w-inline-block" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/BracketsCont" class="nav-link w-inline-block" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.com/invite/rBpTBPttca" class="nav-link w-inline-block" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg" class="nav-link w-inline-block" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </nav>
+      <div class="hamburgerMenuIcon" id="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Navigation Menu -->
+
+<main id="blog-main">
+  <div class="blog-container">
+    <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span>Blog
+    </nav>
+    <header class="blog-header">
+      <h1>Brackets Blog</h1>
+      <p>Practical guides to HTML, CSS and front-end development from the team behind Brackets and Phoenix Code.</p>
+    </header>
+    <ul class="blog-list">
+      <li class="blog-card">
+        <p class="blog-meta"><time datetime="2026-09-23">September 23, 2026</time> &middot; 4 min read</p>
+        <h2><a href="/blog/how-to-open-an-html-file/">How to Open an HTML File</a></h2>
+        <p>Got an .html file and not sure what to do with it? Here are the simplest ways to open and view an HTML file on Windows, Mac, or right in your browser.</p>
+        <a class="blog-read-more" href="/blog/how-to-open-an-html-file/" aria-label="Read: How to Open an HTML File">Read article &rarr;</a>
+      </li>
+      <li class="blog-card">
+        <p class="blog-meta"><time datetime="2026-09-23">September 23, 2026</time> &middot; 3 min read</p>
+        <h2><a href="/blog/how-to-run-html-code-online/">How to Run HTML Code Online When You Just Need to See It Work</a></h2>
+        <p>You&#x27;ve got a snippet of HTML and you want to see it actually run — no project setup, no server. Here&#x27;s the fastest way to run and render HTML code online.</p>
+        <a class="blog-read-more" href="/blog/how-to-run-html-code-online/" aria-label="Read: How to Run HTML Code Online When You Just Need to See It Work">Read article &rarr;</a>
+      </li>
+      <li class="blog-card">
+        <p class="blog-meta"><time datetime="2026-09-23">September 23, 2026</time> &middot; 4 min read</p>
+        <h2><a href="/blog/what-happens-when-a-browser-renders-html/">What Actually Happens in the Half-Second Before Your HTML Shows Up</a></h2>
+        <p>Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML.</p>
+        <a class="blog-read-more" href="/blog/what-happens-when-a-browser-renders-html/" aria-label="Read: What Actually Happens in the Half-Second Before Your HTML Shows Up">Read article &rarr;</a>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<div id="footer-wrapper">
+  <div id="footer" class="row">
+    <div class="medium-6 large-3 columns">
+      <h5>Quick Links</h5>
+      <ul>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets"
+          >Source Code on Github</a
+          >
+        </li>
+        <li>
+          <a
+                  href="/docs/current/modules/brackets.html"
+          >API Documentation</a
+          >
+        </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <!--<li>
+    <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/">Weekly Extension Updates</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
+          >Troubleshooting Help</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki"
+          >Wiki</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="try-it">Videos</h5>
+      <ul>
+        <li>
+          <a
+                  href="http://youtu.be/rvo3Mv1Z4qU"
+          >Introducing Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/Nhvj1NYC3Uc"
+          >Live Development for HTML</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/T6d5C3rLeFY"
+          >JavaScript Debugger for Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://tutsplus.com/courses/introduction-to-brackets?utm_source=Bracketsio&utm_medium=website&utm_campaign=BracketsWebsite"
+          >Tuts+ Introduction to Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://www.youtube.com/user/CodeBrackets"
+          >Brackets Videos on Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="contribute">
+        Get Involved
+      </h5>
+      <ul>
+        <!--<li>
+    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature">Suggest a Feature</a>
+</li>
+<li>
+    <a href="http://bit.ly/BracketsBacklog">View Backlog on Trello</a>
+</li>
+<li>
+    <a href="https://waffle.io/brackets-cont/brackets">Track Our Progress on Waffle</a>
+</li>
+<li>
+    <a href="https://groups.google.com/forum/#!forum/brackets-dev">Discuss on Google Groups</a>
+</li>
+<li>
+    <a href="http://webchat.freenode.net?channels=brackets&uio=d4">Chat on IRC at Freenode/#Brackets</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/issues"
+          >Checkout Current Issues on GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5>Keep in Touch</h5>
+      <ul>
+        <!--
+<li>
+    <a href="https://twitter.com/brackets">Twitter</a>
+</li>
+<li>
+    <a href="https://www.facebook.com/codebrackets">Facebook</a>
+</li>
+<li>
+    <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
+</li> -->
+        <li>
+          <a
+                  href="https://matrix.to/#/%23brackets-cont:matrix.org"
+          >Matrix</a
+          >
+        </li>
+        <li>
+          <a href="https://discord.gg/rBpTBPttca">Discord</a>
+        </li>
+        <li>
+          <a href="https://reddit.com/r/brackets/">Reddit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="about" class="row">
+    <div class="large-12 columns">
+      <p>
+                        <span
+                        >Brackets is maintained by the brackets.io
+                            community. It was founded by Adobe as a community
+                            guided, open source project to push web development
+                            editors to the next level. </span
+                        >The project continues as <a href="https://phcode.dev">Phoenix Code</a>, the next-generation open source code editor with live preview.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="/js/nav.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-XHYXL1VHXW");
+</script>
+</body>
+</html>

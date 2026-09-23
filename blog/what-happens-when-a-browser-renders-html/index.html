@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog</title>
+  <meta name="description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
+  <link rel="canonical" href="https://brackets.io/blog/what-happens-when-a-browser-renders-html/" />
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lgzhgemeh3");
+  </script>
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/foundation.min.css" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://brackets.io/blog/what-happens-when-a-browser-renders-html/" />
+  <meta property="og:title" content="What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog" />
+  <meta property="og:description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
+  <meta property="og:site_name" content="Brackets" />
+  <meta property="og:image" content="https://brackets.io/img/hero@2x.png" />
+  <meta property="article:published_time" content="2026-09-23" />
+  <meta property="article:author" content="Charly P Abraham" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@brackets" />
+  <meta name="twitter:title" content="What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog" />
+  <meta name="twitter:description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
+  <meta name="twitter:image" content="https://brackets.io/img/hero@2x.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/#article",
+      "mainEntityOfPage": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/",
+      "url": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/",
+      "headline": "What Actually Happens in the Half-Second Before Your HTML Shows Up",
+      "description": "Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here's a plain walkthrough of how browsers render HTML.",
+      "image": "https://brackets.io/img/hero@2x.png",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "inLanguage": "en",
+      "keywords": [
+        "how browsers render html",
+        "browser rendering",
+        "html rendering",
+        "render html",
+        "html preview",
+        "dom tree"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Charly P Abraham",
+        "jobTitle": "Co-Founder, Phoenix Code",
+        "url": "https://github.com/charlypa"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://brackets.io/#organization",
+        "name": "Brackets",
+        "url": "https://brackets.io",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://brackets.io/img/brackets.svg"
+        }
+      },
+      "isPartOf": {
+        "@id": "https://brackets.io/blog/#blog"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://brackets.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://brackets.io/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What Actually Happens in the Half-Second Before Your HTML Shows Up",
+          "item": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Only Edit brackets.io.css -->
+  <link rel="stylesheet" href="/css/brackets.io.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="alternate" type="application/rss+xml" title="Brackets Blog" href="https://brackets.io/blog/rss.xml" />
+</head>
+<body id="blog">
+<!-- Navigation Menu -->
+<div class="navbar w-nav">
+  <div class="navbar-base">
+    <div class="navigation-container">
+      <div class="navigation-side">
+        <a href="/" class="brand w-nav-brand w--current">
+          <img src="/img/brackets.svg" alt="Brackets logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-left-menu" id="nav-l">
+        <div class="nav-menu w-nav-menu" id="nav-lmenu">
+          <a href="/contribute.html" class="nav-link w-inline-block">Contribute</a>
+          <a href="/docs/current/modules/brackets.html" class="nav-link w-inline-block">API Docs</a>
+          <a href="https://registry.brackets.io" class="nav-link w-inline-block">Extensions</a>
+          <a href="/blog/" class="nav-link w-inline-block">Blog</a>
+          <a href="https://github.com/brackets-cont/brackets/discussions" class="nav-link w-inline-block">Support</a>
+        </div>
+      </div>
+      <nav class="nav-right-menu" id="nav-r">
+        <div class="nav-menu w-nav-menu" id="nav-rmenu">
+          <a href="https://www.github.com/brackets-cont/brackets" class="nav-link w-inline-block" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/BracketsCont" class="nav-link w-inline-block" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.com/invite/rBpTBPttca" class="nav-link w-inline-block" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg" class="nav-link w-inline-block" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </nav>
+      <div class="hamburgerMenuIcon" id="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Navigation Menu -->
+
+<main id="blog-main">
+  <article class="blog-container blog-post">
+    <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a>
+    </nav>
+    <h1>What Actually Happens in the Half-Second Before Your HTML Shows Up</h1>
+    <p class="blog-byline">
+      By <a href="https://github.com/charlypa" rel="author">Charly P Abraham</a>, Co-Founder, Phoenix Code
+      &middot; <time datetime="2026-09-23">September 23, 2026</time>
+      &middot; 4 min read
+    </p>
+
+    <div class="blog-body">
+<p>You paste some HTML, hit preview, and a page appears. It feels instant. But in that blink, a browser runs through a surprisingly involved routine to turn your text into pixels, and understanding it — even loosely — makes you better at spotting why something rendered wrong. This isn't a computer-science lecture. It's more like watching what goes on backstage.</p>
+<h2>Step one: reading the words</h2>
+<p>The browser starts by reading your HTML top to bottom, character by character. It's looking for tags — the <code>&lt;p&gt;</code>, the <code>&lt;div&gt;</code>, the <code>&lt;img&gt;</code> — and figuring out how they nest inside each other. Out of this reading it builds a kind of family tree of your page, where the <code>&lt;body&gt;</code> is a parent, a <code>&lt;div&gt;</code> inside it is a child, a paragraph inside that is a grandchild, and so on.</p>
+<p>This tree is the thing everything else hangs off of. If you've ever forgotten a closing tag and watched your layout collapse in weird ways, this is the stage where the damage was done. The browser tried to build the tree, hit something it didn't expect, and made its best guess about what you meant. Sometimes its guess matches yours. Sometimes it very much does not.</p>
+<h2>Step two: figuring out how it should look</h2>
+<p>Structure alone is colorless. So next the browser gathers up all your CSS — whatever's in your <code>&lt;style&gt;</code> blocks, your inline styles, and any stylesheets — and works out which rules apply to which elements. A single paragraph might be touched by half a dozen rules, and the browser has to settle any conflicts. This is where "why is my text blue when I clearly set it to black" arguments get resolved, usually in favor of whichever rule is more specific or came last.</p>
+<p>At the end of this, every element in that family tree knows not just what it is but how it should appear — its size, color, spacing, font, all of it.</p>
+<h2>Step three: deciding where everything sits</h2>
+<p>Now the browser plays a geometry game called layout. It walks through the tree and calculates the exact position and size of every single element on the page. How wide is this box? Does that image push the text down? Where does the sidebar land once the header takes its space? Every measurement gets worked out here, and it cascades — move one thing and everything after it may have to shift.</p>
+<p>This is why a single missing width or an unclosed tag can throw an entire page into chaos. Layout is a chain reaction. One wrong number early on ripples through everything below it.</p>
+<h2>Step four: actually drawing it</h2>
+<p>Finally, with structure known, styles resolved, and positions calculated, the browser paints. It fills in the pixels — backgrounds, borders, text, images — and composites them into the finished page you see. If there's JavaScript involved, it may jump in and change things, which can send the browser back to redo layout and paint for the affected parts. That's why heavy, poorly-written scripts make pages feel janky: they keep forcing the browser to recalculate and repaint.</p>
+<h2>Why any of this matters to you</h2>
+<p>You don't need to memorize these stages to write HTML. But knowing they exist changes how you debug. When a page looks broken, you can ask sharper questions. Is the structure wrong — did a tag not close, so the tree came out malformed? Is the styling wrong — is some rule winning that shouldn't? Is the layout wrong — did one element's size knock everything else out of place? Each symptom points back to a different stage.</p>
+<p>The fastest way to build this instinct is to watch it happen. Make a small change, <a href="https://phcode.dev/tools/html-viewer.html">render the HTML</a>, and see what moves. Break something on purpose — remove a closing tag, delete a width — and notice exactly how the page reacts. A live <a href="https://phcode.dev/tools/html-viewer.html">HTML preview</a> turns this whole invisible pipeline into something you can poke at in real time, and that hands-on feedback teaches more in an afternoon than any diagram will.</p>
+<p>Once you've seen a few pages fall apart and put themselves back together as you tweak the code, that half-second stops being a mystery. You start to feel where things went sideways before you've even finished reading the error. And when a snippet grows into a real project, a browser-based editor like <a href="https://phcode.dev/">Phoenix Code</a> keeps that same instant-feedback loop going while you build the whole thing.</p>
+    </div>
+
+    <aside class="blog-cta">
+      <h2>See your HTML in action</h2>
+      <p>Open or paste any HTML in the free online HTML Viewer and see the rendered page next to the code. When a snippet grows into a real project, Phoenix Code, the next generation of Brackets, runs on Windows, macOS, Linux and right in your browser.</p>
+      <a class="button" href="https://phcode.dev/tools/html-viewer.html">Open the HTML Viewer</a>
+      <a class="button secondary" href="https://phcode.dev/">Get Phoenix Code</a>
+    </aside>
+
+    <section class="blog-more">
+      <h2>More from the blog</h2>
+      <nav>
+        <ul>
+          <li><a href="/blog/how-to-open-an-html-file/">How to Open an HTML File</a></li>
+          <li><a href="/blog/how-to-run-html-code-online/">How to Run HTML Code Online When You Just Need to See It Work</a></li>
+        </ul>
+      </nav>
+    </section>
+  </article>
+</main>
+
+<div id="footer-wrapper">
+  <div id="footer" class="row">
+    <div class="medium-6 large-3 columns">
+      <h5>Quick Links</h5>
+      <ul>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets"
+          >Source Code on Github</a
+          >
+        </li>
+        <li>
+          <a
+                  href="/docs/current/modules/brackets.html"
+          >API Documentation</a
+          >
+        </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <!--<li>
+    <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/">Weekly Extension Updates</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
+          >Troubleshooting Help</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki"
+          >Wiki</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="try-it">Videos</h5>
+      <ul>
+        <li>
+          <a
+                  href="http://youtu.be/rvo3Mv1Z4qU"
+          >Introducing Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/Nhvj1NYC3Uc"
+          >Live Development for HTML</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/T6d5C3rLeFY"
+          >JavaScript Debugger for Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://tutsplus.com/courses/introduction-to-brackets?utm_source=Bracketsio&utm_medium=website&utm_campaign=BracketsWebsite"
+          >Tuts+ Introduction to Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://www.youtube.com/user/CodeBrackets"
+          >Brackets Videos on Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="contribute">
+        Get Involved
+      </h5>
+      <ul>
+        <!--<li>
+    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature">Suggest a Feature</a>
+</li>
+<li>
+    <a href="http://bit.ly/BracketsBacklog">View Backlog on Trello</a>
+</li>
+<li>
+    <a href="https://waffle.io/brackets-cont/brackets">Track Our Progress on Waffle</a>
+</li>
+<li>
+    <a href="https://groups.google.com/forum/#!forum/brackets-dev">Discuss on Google Groups</a>
+</li>
+<li>
+    <a href="http://webchat.freenode.net?channels=brackets&uio=d4">Chat on IRC at Freenode/#Brackets</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/issues"
+          >Checkout Current Issues on GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5>Keep in Touch</h5>
+      <ul>
+        <!--
+<li>
+    <a href="https://twitter.com/brackets">Twitter</a>
+</li>
+<li>
+    <a href="https://www.facebook.com/codebrackets">Facebook</a>
+</li>
+<li>
+    <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
+</li> -->
+        <li>
+          <a
+                  href="https://matrix.to/#/%23brackets-cont:matrix.org"
+          >Matrix</a
+          >
+        </li>
+        <li>
+          <a href="https://discord.gg/rBpTBPttca">Discord</a>
+        </li>
+        <li>
+          <a href="https://reddit.com/r/brackets/">Reddit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="about" class="row">
+    <div class="large-12 columns">
+      <p>
+                        <span
+                        >Brackets is maintained by the brackets.io
+                            community. It was founded by Adobe as a community
+                            guided, open source project to push web development
+                            editors to the next level. </span
+                        >The project continues as <a href="https://phcode.dev">Phoenix Code</a>, the next-generation open source code editor with live preview.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="/js/nav.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-XHYXL1VHXW");
+</script>
+</body>
+</html>

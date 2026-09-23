@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Run HTML Code Online When You Just Need to See It Work | Brackets Blog</title>
+  <meta name="description" content="You&#x27;ve got a snippet of HTML and you want to see it actually run — no project setup, no server. Here&#x27;s the fastest way to run and render HTML code online." />
+  <link rel="canonical" href="https://brackets.io/blog/how-to-run-html-code-online/" />
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lgzhgemeh3");
+  </script>
+
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/foundation.min.css" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://brackets.io/blog/how-to-run-html-code-online/" />
+  <meta property="og:title" content="How to Run HTML Code Online When You Just Need to See It Work | Brackets Blog" />
+  <meta property="og:description" content="You&#x27;ve got a snippet of HTML and you want to see it actually run — no project setup, no server. Here&#x27;s the fastest way to run and render HTML code online." />
+  <meta property="og:site_name" content="Brackets" />
+  <meta property="og:image" content="https://brackets.io/img/hero@2x.png" />
+  <meta property="article:published_time" content="2026-09-23" />
+  <meta property="article:author" content="Charly P Abraham" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@brackets" />
+  <meta name="twitter:title" content="How to Run HTML Code Online When You Just Need to See It Work | Brackets Blog" />
+  <meta name="twitter:description" content="You&#x27;ve got a snippet of HTML and you want to see it actually run — no project setup, no server. Here&#x27;s the fastest way to run and render HTML code online." />
+  <meta name="twitter:image" content="https://brackets.io/img/hero@2x.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://brackets.io/blog/how-to-run-html-code-online/#article",
+      "mainEntityOfPage": "https://brackets.io/blog/how-to-run-html-code-online/",
+      "url": "https://brackets.io/blog/how-to-run-html-code-online/",
+      "headline": "How to Run HTML Code Online When You Just Need to See It Work",
+      "description": "You've got a snippet of HTML and you want to see it actually run — no project setup, no server. Here's the fastest way to run and render HTML code online.",
+      "image": "https://brackets.io/img/hero@2x.png",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "inLanguage": "en",
+      "keywords": [
+        "run html code online",
+        "html runner",
+        "render html online",
+        "html renderer",
+        "online html viewer"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Charly P Abraham",
+        "jobTitle": "Co-Founder, Phoenix Code",
+        "url": "https://github.com/charlypa"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://brackets.io/#organization",
+        "name": "Brackets",
+        "url": "https://brackets.io",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://brackets.io/img/brackets.svg"
+        }
+      },
+      "isPartOf": {
+        "@id": "https://brackets.io/blog/#blog"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://brackets.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://brackets.io/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Run HTML Code Online When You Just Need to See It Work",
+          "item": "https://brackets.io/blog/how-to-run-html-code-online/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <!-- Only Edit brackets.io.css -->
+  <link rel="stylesheet" href="/css/brackets.io.css" />
+  <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="alternate" type="application/rss+xml" title="Brackets Blog" href="https://brackets.io/blog/rss.xml" />
+</head>
+<body id="blog">
+<!-- Navigation Menu -->
+<div class="navbar w-nav">
+  <div class="navbar-base">
+    <div class="navigation-container">
+      <div class="navigation-side">
+        <a href="/" class="brand w-nav-brand w--current">
+          <img src="/img/brackets.svg" alt="Brackets logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-left-menu" id="nav-l">
+        <div class="nav-menu w-nav-menu" id="nav-lmenu">
+          <a href="/contribute.html" class="nav-link w-inline-block">Contribute</a>
+          <a href="/docs/current/modules/brackets.html" class="nav-link w-inline-block">API Docs</a>
+          <a href="https://registry.brackets.io" class="nav-link w-inline-block">Extensions</a>
+          <a href="/blog/" class="nav-link w-inline-block">Blog</a>
+          <a href="https://github.com/brackets-cont/brackets/discussions" class="nav-link w-inline-block">Support</a>
+        </div>
+      </div>
+      <nav class="nav-right-menu" id="nav-r">
+        <div class="nav-menu w-nav-menu" id="nav-rmenu">
+          <a href="https://www.github.com/brackets-cont/brackets" class="nav-link w-inline-block" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/BracketsCont" class="nav-link w-inline-block" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://discord.com/invite/rBpTBPttca" class="nav-link w-inline-block" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="https://www.youtube.com/channel/UCNK2a8DKqPQQe3GlfTk-RHg" class="nav-link w-inline-block" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </nav>
+      <div class="hamburgerMenuIcon" id="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Navigation Menu -->
+
+<main id="blog-main">
+  <article class="blog-container blog-post">
+    <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a>
+    </nav>
+    <h1>How to Run HTML Code Online When You Just Need to See It Work</h1>
+    <p class="blog-byline">
+      By <a href="https://github.com/charlypa" rel="author">Charly P Abraham</a>, Co-Founder, Phoenix Code
+      &middot; <time datetime="2026-09-23">September 23, 2026</time>
+      &middot; 3 min read
+    </p>
+
+    <div class="blog-body">
+<p>There's a specific kind of small task that doesn't deserve a whole project folder. You copied a snippet from somewhere, or you're testing a bit of markup a coworker sent, or you're following a tutorial and want to check that one example. Spinning up a local server for that feels like driving to the shop next door. You just want to paste the code and watch it run.</p>
+<p>Good news: you can, and it takes about ten seconds.</p>
+<h2>Why "running" HTML is a slightly odd phrase</h2>
+<p>HTML on its own doesn't really "run" the way a program does. It's a description of a page. But the moment you add CSS or a little JavaScript, there's genuinely something happening — styles get applied, scripts execute, buttons do things. So when people say they want to <strong>run HTML code online</strong>, they usually mean: render the HTML, apply the styles, and let any JavaScript actually fire, so I can see the real, working result.</p>
+<p>That's what a browser does every time you visit a website. An online <a href="https://phcode.dev/tools/html-viewer.html">HTML runner</a> just gives you that same rendering engine in a box you can paste into, with nothing to install.</p>
+<h2>The fastest way to do it</h2>
+<p>Open an online <a href="https://phcode.dev/tools/html-viewer.html">HTML renderer</a>, paste your code into the editor, and the preview shows the output immediately. If your snippet includes a <code>&lt;style&gt;</code> block, the styling comes through. If it includes a <code>&lt;script&gt;</code>, that runs too. You're not deploying anything, you're not compiling — you're just seeing the page the way a visitor would.</p>
+<p>Try it with something tiny to get the feel:</p>
+<pre><code class="language-html">&lt;button onclick=&quot;alert('It works!')&quot;&gt;Click me&lt;/button&gt;
+&lt;style&gt;
+  button { padding: 10px 18px; font-size: 16px; cursor: pointer; }
+&lt;/style&gt;
+</code></pre>
+<p>Paste that in and click the button. The style applies, the alert fires. That's HTML, CSS, and JavaScript all running together, live.</p>
+<h2>When this beats setting up a project</h2>
+<ul>
+<li><strong>Testing a snippet from Stack Overflow or a tutorial.</strong> You want to confirm it does what the answer claims before you paste it into your real codebase.</li>
+<li><strong>Prototyping a small idea.</strong> A layout experiment, a hover effect, a quick component — things that don't need a repo.</li>
+<li><strong>Teaching or explaining.</strong> Showing someone how a piece of code behaves is far clearer when they can watch it run than when they're reading it cold.</li>
+<li><strong>Debugging in isolation.</strong> Pull the broken chunk out of your big project, drop it into a clean <a href="https://phcode.dev/tools/html-viewer.html">render-HTML-online</a> space, and see if it misbehaves on its own. Half the time that alone tells you where the bug is.</li>
+</ul>
+<h2>Where an online runner stops being enough</h2>
+<p>Being honest about the limits matters. An online HTML runner is brilliant for single files and self-contained snippets. It starts to strain when your work spans many files, needs a build step, pulls in a package manager, or talks to a backend. At that point you've outgrown a viewer and you want a proper editor — <a href="https://phcode.dev/">Phoenix Code</a> handles full projects with live preview, extensions, and Git while still running right in the browser.</p>
+<p>But for the everyday "does this snippet work?" question, you don't need any of that. Paste, render, done. Keep an online <a href="https://phcode.dev/tools/html-viewer.html">HTML runner</a> bookmarked and you'll reach for it more often than you'd expect.</p>
+    </div>
+
+    <aside class="blog-cta">
+      <h2>See your HTML in action</h2>
+      <p>Open or paste any HTML in the free online HTML Viewer and see the rendered page next to the code. When a snippet grows into a real project, Phoenix Code, the next generation of Brackets, runs on Windows, macOS, Linux and right in your browser.</p>
+      <a class="button" href="https://phcode.dev/tools/html-viewer.html">Open the HTML Viewer</a>
+      <a class="button secondary" href="https://phcode.dev/">Get Phoenix Code</a>
+    </aside>
+
+    <section class="blog-more">
+      <h2>More from the blog</h2>
+      <nav>
+        <ul>
+          <li><a href="/blog/how-to-open-an-html-file/">How to Open an HTML File</a></li>
+          <li><a href="/blog/what-happens-when-a-browser-renders-html/">What Actually Happens in the Half-Second Before Your HTML Shows Up</a></li>
+        </ul>
+      </nav>
+    </section>
+  </article>
+</main>
+
+<div id="footer-wrapper">
+  <div id="footer" class="row">
+    <div class="medium-6 large-3 columns">
+      <h5>Quick Links</h5>
+      <ul>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets"
+          >Source Code on Github</a
+          >
+        </li>
+        <li>
+          <a
+                  href="/docs/current/modules/brackets.html"
+          >API Documentation</a
+          >
+        </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <!--<li>
+    <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/">Weekly Extension Updates</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
+          >Troubleshooting Help</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/wiki"
+          >Wiki</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="try-it">Videos</h5>
+      <ul>
+        <li>
+          <a
+                  href="http://youtu.be/rvo3Mv1Z4qU"
+          >Introducing Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/Nhvj1NYC3Uc"
+          >Live Development for HTML</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://youtu.be/T6d5C3rLeFY"
+          >JavaScript Debugger for Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="http://tutsplus.com/courses/introduction-to-brackets?utm_source=Bracketsio&utm_medium=website&utm_campaign=BracketsWebsite"
+          >Tuts+ Introduction to Brackets</a
+          >
+        </li>
+        <li>
+          <a
+                  href="https://www.youtube.com/user/CodeBrackets"
+          >Brackets Videos on Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5 id="contribute">
+        Get Involved
+      </h5>
+      <ul>
+        <!--<li>
+    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature">Suggest a Feature</a>
+</li>
+<li>
+    <a href="http://bit.ly/BracketsBacklog">View Backlog on Trello</a>
+</li>
+<li>
+    <a href="https://waffle.io/brackets-cont/brackets">Track Our Progress on Waffle</a>
+</li>
+<li>
+    <a href="https://groups.google.com/forum/#!forum/brackets-dev">Discuss on Google Groups</a>
+</li>
+<li>
+    <a href="http://webchat.freenode.net?channels=brackets&uio=d4">Chat on IRC at Freenode/#Brackets</a>
+</li>-->
+        <li>
+          <a
+                  href="https://github.com/brackets-cont/brackets/issues"
+          >Checkout Current Issues on GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="medium-6 large-3 columns">
+      <h5>Keep in Touch</h5>
+      <ul>
+        <!--
+<li>
+    <a href="https://twitter.com/brackets">Twitter</a>
+</li>
+<li>
+    <a href="https://www.facebook.com/codebrackets">Facebook</a>
+</li>
+<li>
+    <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
+</li> -->
+        <li>
+          <a
+                  href="https://matrix.to/#/%23brackets-cont:matrix.org"
+          >Matrix</a
+          >
+        </li>
+        <li>
+          <a href="https://discord.gg/rBpTBPttca">Discord</a>
+        </li>
+        <li>
+          <a href="https://reddit.com/r/brackets/">Reddit</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="about" class="row">
+    <div class="large-12 columns">
+      <p>
+                        <span
+                        >Brackets is maintained by the brackets.io
+                            community. It was founded by Adobe as a community
+                            guided, open source project to push web development
+                            editors to the next level. </span
+                        >The project continues as <a href="https://phcode.dev">Phoenix Code</a>, the next-generation open source code editor with live preview.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="/js/nav.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-XHYXL1VHXW");
+</script>
+</body>
+</html>
