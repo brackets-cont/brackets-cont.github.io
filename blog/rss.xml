@@ -7,6 +7,13 @@
     <language>en</language>
     <atom:link href="https://brackets.io/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>HTML Viewer vs HTML Editor: Which One Do You Actually Need?</title>
+      <link>https://brackets.io/blog/html-viewer-vs-html-editor/</link>
+      <guid isPermaLink="true">https://brackets.io/blog/html-viewer-vs-html-editor/</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <description>An HTML viewer and an HTML editor sound similar but solve different problems. Here&#x27;s a plain explanation of which one fits the task in front of you.</description>
+    </item>
+    <item>
       <title>How to Open an HTML File</title>
       <link>https://brackets.io/blog/how-to-open-an-html-file/</link>
       <guid isPermaLink="true">https://brackets.io/blog/how-to-open-an-html-file/</guid>
