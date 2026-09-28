@@ -151,6 +151,8 @@
   padding: 2px 6px;
 }
 
+/* Code blocks. The dark box is the fallback look; copy-code.js wraps each
+   <pre> in .code-block with a header bar so the button has its own home. */
 .blog-body pre {
   background-color: #13181b;
   border-radius: 8px;
@@ -161,11 +163,140 @@
 
 .blog-body pre code {
   background: none;
+  border: 0;
   color: #e6edf3;
   font-size: 14px;
   line-height: 22px;
   padding: 0;
   white-space: pre;
+}
+
+/* Enhanced frame (JS-wrapped): header bar + code share one rounded surface. */
+.code-block {
+  background-color: #13181b;
+  border-radius: 10px;
+  margin: 0 0 22px;
+  overflow: hidden;
+}
+
+.code-block pre {
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 18px 20px;
+}
+
+/* Themed horizontal scrollbar for long lines. */
+.code-block pre {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(230, 237, 243, 0.22) transparent;
+}
+
+.code-block pre::-webkit-scrollbar {
+  height: 10px;
+}
+
+.code-block pre::-webkit-scrollbar-thumb {
+  background: rgba(230, 237, 243, 0.18);
+  border: 2px solid #13181b;
+  border-radius: 6px;
+}
+
+.code-block pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(230, 237, 243, 0.32);
+}
+
+.code-block ::selection {
+  background: rgba(32, 152, 245, 0.32);
+  color: #fff;
+}
+
+.code-block__bar {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.025);
+  border-bottom: 1px solid rgba(230, 237, 243, 0.08);
+  display: flex;
+  justify-content: space-between;
+  min-height: 42px;
+  padding: 6px 10px 6px 18px;
+}
+
+.code-block__lang {
+  color: rgba(230, 237, 243, 0.58);
+  font: 600 11px/1 "Inter", sans-serif;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.code-copy-btn {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(230, 237, 243, 0.12);
+  border-radius: 7px;
+  color: rgba(230, 237, 243, 0.72);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 7px;
+  font: 600 12px/1 "Inter", sans-serif;
+  margin: 0;
+  padding: 7px 11px;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+/* Foundation's bare button:focus paints it blue; pin focus to the idle look
+   (the visible ring comes from :focus-visible below). Kept before :hover so
+   hover still wins when both apply. */
+.code-copy-btn:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(230, 237, 243, 0.12);
+  color: rgba(230, 237, 243, 0.72);
+}
+
+.code-copy-btn i {
+  font-size: 15px;
+}
+
+.code-copy-btn:hover {
+  background: rgba(230, 237, 243, 0.11);
+  border-color: rgba(230, 237, 243, 0.22);
+  color: #fff;
+}
+
+.code-copy-btn:focus-visible {
+  outline: 2px solid #2098f5;
+  outline-offset: 2px;
+}
+
+.code-copy-btn.copied {
+  background: rgba(88, 214, 141, 0.13);
+  border-color: rgba(88, 214, 141, 0.42);
+  color: #6fe0a0;
+}
+
+.code-copy-btn.copied i {
+  animation: code-copy-pop 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes code-copy-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-copy-btn {
+    transition: none;
+  }
+  .code-copy-btn.copied i {
+    animation: none;
+  }
 }
 
 /* Call to action */

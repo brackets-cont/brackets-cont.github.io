@@ -7,6 +7,13 @@
     <language>en</language>
     <atom:link href="https://brackets.io/blog/rss.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How to Create an HTML File</title>
+      <link>https://brackets.io/blog/how-to-create-an-html-file/</link>
+      <guid isPermaLink="true">https://brackets.io/blog/how-to-create-an-html-file/</guid>
+      <pubDate>Sun, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Making your first web page? Here&#x27;s how to create an HTML file from scratch on Windows, Mac, or in your browser — and see it render right away.</description>
+    </item>
+    <item>
       <title>HTML Viewer vs HTML Editor: Which One Do You Actually Need?</title>
       <link>https://brackets.io/blog/html-viewer-vs-html-editor/</link>
       <guid isPermaLink="true">https://brackets.io/blog/html-viewer-vs-html-editor/</guid>

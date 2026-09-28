@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog</title>
-  <meta name="description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
-  <link rel="canonical" href="https://brackets.io/blog/what-happens-when-a-browser-renders-html/" />
+  <title>How to Create an HTML File | Brackets Blog</title>
+  <meta name="description" content="Making your first web page? Here's how to create an HTML file from scratch on Windows, Mac, or in your browser — and see it render right away." />
+  <link rel="canonical" href="https://brackets.io/blog/how-to-create-an-html-file/" />
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -21,17 +21,17 @@
   <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://brackets.io/blog/what-happens-when-a-browser-renders-html/" />
-  <meta property="og:title" content="What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog" />
-  <meta property="og:description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
+  <meta property="og:url" content="https://brackets.io/blog/how-to-create-an-html-file/" />
+  <meta property="og:title" content="How to Create an HTML File | Brackets Blog" />
+  <meta property="og:description" content="Making your first web page? Here's how to create an HTML file from scratch on Windows, Mac, or in your browser — and see it render right away." />
   <meta property="og:site_name" content="Brackets" />
   <meta property="og:image" content="https://brackets.io/img/hero@2x.png" />
-  <meta property="article:published_time" content="2026-09-23" />
+  <meta property="article:published_time" content="2026-09-28" />
   <meta property="article:author" content="Charly P Abraham" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@brackets" />
-  <meta name="twitter:title" content="What Actually Happens in the Half-Second Before Your HTML Shows Up | Brackets Blog" />
-  <meta name="twitter:description" content="Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here&#x27;s a plain walkthrough of how browsers render HTML." />
+  <meta name="twitter:title" content="How to Create an HTML File | Brackets Blog" />
+  <meta name="twitter:description" content="Making your first web page? Here's how to create an HTML file from scratch on Windows, Mac, or in your browser — and see it render right away." />
   <meta name="twitter:image" content="https://brackets.io/img/hero@2x.png" />
 
   <script type="application/ld+json">
@@ -40,22 +40,21 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/#article",
-      "mainEntityOfPage": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/",
-      "url": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/",
-      "headline": "What Actually Happens in the Half-Second Before Your HTML Shows Up",
-      "description": "Ever wondered what a browser is doing between the moment it reads your HTML and the moment the page appears? Here's a plain walkthrough of how browsers render HTML.",
+      "@id": "https://brackets.io/blog/how-to-create-an-html-file/#article",
+      "mainEntityOfPage": "https://brackets.io/blog/how-to-create-an-html-file/",
+      "url": "https://brackets.io/blog/how-to-create-an-html-file/",
+      "headline": "How to Create an HTML File",
+      "description": "Making your first web page? Here's how to create an HTML file from scratch on Windows, Mac, or in your browser — and see it render right away.",
       "image": "https://brackets.io/img/hero@2x.png",
-      "datePublished": "2026-09-23",
-      "dateModified": "2026-09-23",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
       "inLanguage": "en",
       "keywords": [
-        "how browsers render html",
-        "browser rendering",
-        "html rendering",
-        "render html",
-        "html preview",
-        "dom tree"
+        "how to create an html file",
+        "create html file",
+        "make an html file",
+        "new html file",
+        "write html"
       ],
       "author": {
         "@type": "Person",
@@ -95,8 +94,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "What Actually Happens in the Half-Second Before Your HTML Shows Up",
-          "item": "https://brackets.io/blog/what-happens-when-a-browser-renders-html/"
+          "name": "How to Create an HTML File",
+          "item": "https://brackets.io/blog/how-to-create-an-html-file/"
         }
       ]
     }
@@ -149,36 +148,52 @@
     <nav class="blog-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a>
     </nav>
-    <h1>What Actually Happens in the Half-Second Before Your HTML Shows Up</h1>
+    <h1>How to Create an HTML File</h1>
     <p class="blog-byline">
       By <a href="https://github.com/charlypa" rel="author">Charly P Abraham</a>, Co-Founder, Phoenix Code
-      &middot; <time datetime="2026-09-23">September 23, 2026</time>
+      &middot; <time datetime="2026-09-28">September 28, 2026</time>
       &middot; 4 min read
     </p>
 
     <div class="blog-body">
-<p>You paste some HTML, hit preview, and a page appears. It feels instant. But in that blink, a browser runs through a surprisingly involved routine to turn your text into pixels, and understanding it — even loosely — makes you better at spotting why something rendered wrong. This isn't a computer-science lecture. It's more like watching what goes on backstage.</p>
-<h2>Step one: reading the words</h2>
-<p>The browser starts by reading your HTML top to bottom, character by character. It's looking for tags — the <code>&lt;p&gt;</code>, the <code>&lt;div&gt;</code>, the <code>&lt;img&gt;</code> — and figuring out how they nest inside each other. Out of this reading it builds a kind of family tree of your page, where the <code>&lt;body&gt;</code> is a parent, a <code>&lt;div&gt;</code> inside it is a child, a paragraph inside that is a grandchild, and so on.</p>
-<p>This tree is the thing everything else hangs off of. If you've ever forgotten a closing tag and watched your layout collapse in weird ways, this is the stage where the damage was done. The browser tried to build the tree, hit something it didn't expect, and made its best guess about what you meant. Sometimes its guess matches yours. Sometimes it very much does not.</p>
-<h2>Step two: figuring out how it should look</h2>
-<p>Structure alone is colorless. So next the browser gathers up all your CSS — whatever's in your <code>&lt;style&gt;</code> blocks, your inline styles, and any stylesheets — and works out which rules apply to which elements. A single paragraph might be touched by half a dozen rules, and the browser has to settle any conflicts. This is where "why is my text blue when I clearly set it to black" arguments get resolved, usually in favor of whichever rule is more specific or came last.</p>
-<p>At the end of this, every element in that family tree knows not just what it is but how it should appear — its size, color, spacing, font, all of it.</p>
-<h2>Step three: deciding where everything sits</h2>
-<p>Now the browser plays a geometry game called layout. It walks through the tree and calculates the exact position and size of every single element on the page. How wide is this box? Does that image push the text down? Where does the sidebar land once the header takes its space? Every measurement gets worked out here, and it cascades — move one thing and everything after it may have to shift.</p>
-<p>This is why a single missing width or an unclosed tag can throw an entire page into chaos. Layout is a chain reaction. One wrong number early on ripples through everything below it.</p>
-<h2>Step four: actually drawing it</h2>
-<p>Finally, with structure known, styles resolved, and positions calculated, the browser paints. It fills in the pixels — backgrounds, borders, text, images — and composites them into the finished page you see. If there's JavaScript involved, it may jump in and change things, which can send the browser back to redo layout and paint for the affected parts. That's why heavy, poorly-written scripts make pages feel janky: they keep forcing the browser to recalculate and repaint.</p>
-<h2>Why any of this matters to you</h2>
-<p>You don't need to memorize these stages to write HTML. But knowing they exist changes how you debug. When a page looks broken, you can ask sharper questions. Is the structure wrong — did a tag not close, so the tree came out malformed? Is the styling wrong — is some rule winning that shouldn't? Is the layout wrong — did one element's size knock everything else out of place? Each symptom points back to a different stage.</p>
-<p>The fastest way to build this instinct is to watch it happen. Make a small change, <a href="https://phcode.dev/tools/html-viewer.html">render the HTML</a>, and see what moves. Break something on purpose — remove a closing tag, delete a width — and notice exactly how the page reacts. A live <a href="https://phcode.dev/tools/html-viewer.html">HTML preview</a> turns this whole invisible pipeline into something you can poke at in real time, and that hands-on feedback teaches more in an afternoon than any diagram will.</p>
-<p>Once you've seen a few pages fall apart and put themselves back together as you tweak the code, that half-second stops being a mystery. You start to feel where things went sideways before you've even finished reading the error. And when a snippet grows into a real project, a browser-based editor like <a href="https://phcode.dev/">Phoenix Code</a> keeps that same instant-feedback loop going while you build the whole thing.</p>
+<p>Creating an HTML file sounds like it should need special software, an account, or at least some setup. It doesn't. An HTML file is a plain text file with a different ending, and you can make one with tools that are already on your computer right now. If you can save a document, you can build a web page.</p>
+<p>Here's the thing worth knowing before you start: the word "HTML" scares people off, but the file itself is nothing more than text. What makes it a web page is the <code>.html</code> at the end of its name and a bit of structure inside. Get those two things right and a browser will happily turn it into a page. Let's walk through it.</p>
+<h2>Step 1: Open a plain text editor</h2>
+<p>You need something that saves plain text, not a word processor. Notepad on Windows or TextEdit on a Mac both work in a pinch. The catch with those is they'll sometimes fight you over formatting, so if you plan to do this more than once, a real code editor like <a href="https://phcode.dev/">Phoenix Code</a> or VS Code makes life easier — it colours your code, closes your tags for you, and won't sneak in hidden formatting. But to make your very first file, whatever you have is fine.</p>
+<h2>Step 2: Write the smallest page that works</h2>
+<p>Every HTML file follows the same skeleton. Type this in exactly as you see it:</p>
+<pre data-lang="html"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>That's a complete, working web page. The <code>&lt;head&gt;</code> holds information about the page, like its title. The <code>&lt;body&gt;</code> holds what people actually see. The tags in angle brackets are just labels telling the browser "this is a heading," "this is a paragraph." You'll learn the rest as you go, but this is enough to see something real.</p>
+<h2>Step 3: Save it with the right extension</h2>
+<p>This is the step that trips almost everyone up. When you save, don't call it <code>page.txt</code> — call it <code>index.html</code>. In Notepad, set <strong>Save as type</strong> to <em>All Files</em> first, or it will quietly bolt <code>.txt</code> onto the end and you'll wonder why your page shows up as a wall of code. On a Mac in TextEdit, choose <strong>Format &rarr; Make Plain Text</strong> before you save, then use the <code>.html</code> ending.</p>
+<p>Why <code>index.html</code>? It's the traditional name for a site's main page, and it's a good habit. But any name works as long as it ends in <code>.html</code> and has no spaces.</p>
+<h2>Step 4: Open it and see your page</h2>
+<p>Find the file, double-click it, and it should open in your browser showing "Hello, world" as a big heading. If it opens as code instead of a page, the extension probably saved wrong — rename it so it ends cleanly in <code>.html</code>. (We wrote a whole piece on <a href="/blog/how-to-open-an-html-file/">how to open an HTML file</a> if that part gives you trouble.)</p>
+<h2>The shortcut: skip the setup entirely</h2>
+<p>If wrangling default programs and file extensions sounds like more friction than you signed up for, you can create and preview an HTML file without saving anything to your machine at all. Open a free online <a href="https://phcode.dev/tools/html-editor.html">HTML editor</a> in your browser, type your markup on one side, and watch the page render live on the other. Nothing to install, nothing to configure — you write a line, you see it appear. When you're happy with it, download the finished <code>.html</code> file.</p>
+<p>For a lot of beginners that's the friendliest way to start. You get the write-and-see loop immediately, without the "why won't this save correctly" detour, and you can move to a desktop editor later once the ideas stick.</p>
+<h2>A few things that commonly go wrong</h2>
+<ul>
+<li><strong>The page shows raw code, not a heading.</strong> The file saved as <code>.txt</code> or <code>.html.txt</code>. Rename it so the name ends in <code>.html</code> and nothing after it.</li>
+<li><strong>Nothing appears at all.</strong> Check you closed your tags — every <code>&lt;body&gt;</code> needs a <code>&lt;/body&gt;</code>. A missing slash is the usual culprit.</li>
+<li><strong>Your styling doesn't show up.</strong> If you linked a CSS file, it has to sit in the same folder as your HTML file, or the browser can't find it.</li>
+</ul>
+<p>That's genuinely all there is to the first file. Text in, <code>.html</code> on the end, browser paints it into a page. Once you've made one, making the next hundred is muscle memory — and an online <a href="https://phcode.dev/tools/html-editor.html">HTML editor</a> is there for the times you just want to try something without the ceremony of saving files.</p>
     </div>
 
     <aside class="blog-cta">
-      <h2>See your HTML in action</h2>
-      <p>Open or paste any HTML in the free online HTML Viewer and see the rendered page next to the code. When a snippet grows into a real project, Phoenix Code, the next generation of Brackets, runs on Windows, macOS, Linux and right in your browser.</p>
-      <a class="button" href="https://phcode.dev/tools/html-viewer.html">Open the HTML Viewer</a>
+      <h2>Write your first page right now</h2>
+      <p>Type HTML on one side and watch it render on the other in the free online HTML Editor — no install, no account. When your page grows into a real project, Phoenix Code, the next generation of Brackets, runs on Windows, macOS, Linux and right in your browser.</p>
+      <a class="button" href="https://phcode.dev/tools/html-editor.html">Open the HTML Editor</a>
       <a class="button secondary" href="https://phcode.dev/">Get Phoenix Code</a>
     </aside>
 
@@ -186,10 +201,10 @@
       <h2>More from the blog</h2>
       <nav>
         <ul>
-          <li><a href="/blog/how-to-create-an-html-file/">How to Create an HTML File</a></li>
           <li><a href="/blog/how-to-open-an-html-file/">How to Open an HTML File</a></li>
           <li><a href="/blog/how-to-run-html-code-online/">How to Run HTML Code Online When You Just Need to See It Work</a></li>
           <li><a href="/blog/html-viewer-vs-html-editor/">HTML Viewer vs HTML Editor: Which One Do You Actually Need?</a></li>
+          <li><a href="/blog/what-happens-when-a-browser-renders-html/">What Actually Happens in the Half-Second Before Your HTML Shows Up</a></li>
         </ul>
       </nav>
     </section>
@@ -216,9 +231,6 @@
         <li>
           <a href="/blog/">Blog</a>
         </li>
-        <!--<li>
-    <a href="https://ingorichter.github.io/BracketsExtensionTweetBot/">Weekly Extension Updates</a>
-</li>-->
         <li>
           <a
                   href="https://github.com/brackets-cont/brackets/wiki/Troubleshooting"
@@ -273,21 +285,6 @@
         Get Involved
       </h5>
       <ul>
-        <!--<li>
-    <a href="https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature">Suggest a Feature</a>
-</li>
-<li>
-    <a href="http://bit.ly/BracketsBacklog">View Backlog on Trello</a>
-</li>
-<li>
-    <a href="https://waffle.io/brackets-cont/brackets">Track Our Progress on Waffle</a>
-</li>
-<li>
-    <a href="https://groups.google.com/forum/#!forum/brackets-dev">Discuss on Google Groups</a>
-</li>
-<li>
-    <a href="http://webchat.freenode.net?channels=brackets&uio=d4">Chat on IRC at Freenode/#Brackets</a>
-</li>-->
         <li>
           <a
                   href="https://github.com/brackets-cont/brackets/issues"
@@ -299,16 +296,6 @@
     <div class="medium-6 large-3 columns">
       <h5>Keep in Touch</h5>
       <ul>
-        <!--
-<li>
-    <a href="https://twitter.com/brackets">Twitter</a>
-</li>
-<li>
-    <a href="https://www.facebook.com/codebrackets">Facebook</a>
-</li>
-<li>
-    <a href="https://plus.google.com/b/115365194873502050036/">Google+</a>
-</li> -->
         <li>
           <a
                   href="https://matrix.to/#/%23brackets-cont:matrix.org"
@@ -339,6 +326,7 @@
 </div>
 
 <script src="/js/nav.js"></script>
+<script src="/js/copy-code.js?v=20260929"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYXL1VHXW"></script>
